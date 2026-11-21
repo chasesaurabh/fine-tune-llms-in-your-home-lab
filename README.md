@@ -63,6 +63,25 @@ Inspect `config.json`, `loss-mask.json`, `lengths.json`, `trainable.json`, `trai
 
 The full extraction protocol replaces `--steps 2` with `--epochs 2` in a new run directory, producing 48 optimizer steps on 192 training examples. Use the same policy for base and adapter. Final-test data and literal regression probes are for a frozen decision, not repeated tuning. Several trained configurations fail the preset task gates; completing a run does not establish useful quality.
 
+To inspect the complete seven-configuration plan without loading models, run:
+
+```powershell
+& $py -m finetune_lab.run_study --output runs/ladder-001 --dry-run
+```
+
+Remove `--dry-run` to execute sequentially, or add `--only qwen3-0.6b-20261121` for one full small-model comparison. The runner verifies frozen data/policy/probe hashes, saves its selected plan and phase journal, and stops on a failed process or raw-reconstruction mismatch. It refuses existing study directories. The journal is evidence, not an automatic resume mechanism.
+
+After all selected phases finish, recompute decisions from raw outputs:
+
+```powershell
+& $py -m finetune_lab.study_report --runs runs/ladder-001 `
+  --plan runs/ladder-001/_plan.json --data experiments/extraction-v2/data `
+  --probes experiments/extraction-v2/probes.jsonl `
+  --output runs/ladder-001/decision-001.json
+```
+
+The report uses the declared 144-case test, 96-case raw reconstruction and sixteen literal probes. It checks identities and preserves individual regressions. These correlated synthetic cases do not establish performance on real incidents. `wrapper_diagnostic` separately measures a post-hoc alternate consumer accepting one complete JSON Markdown fence; it never changes the primary strict scores or creates new confirmation evidence.
+
 Commands reject existing output directories and changed data identities. The official chat template, completion-only labels and scored end token are inspected before training. Examples exceeding the sequence cap are rejected rather than silently dropping the target. `--max-length 512` is a cap, not proof every batch contained 512 tokens.
 
 ## Tools and reference projects
@@ -75,6 +94,8 @@ Use each module's `--help` for its exact arguments:
 | `training`, `evaluation` | SFT and separate-process base/adapter scoring |
 | `paired` | Re-score matched raw responses and report gains/regressions |
 | `probes` | Literal response contracts outside the extraction task |
+| `run_study`, `study_report` | Sequential frozen ladder and raw-evidence decision reconstruction |
+| `wrapper_diagnostic` | Separately labeled alternate-consumer analysis of whole JSON fences |
 | `compare_resume` | Compare adapter tensors and optimizer traces |
 | `preference`, `dpo`, `compare_preferences` | Pair likelihood, frozen-reference DPO and reference-adjusted comparison |
 | `capacity` | Fixed-length train/backward/optimizer/save/reload probe |
