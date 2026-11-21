@@ -84,12 +84,15 @@ def main():
     parser.add_argument("--gradient-checkpointing",action="store_true")
     parser.add_argument("--instruction-file",type=Path)
     parser.add_argument("--in-memory-evaluation",action="store_true")
+    parser.add_argument('--resume-from',type=Path)
+    parser.add_argument('--stop-after-step',type=int)
     parser.add_argument("--task",choices=['extraction','response','triage','preference'],default='extraction')
     args=parser.parse_args()
     if args.output.exists(): parser.error("use a new output directory")
     if not re.fullmatch('[0-9a-f]{40}',args.revision): parser.error("pin a 40-character revision")
     if min(args.micro_batch,args.accumulation,args.max_length,args.epochs)<=0 or args.steps==0 or args.steps < -1:
         parser.error("positive budgets are required; --steps -1 means use epochs")
+    if args.stop_after_step is not None and args.stop_after_step<=0: parser.error('stop step must be positive')
     audit=audit_splits(args.data)
     train=load_rows(args.data/'train.jsonl')
     validation=load_rows(args.data/'validation.jsonl')
@@ -98,7 +101,7 @@ def main():
     import torch
     from datasets import Dataset
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
-    from transformers import AutoTokenizer, set_seed
+    from transformers import AutoTokenizer, set_seed, TrainerCallback
     from trl import SFTConfig,SFTTrainer
     if not torch.cuda.is_available(): raise RuntimeError('NVIDIA CUDA is required for this path')
     set_seed(args.seed,deterministic=True)
@@ -109,11 +112,17 @@ def main():
     formatted, lengths=formatted_rows(tokenizer,train,args.max_length,instruction)
     val_formatted,val_lengths=formatted_rows(tokenizer,validation,args.max_length,instruction)
     args.output.mkdir(parents=True)
-    config={k:v for k,v in vars(args).items() if k not in ('data','output','instruction_file')}
+    config={k:v for k,v in vars(args).items() if k not in ('data','output','instruction_file','resume_from')}
     config.update(instruction=instruction,instruction_sha256=hashlib.sha256(instruction.encode('utf-8')).hexdigest())
     config.update(dataset=audit,learning_rate=2e-4,rank=8,alpha=16,dropout=0.05,
                   targets='all-linear',template='official; one user message; thinking disabled',
                   precision='bfloat16',completion_only_loss=True,packing=False)
+    from .checkpoints import verify_checkpoint,file_hashes
+    if args.resume_from:
+        restored_step=verify_checkpoint(args.resume_from,config)
+        if args.stop_after_step is not None and args.stop_after_step<=restored_step:
+            raise ValueError('stop boundary must be after restored step')
+        config.update(resume_checkpoint=args.resume_from.name,resume_step=restored_step)
     write_json(args.output/'config.json',config)
     write_json(args.output/'lengths.json',{'train':lengths,'validation':val_lengths})
     write_json(args.output/'environment.json',{
@@ -148,6 +157,14 @@ def main():
             bf16=True,tf32=True,gradient_checkpointing=args.gradient_checkpointing,
             max_length=args.max_length,completion_only_loss=True,packing=False,
             report_to='none',seed=args.seed,data_seed=args.seed,dataloader_num_workers=0))
+    if args.stop_after_step is not None:
+        class StopAtBoundary(TrainerCallback):
+            def on_step_end(self,training_args,state,control,**kwargs):
+                if state.global_step>=args.stop_after_step:
+                    control.should_save=True
+                    control.should_training_stop=True
+                return control
+        trainer.add_callback(StopAtBoundary())
     batch=next(iter(trainer.get_train_dataloader()))
     mask=[]
     expected_prefixes={tuple(tokenizer(row['prompt']+row['completion'],add_special_tokens=False)['input_ids']):
@@ -171,7 +188,7 @@ def main():
     set_seed(args.seed,deterministic=True)
     torch.cuda.synchronize(); torch.cuda.reset_peak_memory_stats()
     start=time.perf_counter()
-    result=trainer.train()
+    result=trainer.train(resume_from_checkpoint=str(args.resume_from) if args.resume_from else None)
     torch.cuda.synchronize()
     training_seconds=time.perf_counter()-start
     train_peak={'allocated_gib':torch.cuda.max_memory_allocated()/2**30,'reserved_gib':torch.cuda.max_memory_reserved()/2**30}
@@ -180,6 +197,8 @@ def main():
     trainer.save_model(str(args.output/'adapter'))
     tokenizer.save_pretrained(args.output/'adapter')
     trainer.save_state()
+    write_json(args.output/'checkpoint-hashes.json',{p.name:file_hashes(p)
+        for p in (args.output/'checkpoints').glob('checkpoint-*') if p.is_dir()})
     adapter_hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (args.output/'adapter').iterdir() if p.is_file()}
     write_json(args.output/'adapter-hashes.json',adapter_hashes)
     torch.cuda.synchronize()
