@@ -61,7 +61,10 @@ def main():
     config.update(seed=args.seed,epochs=args.epochs,steps=args.steps,algorithm='DPO sigmoid',
         learning_rate=5e-5,beta=0.1,micro_batch=4,accumulation=2,
         gradient_checkpointing=False,reference='separate frozen SFT parent',parent_adapter_hashes=parent_hashes,
-        in_memory_evaluation=True,task='preference')
+        in_memory_evaluation=True,task='preference',dropout=0.0,disable_dropout=True,
+        optimizer='adamw_torch_fused',lr_scheduler='cosine',warmup_steps=2,
+        weight_decay=0.0,adam_beta1=0.9,adam_beta2=0.999,adam_epsilon=1e-8,
+        max_grad_norm=1.0,data_seed=args.seed,tf32_training=True)
     write_json(args.output/'config.json',config)
     policy=PeftModel.from_pretrained(load_model(config['model'],config['revision'],'lora'),
         args.sft_run/'adapter',is_trainable=True)
@@ -77,6 +80,8 @@ def main():
         args=DPOConfig(output_dir=str(args.output/'checkpoints'),num_train_epochs=args.epochs,
             max_steps=args.steps,per_device_train_batch_size=4,per_device_eval_batch_size=4,
             gradient_accumulation_steps=2,learning_rate=5e-5,lr_scheduler_type='cosine',warmup_steps=2,
+            optim='adamw_torch_fused',weight_decay=0.0,adam_beta1=0.9,adam_beta2=0.999,
+            adam_epsilon=1e-8,max_grad_norm=1.0,
             logging_steps=1,eval_strategy='epoch',save_strategy='epoch',save_total_limit=2,
             bf16=True,tf32=True,gradient_checkpointing=False,max_length=config['max_length'],
             beta=0.1,loss_type=['sigmoid'],disable_dropout=True,sync_ref_model=False,

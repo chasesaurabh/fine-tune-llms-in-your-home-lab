@@ -4,7 +4,8 @@ import json
 from pathlib import Path
 
 IDENTITY_KEYS=('model','revision','method','seed','epochs','steps','micro_batch','accumulation',
-    'max_length','gradient_checkpointing','instruction','dataset','learning_rate','rank','alpha','dropout','targets')
+    'max_length','gradient_checkpointing','instruction','dataset','learning_rate','rank','alpha','dropout','targets',
+    'optimizer','lr_scheduler','warmup_steps','weight_decay','adam_beta1','adam_beta2','adam_epsilon','max_grad_norm','data_seed')
 
 
 def file_hashes(directory):

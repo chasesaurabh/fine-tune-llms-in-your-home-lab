@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
+import math
 import os
 from pathlib import Path
 import platform
@@ -81,6 +82,11 @@ def main():
     parser.add_argument("--micro-batch",type=int,default=4)
     parser.add_argument("--accumulation",type=int,default=2)
     parser.add_argument("--max-length",type=int,default=512)
+    parser.add_argument('--learning-rate',type=float,default=2e-4)
+    parser.add_argument('--rank',type=int,default=8)
+    parser.add_argument('--alpha',type=int,default=16)
+    parser.add_argument('--dropout',type=float,default=0.05)
+    parser.add_argument('--warmup-steps',type=int,default=2)
     parser.add_argument("--gradient-checkpointing",action="store_true")
     parser.add_argument("--instruction-file",type=Path)
     parser.add_argument("--in-memory-evaluation",action="store_true")
@@ -93,6 +99,10 @@ def main():
     if min(args.micro_batch,args.accumulation,args.max_length,args.epochs)<=0 or args.steps==0 or args.steps < -1:
         parser.error("positive budgets are required; --steps -1 means use epochs")
     if args.stop_after_step is not None and args.stop_after_step<=0: parser.error('stop step must be positive')
+    if not math.isfinite(args.learning_rate) or args.learning_rate<=0 or min(args.rank,args.alpha)<=0:
+        parser.error('learning rate, rank and alpha must be positive and finite')
+    if not math.isfinite(args.dropout) or not 0<=args.dropout<1 or args.warmup_steps<0:
+        parser.error('dropout must be in [0,1); warmup steps must be nonnegative')
     audit=audit_splits(args.data)
     train=load_rows(args.data/'train.jsonl')
     validation=load_rows(args.data/'validation.jsonl')
@@ -114,9 +124,14 @@ def main():
     args.output.mkdir(parents=True)
     config={k:v for k,v in vars(args).items() if k not in ('data','output','instruction_file','resume_from')}
     config.update(instruction=instruction,instruction_sha256=hashlib.sha256(instruction.encode('utf-8')).hexdigest())
-    config.update(dataset=audit,learning_rate=2e-4,rank=8,alpha=16,dropout=0.05,
+    config.update(dataset=audit,
                   targets='all-linear',template='official; one user message; thinking disabled',
-                  precision='bfloat16',completion_only_loss=True,packing=False)
+                  precision='bfloat16',completion_only_loss=True,packing=False,
+                  optimizer='adamw_torch_fused',lr_scheduler='cosine',
+                  weight_decay=0.0,adam_beta1=0.9,adam_beta2=0.999,adam_epsilon=1e-8,
+                  max_grad_norm=1.0,eval_strategy='epoch',save_strategy='epoch',save_total_limit=2,
+                  data_seed=args.seed,tf32_training=True,
+                  inference_precision='explicit CUDA BF16 autocast; TF32 disabled')
     from .checkpoints import verify_checkpoint,file_hashes
     if args.resume_from:
         restored_step=verify_checkpoint(args.resume_from,config)
@@ -139,7 +154,7 @@ def main():
     if args.method=='qlora':
         model=prepare_model_for_kbit_training(model,use_gradient_checkpointing=args.gradient_checkpointing)
     model.config.use_cache=False
-    model=get_peft_model(model,LoraConfig(r=8,lora_alpha=16,lora_dropout=0.05,
+    model=get_peft_model(model,LoraConfig(r=args.rank,lora_alpha=args.alpha,lora_dropout=args.dropout,
         bias='none',task_type='CAUSAL_LM',target_modules='all-linear'))
     if args.gradient_checkpointing: model.enable_input_require_grads()
     trainable={name:p.numel() for name,p in model.named_parameters() if p.requires_grad}
@@ -152,7 +167,9 @@ def main():
         args=SFTConfig(output_dir=str(args.output/'checkpoints'),num_train_epochs=args.epochs,
             max_steps=args.steps,per_device_train_batch_size=args.micro_batch,
             per_device_eval_batch_size=1,gradient_accumulation_steps=args.accumulation,
-            learning_rate=2e-4,lr_scheduler_type='cosine',warmup_steps=2,
+            learning_rate=args.learning_rate,lr_scheduler_type='cosine',warmup_steps=args.warmup_steps,
+            optim='adamw_torch_fused',weight_decay=0.0,adam_beta1=0.9,adam_beta2=0.999,
+            adam_epsilon=1e-8,max_grad_norm=1.0,
             logging_steps=1,eval_strategy='epoch',save_strategy='epoch',save_total_limit=2,
             bf16=True,tf32=True,gradient_checkpointing=args.gradient_checkpointing,
             max_length=args.max_length,completion_only_loss=True,packing=False,

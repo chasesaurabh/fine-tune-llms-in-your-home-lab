@@ -82,6 +82,9 @@ def main():
         'eos_scored':True,'prompt_scored':False,'dataset':config['dataset'],
         'scope':'Fixed synthetic pairs; sum likelihood, token means and generated behavior are distinct. No human preference inference.',
         'model':config['model'],'revision':config['revision'],'method':config['method'],
+        'algorithm':config.get('algorithm','SFT'),
+        'parent_adapter_hashes':config.get('parent_adapter_hashes'),
+        'adapter_hashes':json.loads((args.run/'adapter-hashes.json').read_text()) if args.mode=='adapter' else None,
         'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
 
 
