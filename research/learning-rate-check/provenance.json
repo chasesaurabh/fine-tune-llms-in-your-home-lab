@@ -1,0 +1,17 @@
+{
+  "files": {
+    "config.json": "7c039ab177f6e7ee55aa41e4b967b913c0afca4ef792562b77e8fbab790ba29e",
+    "environment.json": "80f3915796cfb9413d50de2e616acf49e26509b974d137266a223f898ad33f52",
+    "training.json": "fe52fc00c7ddb064d1b5838f8d0d621aa780f3e51137c6cae284b683fae8896c",
+    "trainable.json": "27ef8fb799c462710146fc5522e1c32bf483110d510f0fc906c426dcebf5b1dc",
+    "lengths.json": "872d5b42896292f6044edf392bb30a81ac4ba36f775792da9af76a1b2b674dfd",
+    "loss-mask.json": "97054892881dc4b80277cab099315d7af6eb82cae690cd3adf6d722a0e1554cb",
+    "adapter-hashes.json": "19c0b653b5b2117affa3955a276bed9854af059debcf8a2e4a23a2c3cfad4bf1",
+    "in-memory-validation.json": "bceb851d517cadad7f1f7736c8736e2887782fc8a6e4cb91400c907779ac17b0",
+    "adapter-validation/outputs.json": "bceb851d517cadad7f1f7736c8736e2887782fc8a6e4cb91400c907779ac17b0",
+    "adapter-validation/summary.json": "00a40cad6d97cad84b21e6e4cce699a7fc268d87e3934079041e3957a74fed78",
+    "adapter-validation/reload-differences.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  },
+  "control": "../extraction-study/runs/qwen3-0.6b-20261121/adapter-validation",
+  "scope": "One seed, validation only, same controls except learning rate. No new final-test or best-rate claim."
+}

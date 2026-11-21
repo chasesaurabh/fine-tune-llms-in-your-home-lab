@@ -1,0 +1,12 @@
+{
+  "files": {
+    "report.json": "dc62edee8a3e0dc2600065e9b6e21542ce49f76aba709f3bbeea89a9b403324d",
+    "initial-report.json": "b42265d891a90bea5d22eaee22f86898d22ef043f8a916641996f812c106f376",
+    "framing-diagnostic.json": "88408597a3d0647b439b4d2059b49fefcce0cb50543c545b55c0587a1a23904b"
+  },
+  "client": "scripts/verify_service.py",
+  "client_sha256": "26072b4fa21658ac345c66df9930ac2341c1a6a3da67536875aef19e381e6260",
+  "server_module_sha256": "bac5c01647e205448707f8ef3b4ca20e6e86015a6529ca544c7ce2f5c7e79d67",
+  "fixture": "Accepted Qwen3-14B extraction adapter from the recorded extraction study; model and adapters acquired or recreated separately.",
+  "scope": "Synthetic local HTTP requests, two server starts, corrupt-candidate rejection and original restoration. No private execution journal or credentials included."
+}

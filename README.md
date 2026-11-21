@@ -2,6 +2,8 @@
 
 Runnable adapter-training labs, strict evaluators and original synthetic datasets for the book by Saurabh Chase. Code is MIT; dataset manifests retain their CC0-1.0 dedication. Model weights are acquired separately under their own licenses.
 
+For the book's commands, download [book-v2.0.0](https://github.com/chasesaurabh/fine-tune-llms-in-your-home-lab/releases/tag/book-v2.0.0) and verify its `SHA256SUMS` file. Keep that named version with your experiment records.
+
 Use the source archive for datasets, generators, tests and research files. The wheel installs the Python modules only. No model weights or trained adapters are bundled. Outputs belong under the ignored `runs/` directory; review actual file contents and Git history before sharing anything.
 
 ## CPU checks
@@ -105,6 +107,15 @@ Use each module's `--help` for its exact arguments:
 The response-style, triage and preference fixtures are in their respective `experiments/` directories. Historical fixtures are teaching sets; repeated use does not produce independent confirmation data. Preference pair likelihood is not a human-preference study. Response-style examples use supplied context and do not implement a retrieval engine.
 
 The service requires `LAB_API_TOKEN`, binds to 127.0.0.1, accepts one explicit asset per request and validates the output. It has token limits, not a hard inference wall-clock deadline. It is a local teaching service, not a complete multi-user gateway. Never expose its token in logs or commits.
+
+After training and verifying the accepted 14B extraction adapter, test the real Windows service from the source-archive root:
+
+```powershell
+& $py scripts/verify_service.py --code . `
+  --run runs/extraction-14b-001 --output runs/service-check-001
+```
+
+This manual integration check loads the real model in two separate server processes, checks three synthetic golden cases and nine request boundaries, rejects a deliberately corrupted copy, and restarts the original adapter. It generates its own temporary token without saving it, stops only its own processes, and retains the report under the new output directory. It does not modify the accepted adapter. The corrupted copy includes the adapter weights, so reserve extra disk space and keep the output private unless its contents and model terms have been reviewed. Completing this small check is not a production security certification or a broad quality benchmark.
 
 ## Model identities and rights
 

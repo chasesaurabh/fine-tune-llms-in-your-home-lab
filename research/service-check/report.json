@@ -1,0 +1,373 @@
+{
+  "scope": "Real model, synthetic golden cases, authenticated loopback HTTP, forced process stop and fresh restart. No general quality or production security claim.",
+  "script_sha256": "26072b4fa21658ac345c66df9930ac2341c1a6a3da67536875aef19e381e6260",
+  "golden_requests": [
+    {
+      "text": "LAB-1234ABCD: the switch drops established connections. Impact: the whole team is blocked without a workaround.",
+      "target": {
+        "asset": "LAB-1234ABCD",
+        "category": "network",
+        "urgency": "high"
+      }
+    },
+    {
+      "text": "LAB-5678EF90: the cooling fan has stopped rotating. Impact: work continues with an alternative and no urgent deadline.",
+      "target": {
+        "asset": "LAB-5678EF90",
+        "category": "hardware",
+        "urgency": "low"
+      }
+    },
+    {
+      "text": "LAB-0ABC1234: the approved application crashes during startup. Impact: one person cannot continue working.",
+      "target": {
+        "asset": "LAB-0ABC1234",
+        "category": "software",
+        "urgency": "medium"
+      }
+    }
+  ],
+  "cycles": [
+    {
+      "cycle": 1,
+      "requests": [
+        {
+          "name": "unauthenticated",
+          "expected_status": 401,
+          "status": 401,
+          "response": {
+            "error": "Unauthorized"
+          },
+          "seconds": 0.002157299895770848
+        },
+        {
+          "name": "missing-asset",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Invalid single-asset request"
+          },
+          "seconds": 0.002091199974529445
+        },
+        {
+          "name": "two-assets",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Invalid single-asset request"
+          },
+          "seconds": 0.00198079994879663
+        },
+        {
+          "name": "duplicate-json-key",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Invalid single-asset request"
+          },
+          "seconds": 0.0019038000609725714
+        },
+        {
+          "name": "extra-field",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Invalid single-asset request"
+          },
+          "seconds": 0.0020326999947428703
+        },
+        {
+          "name": "oversized-body",
+          "expected_status": 413,
+          "status": 413,
+          "response": {
+            "error": "Request body too large or empty"
+          },
+          "seconds": 0.001982599962502718
+        },
+        {
+          "name": "wrong-content-type",
+          "expected_status": 415,
+          "status": 415,
+          "response": {
+            "error": "Expected application/json"
+          },
+          "seconds": 0.001920499955303967
+        },
+        {
+          "name": "wrong-route",
+          "expected_status": 404,
+          "status": 404,
+          "response": {
+            "error": "Not found"
+          },
+          "seconds": 0.0018825000151991844
+        },
+        {
+          "name": "rendered-token-bound",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Rendered request exceeds the lab input contract"
+          },
+          "seconds": 0.0200431999983266
+        },
+        {
+          "status": 200,
+          "response": {
+            "result": {
+              "asset": "LAB-1234ABCD",
+              "category": "network",
+              "urgency": "high"
+            },
+            "model": "Qwen/Qwen3-14B",
+            "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+            "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+            "mode": "synthetic lab; no action executor"
+          },
+          "seconds": 2.6243895000079647,
+          "name": "golden-1",
+          "target": {
+            "asset": "LAB-1234ABCD",
+            "category": "network",
+            "urgency": "high"
+          },
+          "exact": true
+        },
+        {
+          "status": 200,
+          "response": {
+            "result": {
+              "asset": "LAB-5678EF90",
+              "category": "hardware",
+              "urgency": "low"
+            },
+            "model": "Qwen/Qwen3-14B",
+            "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+            "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+            "mode": "synthetic lab; no action executor"
+          },
+          "seconds": 2.4083829999435693,
+          "name": "golden-2",
+          "target": {
+            "asset": "LAB-5678EF90",
+            "category": "hardware",
+            "urgency": "low"
+          },
+          "exact": true
+        },
+        {
+          "status": 200,
+          "response": {
+            "result": {
+              "asset": "LAB-0ABC1234",
+              "category": "software",
+              "urgency": "medium"
+            },
+            "model": "Qwen/Qwen3-14B",
+            "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+            "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+            "mode": "synthetic lab; no action executor"
+          },
+          "seconds": 2.2419347000541165,
+          "name": "golden-3",
+          "target": {
+            "asset": "LAB-0ABC1234",
+            "category": "software",
+            "urgency": "medium"
+          },
+          "exact": true
+        }
+      ],
+      "health": {
+        "status": 200,
+        "response": {
+          "status": "ready",
+          "model": "Qwen/Qwen3-14B",
+          "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+          "mode": "synthetic lab; no action executor"
+        },
+        "seconds": 1.5248370999470353
+      },
+      "golden_exact": 3,
+      "own_process_stopped": true,
+      "endpoint_stopped": true
+    },
+    {
+      "cycle": 2,
+      "requests": [
+        {
+          "name": "unauthenticated",
+          "expected_status": 401,
+          "status": 401,
+          "response": {
+            "error": "Unauthorized"
+          },
+          "seconds": 0.00210829998832196
+        },
+        {
+          "name": "missing-asset",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Invalid single-asset request"
+          },
+          "seconds": 0.0019639000529423356
+        },
+        {
+          "name": "two-assets",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Invalid single-asset request"
+          },
+          "seconds": 0.0018480999860912561
+        },
+        {
+          "name": "duplicate-json-key",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Invalid single-asset request"
+          },
+          "seconds": 0.0018276000628247857
+        },
+        {
+          "name": "extra-field",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Invalid single-asset request"
+          },
+          "seconds": 0.0017737000016495585
+        },
+        {
+          "name": "oversized-body",
+          "expected_status": 413,
+          "status": 413,
+          "response": {
+            "error": "Request body too large or empty"
+          },
+          "seconds": 0.0019034999422729015
+        },
+        {
+          "name": "wrong-content-type",
+          "expected_status": 415,
+          "status": 415,
+          "response": {
+            "error": "Expected application/json"
+          },
+          "seconds": 0.001748100039549172
+        },
+        {
+          "name": "wrong-route",
+          "expected_status": 404,
+          "status": 404,
+          "response": {
+            "error": "Not found"
+          },
+          "seconds": 0.0018261000514030457
+        },
+        {
+          "name": "rendered-token-bound",
+          "expected_status": 400,
+          "status": 400,
+          "response": {
+            "error": "Rendered request exceeds the lab input contract"
+          },
+          "seconds": 0.020975899999029934
+        },
+        {
+          "status": 200,
+          "response": {
+            "result": {
+              "asset": "LAB-1234ABCD",
+              "category": "network",
+              "urgency": "high"
+            },
+            "model": "Qwen/Qwen3-14B",
+            "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+            "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+            "mode": "synthetic lab; no action executor"
+          },
+          "seconds": 2.5832857000641525,
+          "name": "golden-1",
+          "target": {
+            "asset": "LAB-1234ABCD",
+            "category": "network",
+            "urgency": "high"
+          },
+          "exact": true
+        },
+        {
+          "status": 200,
+          "response": {
+            "result": {
+              "asset": "LAB-5678EF90",
+              "category": "hardware",
+              "urgency": "low"
+            },
+            "model": "Qwen/Qwen3-14B",
+            "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+            "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+            "mode": "synthetic lab; no action executor"
+          },
+          "seconds": 2.3518640999682248,
+          "name": "golden-2",
+          "target": {
+            "asset": "LAB-5678EF90",
+            "category": "hardware",
+            "urgency": "low"
+          },
+          "exact": true
+        },
+        {
+          "status": 200,
+          "response": {
+            "result": {
+              "asset": "LAB-0ABC1234",
+              "category": "software",
+              "urgency": "medium"
+            },
+            "model": "Qwen/Qwen3-14B",
+            "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+            "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+            "mode": "synthetic lab; no action executor"
+          },
+          "seconds": 2.2998089999891818,
+          "name": "golden-3",
+          "target": {
+            "asset": "LAB-0ABC1234",
+            "category": "software",
+            "urgency": "medium"
+          },
+          "exact": true
+        }
+      ],
+      "health": {
+        "status": 200,
+        "response": {
+          "status": "ready",
+          "model": "Qwen/Qwen3-14B",
+          "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+          "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+          "mode": "synthetic lab; no action executor"
+        },
+        "seconds": 1.5254603999201208
+      },
+      "golden_exact": 3,
+      "own_process_stopped": true,
+      "endpoint_stopped": true
+    }
+  ],
+  "rollback_scope": "Accepted artifact, deliberately corrupted private candidate rejected before loading, then original accepted artifact restarted. No live traffic migration or executor.",
+  "rejected_candidate": {
+    "return_code": 1,
+    "checksum_failure": true,
+    "candidate_weight_sha256": "8784c39ec69d6460dcd13acd5096543b39babe17905d621cc234a921d5e556c8"
+  },
+  "original_adapter_unchanged_after_rejection": true,
+  "restart_same_golden_results": true,
+  "all_golden_exact": true
+}

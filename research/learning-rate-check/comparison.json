@@ -1,0 +1,66 @@
+{
+  "scope": "One seed, validation only, same controls except learning rate. No new final-test or best-rate claim.",
+  "control_rate": 0.0002,
+  "candidate_rate": 0.0001,
+  "control": {
+    "cases": 96,
+    "valid_json_object": 96,
+    "schema_valid": 96,
+    "exact_object_match": 96,
+    "fields": {
+      "asset": 96,
+      "category": 96,
+      "urgency": 96
+    }
+  },
+  "candidate": {
+    "cases": 96,
+    "valid_json_object": 96,
+    "schema_valid": 96,
+    "exact_object_match": 93,
+    "fields": {
+      "asset": 96,
+      "category": 93,
+      "urgency": 96
+    }
+  },
+  "gains": [],
+  "regressions": [
+    "v2-09-22",
+    "v2-11-22",
+    "v2-09-10"
+  ],
+  "fresh_raw_reconstruction": true,
+  "clean_study_raw_comparison": [
+    {
+      "file": "adapter-validation/outputs.json",
+      "cases": 96,
+      "case_prompt_raw_identical": true
+    },
+    {
+      "file": "base-validation/outputs.json",
+      "cases": 96,
+      "case_prompt_raw_identical": true
+    },
+    {
+      "file": "base-test/outputs.json",
+      "cases": 144,
+      "case_prompt_raw_identical": true
+    },
+    {
+      "file": "adapter-test/outputs.json",
+      "cases": 144,
+      "case_prompt_raw_identical": true
+    },
+    {
+      "file": "base-probes/outputs.json",
+      "cases": 16,
+      "case_prompt_raw_identical": true
+    },
+    {
+      "file": "adapter-probes/outputs.json",
+      "cases": 16,
+      "case_prompt_raw_identical": true
+    }
+  ]
+}

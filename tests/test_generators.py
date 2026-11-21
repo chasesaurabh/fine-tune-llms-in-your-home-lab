@@ -6,11 +6,21 @@ import sys
 import tempfile
 import unittest
 from finetune_lab.data import audit_splits
+from finetune_lab.serve import extraction_prompt
 
 ROOT=Path(__file__).resolve().parents[1]
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_service_framing_matches_every_frozen_extraction_prompt(self):
+        root=ROOT/'experiments/extraction-v2/data'
+        for split in ('train','validation','test'):
+            for line in (root/(split+'.jsonl')).read_text().splitlines():
+                row=json.loads(line)
+                self.assertIn('\n\nIncident:\n',row['prompt'])
+                note=row['prompt'].split('\n\nIncident:\n',1)[1]
+                self.assertEqual(extraction_prompt(note),row['prompt'],row['id'])
+
     def test_source_generators_reproduce_distributed_data(self):
         projects={'generate_extraction_evidence_dataset.py':'nvidia-evidence',
             'generate_project2_dataset.py':'project2-nvidia',

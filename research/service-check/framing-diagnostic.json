@@ -1,0 +1,148 @@
+{
+  "scope": "Post-failure diagnosis on the same three synthetic cases. Canonical framing is copied verbatim from the frozen dataset generator; not tuned wording or independent quality evidence.",
+  "generator_sha256": "fc172dbefeb47e7f12f4d074fc68abcc260d14c50684e16ab876c6c609df5a39",
+  "template": "Return exactly one JSON object with string fields asset, category and urgency. Category must be network, hardware, software or access; urgency must be low, medium or high. Copy the asset identifier exactly. No extra keys or prose.\n\nIncident:\n{note}",
+  "runtime_identity": {
+    "model": "Qwen/Qwen3-14B",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "adapter_sha256": "2167d90e3fdec44770a9488a0a9a197f39950c8e07bf918fb014ce641965721e",
+    "mode": "synthetic lab; no action executor"
+  },
+  "cases": [
+    {
+      "text": "LAB-1234ABCD: the switch drops established connections. Impact: the whole team is blocked without a workaround.",
+      "target": {
+        "asset": "LAB-1234ABCD",
+        "category": "network",
+        "urgency": "high"
+      },
+      "original_framing": {
+        "raw_output": "{\"category\":\"network\",\"urgency\":\"High\",\"asset\":\"LAB-1234ABCD\"}",
+        "score": {
+          "parsed": {
+            "category": "network",
+            "urgency": "High",
+            "asset": "LAB-1234ABCD"
+          },
+          "valid_json_object": true,
+          "schema_valid": false,
+          "exact_object_match": false,
+          "fields": {
+            "asset": false,
+            "category": false,
+            "urgency": false
+          }
+        }
+      },
+      "dataset_framing": {
+        "raw_output": "{\"asset\":\"LAB-1234ABCD\",\"category\":\"network\",\"urgency\":\"high\"}",
+        "score": {
+          "parsed": {
+            "asset": "LAB-1234ABCD",
+            "category": "network",
+            "urgency": "high"
+          },
+          "valid_json_object": true,
+          "schema_valid": true,
+          "exact_object_match": true,
+          "fields": {
+            "asset": true,
+            "category": true,
+            "urgency": true
+          }
+        },
+        "prompt_sha256": "311d2f829fc073f8c1cda5a882c12105d2df0b630cc11238bb5ce3a88d49d804"
+      }
+    },
+    {
+      "text": "LAB-5678EF90: the cooling fan has stopped rotating. Impact: work continues with an alternative and no urgent deadline.",
+      "target": {
+        "asset": "LAB-5678EF90",
+        "category": "hardware",
+        "urgency": "low"
+      },
+      "original_framing": {
+        "raw_output": "{\"category\":\"hardware\",\"urgency\":\"low\",\"asset\":\"LAB-5678EF90\"}",
+        "score": {
+          "parsed": {
+            "category": "hardware",
+            "urgency": "low",
+            "asset": "LAB-5678EF90"
+          },
+          "valid_json_object": true,
+          "schema_valid": true,
+          "exact_object_match": true,
+          "fields": {
+            "asset": true,
+            "category": true,
+            "urgency": true
+          }
+        }
+      },
+      "dataset_framing": {
+        "raw_output": "{\"asset\":\"LAB-5678EF90\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+        "score": {
+          "parsed": {
+            "asset": "LAB-5678EF90",
+            "category": "hardware",
+            "urgency": "low"
+          },
+          "valid_json_object": true,
+          "schema_valid": true,
+          "exact_object_match": true,
+          "fields": {
+            "asset": true,
+            "category": true,
+            "urgency": true
+          }
+        },
+        "prompt_sha256": "30c31bc375cf974e1d28b91fe897482cf361c930b036d5e253d24d3ced6edca0"
+      }
+    },
+    {
+      "text": "LAB-0ABC1234: the approved application crashes during startup. Impact: one person cannot continue working.",
+      "target": {
+        "asset": "LAB-0ABC1234",
+        "category": "software",
+        "urgency": "medium"
+      },
+      "original_framing": {
+        "raw_output": "{\"category\":\"software\",\"urgency\":\"medium\",\"asset\":\"LAB-0ABC1234\"}",
+        "score": {
+          "parsed": {
+            "category": "software",
+            "urgency": "medium",
+            "asset": "LAB-0ABC1234"
+          },
+          "valid_json_object": true,
+          "schema_valid": true,
+          "exact_object_match": true,
+          "fields": {
+            "asset": true,
+            "category": true,
+            "urgency": true
+          }
+        }
+      },
+      "dataset_framing": {
+        "raw_output": "{\"asset\":\"LAB-0ABC1234\",\"category\":\"software\",\"urgency\":\"medium\"}",
+        "score": {
+          "parsed": {
+            "asset": "LAB-0ABC1234",
+            "category": "software",
+            "urgency": "medium"
+          },
+          "valid_json_object": true,
+          "schema_valid": true,
+          "exact_object_match": true,
+          "fields": {
+            "asset": true,
+            "category": true,
+            "urgency": true
+          }
+        },
+        "prompt_sha256": "95d54e692514afa277380550889177d1b93065d5ba01e6232432e233f27e721f"
+      }
+    }
+  ]
+}

@@ -12,6 +12,14 @@ from .scoring import extraction_schema,parse_object
 from .training import load_model,render
 
 ASSET=re.compile(r'\bLAB-[0-9A-F]{8}\b')
+EXTRACTION_PROMPT=('Return exactly one JSON object with string fields asset, category and urgency. '
+    'Category must be network, hardware, software or access; urgency must be low, medium or high. '
+    'Copy the asset identifier exactly. No extra keys or prose.\n\nIncident:\n{note}')
+
+
+def extraction_prompt(text):
+    """Keep the service framing identical to the released extraction dataset."""
+    return EXTRACTION_PROMPT.format(note=text)
 
 
 def validate_request(value):
@@ -46,7 +54,7 @@ class Runtime:
 
     def complete(self,text):
         import torch
-        content='Return exactly one JSON object with keys category, urgency, and asset.\nIncident: '+text
+        content=extraction_prompt(text)
         prompt=render(self.tokenizer,content,self.config.get('instruction',''))
         encoded=self.tokenizer(prompt,add_special_tokens=False,return_tensors='pt').to(self.model.device)
         if encoded['input_ids'].shape[1]>512: raise ValueError('Rendered input exceeds 512 tokens')

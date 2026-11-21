@@ -1,0 +1,9 @@
+# Real local-service checks
+
+`report.json` retains the original responses to synthetic requests using the accepted Qwen3-14B extraction adapter. Each of two fresh server processes returned all three expected objects and rejected nine malformed or unauthorized requests with the expected status. A deliberately corrupted copy was rejected by its checksum; the original adapter remained unchanged and was restored in a new process. The endpoint stopped after each owned server process ended.
+
+The initial service used a shorter prompt than the frozen dataset. It returned `High` instead of the required lowercase `high` on the network request, correctly producing HTTP422; only two of three golden cases passed. `initial-report.json` preserves that failure. `framing-diagnostic.json` records the raw responses to the same three cases with the old and dataset-aligned framing. The service was corrected to use the original dataset instruction verbatim, with a regression check against all432distributed prompts. The validator, adapter and golden requests were unchanged. This is a diagnosed and retested integration correction, not new independent model-quality evidence.
+
+Run `scripts/verify_service.py --help` and follow the main README after recreating and verifying the accepted adapter. The script generates a temporary token, writes a report to a new directory, and never saves authorization headers. No model weights, adapters or server logs are distributed here. Base-model licensing applies separately.
+
+These observations establish this small fixture's behavior under the recorded environment. They do not establish accuracy on real incidents, production gateway security, a hard inference deadline or representative latency. Request timings are individual observations, not a benchmark distribution. CPU HTTP unit tests use a declared fake runtime and answer a separate question.
