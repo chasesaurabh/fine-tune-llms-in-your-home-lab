@@ -33,6 +33,9 @@ def score_row(text,row,task):
 
 def generate(model,tokenizer,rows,task,batch_size=4,instruction=""):
     import torch
+    # Trainer can change process-wide TF32 settings; define the inference policy
+    # here so a fresh process cannot inherit a different matmul precision.
+    torch.backends.cuda.matmul.allow_tf32=False
     tokenizer.padding_side='left'
     model.eval()
     outputs=[]
@@ -40,8 +43,10 @@ def generate(model,tokenizer,rows,task,batch_size=4,instruction=""):
         batch=rows[offset:offset+batch_size]
         prompts=[render(tokenizer,row['prompt'],instruction) for row in batch]
         encoded=tokenizer(prompts,padding=True,add_special_tokens=False,return_tensors='pt').to(model.device)
-        with torch.inference_mode():
-            generated=model.generate(**encoded,max_new_tokens=128,do_sample=False,pad_token_id=tokenizer.pad_token_id)
+        # Match the BF16 autocast used by Trainer/Accelerate in the training process.
+        # Adapter parameters can be FP32 even when base weights are BF16.
+        with torch.inference_mode(), torch.autocast('cuda',dtype=torch.bfloat16):
+            generated=model.generate(**encoded,max_new_tokens=128,do_sample=False,pad_token_id=tokenizer.pad_token_id,use_cache=True)
         for row,prompt,ids in zip(batch,prompts,generated[:,encoded['input_ids'].shape[1]:],strict=True):
             text=tokenizer.decode(ids,skip_special_tokens=True)
             outputs.append({'id':row['id'],'raw_output':text,'target':row.get('target',row.get('chosen')),
@@ -91,6 +96,7 @@ def main():
         'mode':args.mode,'task':args.task,'split':args.split,'batch_size':args.batch_size,
         'model':config['model'],'revision':config['revision'],'method':config['method'],
         'max_new_tokens':128,'greedy':True,'dataset':audit,
+        'inference_precision':'explicit CUDA BF16 autocast; TF32 disabled',
         'elapsed_seconds':time.perf_counter()-started,
         'peak_allocated_gib':torch.cuda.max_memory_allocated()/2**30,
         'peak_reserved_gib':torch.cuda.max_memory_reserved()/2**30,
@@ -100,6 +106,16 @@ def main():
         'environment':{'python':platform.python_version(),'gpu':torch.cuda.get_device_name(0),
             'cuda':torch.version.cuda,'packages':{p:importlib.metadata.version(p) for p in ('torch','transformers','peft','bitsandbytes')}}}
     write_json(args.output/'outputs.json',outputs)
+    memory_path=args.run/'in-memory-validation.json'
+    if args.mode=='adapter' and args.split=='validation' and memory_path.exists():
+        memory=json.loads(memory_path.read_text(encoding='utf-8'))
+        if [r['id'] for r in memory]!=[r['id'] for r in outputs]:
+            raise ValueError('in-memory/reload case identities differ')
+        differences=[{'id':a['id'],'in_memory':a['raw_output'],'reloaded':b['raw_output']}
+                     for a,b in zip(memory,outputs,strict=True) if a['raw_output']!=b['raw_output']]
+        write_json(args.output/'reload-differences.json',differences)
+        summary['in_memory_raw_outputs_identical']=not differences
+        summary['in_memory_different_cases']=len(differences)
     write_json(args.output/'summary.json',summary)
     print(json.dumps(summary),flush=True)
 

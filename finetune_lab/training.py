@@ -83,6 +83,8 @@ def main():
     parser.add_argument("--max-length",type=int,default=512)
     parser.add_argument("--gradient-checkpointing",action="store_true")
     parser.add_argument("--instruction-file",type=Path)
+    parser.add_argument("--in-memory-evaluation",action="store_true")
+    parser.add_argument("--task",choices=['extraction','response','triage','preference'],default='extraction')
     args=parser.parse_args()
     if args.output.exists(): parser.error("use a new output directory")
     if not re.fullmatch('[0-9a-f]{40}',args.revision): parser.error("pin a 40-character revision")
@@ -121,6 +123,9 @@ def main():
         'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
     torch.cuda.reset_peak_memory_stats()
     model=load_model(args.model,args.revision,args.method)
+    quantized_modules=sum(type(module).__name__=='Linear4bit' for module in model.modules())
+    if args.method=='qlora' and (not getattr(model,'is_loaded_in_4bit',False) or quantized_modules==0):
+        raise ValueError('requested QLoRA did not load genuine four-bit linear modules')
     load_peak={'allocated_gib':torch.cuda.max_memory_allocated()/2**30,'reserved_gib':torch.cuda.max_memory_reserved()/2**30}
     if args.method=='qlora':
         model=prepare_model_for_kbit_training(model,use_gradient_checkpointing=args.gradient_checkpointing)
@@ -130,7 +135,9 @@ def main():
     if args.gradient_checkpointing: model.enable_input_require_grads()
     trainable={name:p.numel() for name,p in model.named_parameters() if p.requires_grad}
     if not trainable: raise ValueError('no trainable parameters')
-    write_json(args.output/'trainable.json',{'parameters':sum(trainable.values()),'modules':trainable})
+    write_json(args.output/'trainable.json',{'parameters':sum(trainable.values()),'modules':trainable,
+        'four_bit_linear_modules':quantized_modules,
+        'parameter_devices':sorted({str(p.device) for p in model.parameters()})})
     trainer=SFTTrainer(model=model,processing_class=tokenizer,
         train_dataset=Dataset.from_list(formatted),eval_dataset=Dataset.from_list(val_formatted),
         args=SFTConfig(output_dir=str(args.output/'checkpoints'),num_train_epochs=args.epochs,
@@ -168,14 +175,25 @@ def main():
     torch.cuda.synchronize()
     training_seconds=time.perf_counter()-start
     train_peak={'allocated_gib':torch.cuda.max_memory_allocated()/2**30,'reserved_gib':torch.cuda.max_memory_reserved()/2**30}
+    torch.cuda.reset_peak_memory_stats()
+    save_started=time.perf_counter()
     trainer.save_model(str(args.output/'adapter'))
     tokenizer.save_pretrained(args.output/'adapter')
     trainer.save_state()
     adapter_hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (args.output/'adapter').iterdir() if p.is_file()}
     write_json(args.output/'adapter-hashes.json',adapter_hashes)
+    torch.cuda.synchronize()
+    save_peak={'allocated_gib':torch.cuda.max_memory_allocated()/2**30,'reserved_gib':torch.cuda.max_memory_reserved()/2**30}
     write_json(args.output/'training.json',{'load_peak':load_peak,'training_peak':train_peak,
+        'save_peak':save_peak,'save_seconds':time.perf_counter()-save_started,
         'training_seconds':training_seconds,'metrics':result.metrics,'log_history':trainer.state.log_history,
-        'quality_evaluation':'not performed by training; use the separate evaluation command'})
+        'quality_evaluation':'in-memory validation only' if args.in_memory_evaluation else 'not performed; use the separate evaluation command'})
+    if args.in_memory_evaluation:
+        from .evaluation import generate
+        inference_model=trainer.accelerator.unwrap_model(trainer.model,keep_fp32_wrapper=False)
+        inference_model.gradient_checkpointing_disable()
+        outputs=generate(inference_model,tokenizer,validation,args.task,batch_size=1,instruction=instruction)
+        write_json(args.output/'in-memory-validation.json',outputs)
     print(json.dumps({'training_seconds':training_seconds,'training_peak':train_peak,'steps':trainer.state.global_step}),flush=True)
 
 
