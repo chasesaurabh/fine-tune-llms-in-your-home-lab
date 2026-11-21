@@ -1,0 +1,23 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "data_sha256": "7b0d4734003730142bd32d3da4d9a033a4237de6fcd73055a97fd926e845f081",
+  "code_sha256": "22fdb6789ffb9a88869a6bd6c79311ab6ba98b1fd7368da08ada34ae9f80d118",
+  "scorer_sha256": "3f631d268123ae4467f12991d60d4bf423b76fc9eaab16d3cd4c7bca8b998bf6",
+  "python": "3.12.14",
+  "os": "Windows",
+  "packages": {
+    "torch": "2.9.0+cu129",
+    "transformers": "5.17.0",
+    "accelerate": "1.15.0",
+    "tokenizers": "0.23.2"
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda": "12.9",
+  "dtype": "bfloat16",
+  "max_new_tokens": 80,
+  "do_sample": false,
+  "batch_size": 4,
+  "seed": 20261120,
+  "split_status": "spent diagnostic"
+}

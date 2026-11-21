@@ -1,0 +1,30 @@
+{
+  "raw": {
+    "cases": 60,
+    "valid_json_object": 0,
+    "schema_valid": 0,
+    "exact_object_match": 0,
+    "fields": {
+      "asset": 0,
+      "category": 0,
+      "urgency": 0
+    },
+    "elapsed_seconds": 29.704372800071724,
+    "peak_allocated_gib": 1.225057601928711,
+    "peak_reserved_gib": 1.61328125
+  },
+  "chat": {
+    "cases": 60,
+    "valid_json_object": 60,
+    "schema_valid": 60,
+    "exact_object_match": 6,
+    "fields": {
+      "asset": 60,
+      "category": 15,
+      "urgency": 27
+    },
+    "elapsed_seconds": 12.083327100030147,
+    "peak_allocated_gib": 1.2170615196228027,
+    "peak_reserved_gib": 1.6328125
+  }
+}

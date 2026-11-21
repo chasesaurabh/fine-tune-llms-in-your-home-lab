@@ -1,0 +1,16 @@
+{
+  "scope": "Historical 60-case synthetic template diagnostic; spent data, not the later frozen study final test.",
+  "files": {
+    "identity.json": "12c11f29333da521e8f4f41b56e2f4af0d3e4e8461f588dba83c3b8ffc47a70f",
+    "summary.json": "87ee020598404138cd15dbabecd5635efcebf9e2609c6d7e471c056524cce90c",
+    "raw-outputs.json": "36f567111508bf1638c9b1b5b5ae28f0f714a6f6b28a3bf911bb70545683f84f",
+    "chat-outputs.json": "db25ff5a72832c5281b0ae80da86a68f2b351995b017f2c505f8f8cace0c4af6",
+    "raw-prompts.json": "40f5b62a81f5e7a9974a603c5b1a17cec76c0bcb979723ef6b7ab12f67008dca",
+    "chat-prompts.json": "f00f77c562403da5560f1ff2b0010c305c59a3f74abad68a71a7eb8c555e0c80"
+  },
+  "recomputed_all_120_response_scores": true,
+  "original_bytes_preserved": true,
+  "data": "experiments/nvidia-evidence/data/test.jsonl",
+  "code": "finetune_lab/compare_templates.py",
+  "limitations": "Changes the prompt renderer on the same base model. It is neither adapter training evidence nor a model leaderboard. Generation timing excludes initial model loading."
+}

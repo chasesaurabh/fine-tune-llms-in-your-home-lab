@@ -1,0 +1,302 @@
+[
+  {
+    "id": "evidence-g12-020",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, A critical operation cannot continue. Second, on EVID-12-020, the reporting application closes during export.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 98
+  },
+  {
+    "id": "evidence-g12-004",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, One person is blocked while the rest of the team continues. Second, on EVID-12-004, the desktop client loops during sign-in.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 105
+  },
+  {
+    "id": "evidence-g11-009",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-009; condition the accounting application reports an update failure; impact One person is blocked while the rest of the team continues.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 101
+  },
+  {
+    "id": "evidence-g11-002",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-002; condition the user is locked out after changing a password; impact This may wait for the scheduled maintenance window.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 100
+  },
+  {
+    "id": "evidence-g12-014",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, Production work has stopped and there is no workaround. Second, on EVID-12-014, remote sessions disconnect after a few seconds.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 103
+  },
+  {
+    "id": "evidence-g11-004",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-004; condition the monitor flickers after warming up; impact A critical operation cannot continue.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 95
+  },
+  {
+    "id": "evidence-g11-025",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-025; condition the desktop client loops during sign-in; impact Production work has stopped and there is no workaround.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 99
+  },
+  {
+    "id": "evidence-g11-003",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-003; condition the inventory portal cannot be reached; impact Please investigate before the end of the day.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 97
+  },
+  {
+    "id": "evidence-g12-026",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, The entire team is blocked. Second, on EVID-12-026, the router reports that its uplink is down.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 101
+  },
+  {
+    "id": "evidence-g11-023",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-023; condition the inventory portal cannot be reached; impact The issue is inconvenient but no work is blocked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 98
+  },
+  {
+    "id": "evidence-g12-010",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, A time-sensitive task is delayed, but a partial workaround exists. Second, on EVID-12-010, name lookups time out.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 104
+  },
+  {
+    "id": "evidence-g11-018",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-018; condition the approved group is missing from the account; impact One person is blocked while the rest of the team continues.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g11-016",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-016; condition the storage warning indicator is illuminated; impact Production work has stopped and there is no workaround.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 98
+  },
+  {
+    "id": "evidence-g12-029",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, A critical operation cannot continue. Second, on EVID-12-029, the service-account token has been revoked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 99
+  },
+  {
+    "id": "evidence-g12-021",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, The issue is inconvenient but no work is blocked. Second, on EVID-12-021, the shared folder returns permission denied.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g12-027",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, This may wait for the scheduled maintenance window. Second, on EVID-12-027, the keyboard repeats characters.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 99
+  },
+  {
+    "id": "evidence-g11-006",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-006; condition the shared folder returns permission denied; impact A time-sensitive task is delayed, but a partial workaround exists.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 101
+  },
+  {
+    "id": "evidence-g11-013",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-013; condition the editor freezes while opening a project; impact A critical operation cannot continue.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 95
+  },
+  {
+    "id": "evidence-g12-007",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, Please investigate before the end of the day. Second, on EVID-12-007, the keyboard repeats characters.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 99
+  },
+  {
+    "id": "evidence-g11-011",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-011; condition the router reports that its uplink is down; impact This may wait for the scheduled maintenance window.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 100
+  },
+  {
+    "id": "evidence-g12-009",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, This may wait for the scheduled maintenance window. Second, on EVID-12-009, the service-account token has been revoked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g12-028",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, A time-sensitive task is delayed, but a partial workaround exists. Second, on EVID-12-028, the accounting application reports an update failure.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 106
+  },
+  {
+    "id": "evidence-g12-003",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, The issue is inconvenient but no work is blocked. Second, on EVID-12-003, the workstation does not power on.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g11-030",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-030; condition the new employee cannot open the mailbox; impact Please investigate before the end of the day.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 98
+  },
+  {
+    "id": "evidence-g11-028",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-028; condition the workstation does not power on; impact The entire team is blocked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 94
+  },
+  {
+    "id": "evidence-g12-025",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, Please investigate before the end of the day. Second, on EVID-12-025, the new employee cannot open the mailbox.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g11-012",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-012; condition the keyboard repeats characters; impact Please investigate before the end of the day.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 95
+  },
+  {
+    "id": "evidence-g11-015",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-015; condition name lookups time out; impact A time-sensitive task is delayed, but a partial workaround exists.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 100
+  },
+  {
+    "id": "evidence-g12-018",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, This may wait for the scheduled maintenance window. Second, on EVID-12-018, the inventory portal cannot be reached.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 101
+  },
+  {
+    "id": "evidence-g11-007",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-007; condition wireless connections drop repeatedly; impact Production work has stopped and there is no workaround.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 96
+  },
+  {
+    "id": "evidence-g12-008",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, The entire team is blocked. Second, on EVID-12-008, the accounting application reports an update failure.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 99
+  },
+  {
+    "id": "evidence-g12-023",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, Production work has stopped and there is no workaround. Second, on EVID-12-023, the workstation does not power on.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g12-024",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, There is a working alternative and no deadline. Second, on EVID-12-024, the desktop client loops during sign-in.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g11-008",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-008; condition the workstation does not power on; impact There is a working alternative and no deadline.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 97
+  },
+  {
+    "id": "evidence-g12-005",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, Production work has stopped and there is no workaround. Second, on EVID-12-005, the new employee cannot open the mailbox.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 103
+  },
+  {
+    "id": "evidence-g12-015",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, There is a working alternative and no deadline. Second, on EVID-12-015, the cooling fan makes a grinding sound.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g11-022",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-022; condition the user is locked out after changing a password; impact A critical operation cannot continue.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 97
+  },
+  {
+    "id": "evidence-g11-019",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-019; condition remote sessions disconnect after a few seconds; impact The entire team is blocked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 95
+  },
+  {
+    "id": "evidence-g12-019",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, A time-sensitive task is delayed, but a partial workaround exists. Second, on EVID-12-019, the monitor flickers after warming up.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 106
+  },
+  {
+    "id": "evidence-g12-017",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, The entire team is blocked. Second, on EVID-12-017, the user is locked out after changing a password.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 101
+  },
+  {
+    "id": "evidence-g12-012",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, The issue is inconvenient but no work is blocked. Second, on EVID-12-012, the editor freezes while opening a project.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 103
+  },
+  {
+    "id": "evidence-g12-011",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, A critical operation cannot continue. Second, on EVID-12-011, the storage warning indicator is illuminated.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 98
+  },
+  {
+    "id": "evidence-g11-010",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-010; condition the new employee cannot open the mailbox; impact The entire team is blocked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 95
+  },
+  {
+    "id": "evidence-g12-002",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, A critical operation cannot continue. Second, on EVID-12-002, wireless connections drop repeatedly.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 96
+  },
+  {
+    "id": "evidence-g11-014",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-014; condition the service-account token has been revoked; impact The issue is inconvenient but no work is blocked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 99
+  },
+  {
+    "id": "evidence-g11-029",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-029; condition the accounting application reports an update failure; impact This may wait for the scheduled maintenance window.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 98
+  },
+  {
+    "id": "evidence-g11-017",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-017; condition the approved plugin fails to load; impact There is a working alternative and no deadline.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 97
+  },
+  {
+    "id": "evidence-g12-016",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, Please investigate before the end of the day. Second, on EVID-12-016, the approved plugin fails to load.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 101
+  },
+  {
+    "id": "evidence-g11-001",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-001; condition the reporting application closes during export; impact The entire team is blocked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 94
+  },
+  {
+    "id": "evidence-g12-022",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, One person is blocked while the rest of the team continues. Second, on EVID-12-022, wireless connections drop repeatedly.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g12-013",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, One person is blocked while the rest of the team continues. Second, on EVID-12-013, the approved group is missing from the account.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 106
+  },
+  {
+    "id": "evidence-g11-027",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-027; condition wireless connections drop repeatedly; impact One person is blocked while the rest of the team continues.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 98
+  },
+  {
+    "id": "evidence-g12-006",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, There is a working alternative and no deadline. Second, on EVID-12-006, the router reports that its uplink is down.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 104
+  },
+  {
+    "id": "evidence-g12-030",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, The issue is inconvenient but no work is blocked. Second, on EVID-12-030, name lookups time out.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 101
+  },
+  {
+    "id": "evidence-g11-024",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-024; condition the monitor flickers after warming up; impact A time-sensitive task is delayed, but a partial workaround exists.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 102
+  },
+  {
+    "id": "evidence-g11-021",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-021; condition the reporting application closes during export; impact Please investigate before the end of the day.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 97
+  },
+  {
+    "id": "evidence-g11-026",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-026; condition the shared folder returns permission denied; impact There is a working alternative and no deadline.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 97
+  },
+  {
+    "id": "evidence-g12-001",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Here are the facts. First, A time-sensitive task is delayed, but a partial workaround exists. Second, on EVID-12-001, the shared folder returns permission denied.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 105
+  },
+  {
+    "id": "evidence-g11-005",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-005; condition the desktop client loops during sign-in; impact The issue is inconvenient but no work is blocked.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 99
+  },
+  {
+    "id": "evidence-g11-020",
+    "prompt": "<|im_start|>user\nExtract exactly one JSON object with string keys category, urgency, and asset. Allowed category values: network, hardware, software, access. Allowed urgency values: low, medium, high. Use the asset identifier exactly as written. Return no prose.\n\nNote: Classification request -- identifier EVID-11-020; condition the cooling fan makes a grinding sound; impact This may wait for the scheduled maintenance window.\n\nJSON:<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "tokens": 98
+  }
+]

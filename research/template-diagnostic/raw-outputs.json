@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "evidence-g12-020",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-020\" }\n\nThe facts are: First, a critical operation cannot continue. Second, on EVID-12-020, the reporting application closes during export. Third, the asset is a network device. Fourth, the asset is a hardware device. Fifth",
+    "target": {
+      "asset": "EVID-12-020",
+      "category": "software",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-004",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-004\" }\n\nThe facts are: One person is blocked while the rest of the team continues. Second, on EVID-12-004, the desktop client loops during sign-in.\n\nAnswer:\n```json\n{\"category\": \"network\", \"urgency",
+    "target": {
+      "asset": "EVID-12-004",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-009",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-009\" }\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose",
+    "target": {
+      "asset": "EVID-11-009",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-002",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-002\" }\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose",
+    "target": {
+      "asset": "EVID-11-002",
+      "category": "access",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-014",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-014\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-014\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-014",
+      "category": "network",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-004",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-11-004\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-11-004\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"high\", \"",
+    "target": {
+      "asset": "EVID-11-004",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-025",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-025\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-025\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-025",
+      "category": "software",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-003",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-003\" }\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose",
+    "target": {
+      "asset": "EVID-11-003",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-026",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-026\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-026\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-026",
+      "category": "network",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-023",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-023\" }\n\nMake sure to return only the JSON object, no other text, and no markdown.\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-023\"} \n\nThe JSON object is",
+    "target": {
+      "asset": "EVID-11-023",
+      "category": "network",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-010",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-010\" }\n\nThe facts are:\n\n1. A time-sensitive task is delayed, but a partial workaround exists.\n\n2. On EVID-12-010, name lookups time out.\n\nAnswer: {\"category\": \"network\", \"urgency\": \"",
+    "target": {
+      "asset": "EVID-12-010",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-018",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-018\" }\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose",
+    "target": {
+      "asset": "EVID-11-018",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-016",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"medium\", \"asset\": \"EVID-11-016\" }\n\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"medium\", \"asset\": \"EVID-11-016\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"medium\", \"",
+    "target": {
+      "asset": "EVID-11-016",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-029",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-029\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-029\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-029",
+      "category": "access",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-021",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-021\" }\n\nThe facts are: First, the issue is inconvenient but no work is blocked. Second, on EVID-12-021, the shared folder returns permission denied.\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\",",
+    "target": {
+      "asset": "EVID-12-021",
+      "category": "access",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-027",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-027\" }\n\nThe facts are: First, This may wait for the scheduled maintenance window. Second, on EVID-12-027, the keyboard repeats characters.\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\":",
+    "target": {
+      "asset": "EVID-12-027",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-006",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-006\" }\n\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-006\"}\n```\n```json\n```json\n```json\n```json\n```json\n```json",
+    "target": {
+      "asset": "EVID-11-006",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-013",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-11-013\" }\n\nThe JSON object should have exactly one object, and the keys category, urgency, and asset must be present. The JSON object should not have any other keys. The JSON object should not have any other values. The JSON object should not have any other properties",
+    "target": {
+      "asset": "EVID-11-013",
+      "category": "software",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-007",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-007\" }\n\nThe facts are: First, Please investigate before the end of the day. Second, on EVID-12-007, the keyboard repeats characters.\n\nSo, what is the correct JSON object?\n\nA. { \"category\": \"network\",",
+    "target": {
+      "asset": "EVID-12-007",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-011",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-011\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-011\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-011",
+      "category": "network",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-009",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-009\" }\n\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-009\"}\n```\n```json\n{\"category\": \"network\", \"urgency\": \"high\", \"",
+    "target": {
+      "asset": "EVID-12-009",
+      "category": "access",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-028",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-028\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-028\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-028",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-003",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-003\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-003\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-003",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-030",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-030\" }\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose",
+    "target": {
+      "asset": "EVID-11-030",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-028",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-028\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-028\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-028",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-025",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-025\" }\n\nThe facts are: First, Please investigate before the end of the day. Second, on EVID-12-025, the new employee cannot open the mailbox.\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\",",
+    "target": {
+      "asset": "EVID-12-025",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-012",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-012\" }\n\nThe JSON object should have exactly one object, and the keys category, urgency, and asset must be present. The JSON object must not contain any other keys. The JSON object must not contain any other values. The JSON object must not contain any other text",
+    "target": {
+      "asset": "EVID-11-012",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-015",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-015\" }\n\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-015\"}\n```\n```json\n```json\n```json\n```json\n```json\n```json",
+    "target": {
+      "asset": "EVID-11-015",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-018",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-018\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-018\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-018",
+      "category": "network",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-007",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-007\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-007\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-007",
+      "category": "network",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-008",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-008\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-008\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-008",
+      "category": "software",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-023",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-023\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-023\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-023",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-024",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-024\" }\n\nThe facts are:\n\n1. There is a working alternative and no deadline.\n\n2. On EVID-12-024, the desktop client loops during sign-in.\n\nAnswer: { \"category\": \"network\", \"urgency\": \"low",
+    "target": {
+      "asset": "EVID-12-024",
+      "category": "software",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-008",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-008\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-008\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-008",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-005",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-005\" }\n\nAnswer in JSON format, no markdown, and only the JSON object.\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-005\"}.\nAnswer:\n{\"category\": \"network",
+    "target": {
+      "asset": "EVID-12-005",
+      "category": "access",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-015",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-015\" }\n\nAnswer in JSON format, with no markdown, and only the JSON object.\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-015\"}\n```\n\n\n```json",
+    "target": {
+      "asset": "EVID-12-015",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-022",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-11-022\" }\n\nMake sure to return only the JSON object, no other text, and no markdown.\nAnswer:\n{\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-11-022\"} \n\nThe JSON object is",
+    "target": {
+      "asset": "EVID-11-022",
+      "category": "access",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-019",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-019\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-019\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-019",
+      "category": "network",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-019",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-019\" }\n\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-019\"}\n```\n```json\n```json\n```json\n```json\n```json\n```json",
+    "target": {
+      "asset": "EVID-12-019",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-017",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-017\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-017\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-017",
+      "category": "access",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-012",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-012\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-012\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-012",
+      "category": "software",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-011",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-011\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-011\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-011",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-010",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-010\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-010\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-010",
+      "category": "access",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-002",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-002\" }\n\nAnswer: {\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-12-002\"}\nAnswer:\n{\"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-",
+    "target": {
+      "asset": "EVID-12-002",
+      "category": "network",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-014",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-014\" }\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose",
+    "target": {
+      "asset": "EVID-11-014",
+      "category": "access",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-029",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-029\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-029\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-029",
+      "category": "software",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-017",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-017\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-017\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-017",
+      "category": "software",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-016",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-016\" }\n\nThe facts are: First, Please investigate before the end of the day. Second, on EVID-12-016, the approved plugin fails to load.\n\nSo, what is the correct JSON object?\n\nA. { \"category\": \"",
+    "target": {
+      "asset": "EVID-12-016",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-001",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"high\", \"asset\": \"EVID-11-001\" }\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose.\n\nMake sure to return only the JSON object, not any prose",
+    "target": {
+      "asset": "EVID-11-001",
+      "category": "software",
+      "urgency": "high"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-022",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-022\" }\n\nThe facts are: One person is blocked while the rest of the team continues. Second, on EVID-12-022, wireless connections drop repeatedly.\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low",
+    "target": {
+      "asset": "EVID-12-022",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-013",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-013\" }\n\nThe facts are: One person is blocked while the rest of the team continues. Second, on EVID-12-013, the approved group is missing from the account.\n\nAnswer: {\"category\": \"network\", \"urgency\": \"",
+    "target": {
+      "asset": "EVID-12-013",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-027",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-027\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-027\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-027",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-006",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-006\" }\n\nAnswer in JSON format, with no markdown, and only the JSON object.\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-006\"}\n```\n\n\n```json",
+    "target": {
+      "asset": "EVID-12-006",
+      "category": "network",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-030",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-030\" }\n\nThe facts are: First, the issue is inconvenient but no work is blocked. Second, on EVID-12-030, name lookups time out.\n\nSo, the JSON should be:\n\n{\"category\": \"network\", \"urgency",
+    "target": {
+      "asset": "EVID-12-030",
+      "category": "network",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-024",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-024\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-024\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-024",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-021",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-021\" }\n\nMake sure to return only the JSON object, no other text, and no markdown.\nAnswer:\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-021\"} \n\nThe JSON object is",
+    "target": {
+      "asset": "EVID-11-021",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-026",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-026\" }\n\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-026\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-026",
+      "category": "access",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g12-001",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-001\" }\n\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-12-001\"}\n```\n```json\n```json\n```json\n```json\n```json\n```json",
+    "target": {
+      "asset": "EVID-12-001",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-005",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-005\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"asset\": \"EVID-11-005\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"low\", \"",
+    "target": {
+      "asset": "EVID-11-005",
+      "category": "software",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  },
+  {
+    "id": "evidence-g11-020",
+    "raw_output": " { \"category\": \"network\", \"urgency\": \"medium\", \"asset\": \"EVID-11-020\" }\nAnswer:\n```json\n{\"category\": \"network\", \"urgency\": \"medium\", \"asset\": \"EVID-11-020\"}\n```\n\n\n```json\n{\"category\": \"network\", \"urgency\": \"medium\", \"",
+    "target": {
+      "asset": "EVID-11-020",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "parsed": null,
+    "valid_json_object": false,
+    "schema_valid": false,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": false,
+      "urgency": false
+    }
+  }
+]
