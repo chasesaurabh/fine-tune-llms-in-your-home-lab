@@ -15,7 +15,8 @@ class StudyTests(unittest.TestCase):
             'instruction_sha256':hashlib.sha256(policy.strip().encode()).hexdigest()}
         validate_run(config,policy)
         for key,value in [('epochs',1),('learning_rate',0.0001),('rank',16),
-                          ('warmup_steps',3),('stop_after',4),('instruction','A different policy')]:
+                          ('warmup_steps',3),('stop_after_step',4),('resume_step',4),
+                          ('instruction','A different policy')]:
             changed={**config,key:value}
             with self.subTest(key=key),self.assertRaises(ValueError):validate_run(changed,policy)
 

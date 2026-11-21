@@ -23,8 +23,9 @@ def validate_run(config, policy):
     for key,value in EXPECTED_RUN.items():
         if config.get(key)!=value:raise ValueError('Run differs from frozen control: '+key)
     # The original source hard-coded two warmup steps and had no stop callback.
-    if config.get('warmup_steps',2)!=2 or config.get('stop_after',0)!=0:
-        raise ValueError('Run has changed warmup or stopping controls')
+    if (config.get('warmup_steps',2)!=2 or config.get('stop_after_step') is not None
+            or config.get('resume_step',0)!=0):
+        raise ValueError('Run has changed warmup, stopping or resume controls')
     instruction=policy.strip()
     digest=hashlib.sha256(instruction.encode('utf-8')).hexdigest()
     if config.get('instruction')!=instruction or config.get('instruction_sha256')!=digest:
