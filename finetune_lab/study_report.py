@@ -7,6 +7,41 @@ from .data import load_rows
 from .paired import compare,index
 from .training import write_json
 
+EXPECTED_RUN = {'epochs':2.0, 'steps':-1, 'micro_batch':1, 'accumulation':8,
+    'max_length':512, 'gradient_checkpointing':True, 'in_memory_evaluation':True,
+    'task':'extraction', 'learning_rate':0.0002, 'rank':8, 'alpha':16,
+    'dropout':0.05, 'targets':'all-linear', 'completion_only_loss':True,
+    'packing':False, 'precision':'bfloat16',
+    'template':'official; one user message; thinking disabled'}
+EXPECTED_ACCEPTANCE = {'exact_minimum':137, 'test_cases':144, 'schema_minimum':144,
+    'net_gain_minimum':8, 'literal_probe_regressions_allowed':0,
+    'validation_raw_reconstruction':'exact', 'prefer_base_if_already_sufficient':True}
+
+
+def validate_run(config, policy):
+    """Reject a changed training/prompt budget before applying the frozen gates."""
+    for key,value in EXPECTED_RUN.items():
+        if config.get(key)!=value:raise ValueError('Run differs from frozen control: '+key)
+    # The original source hard-coded two warmup steps and had no stop callback.
+    if config.get('warmup_steps',2)!=2 or config.get('stop_after',0)!=0:
+        raise ValueError('Run has changed warmup or stopping controls')
+    instruction=policy.strip()
+    digest=hashlib.sha256(instruction.encode('utf-8')).hexdigest()
+    if config.get('instruction')!=instruction or config.get('instruction_sha256')!=digest:
+        raise ValueError('Run differs from frozen instruction')
+
+
+def validate_inputs(plan,data,probes,policy):
+    if plan.get('acceptance')!=EXPECTED_ACCEPTANCE:
+        raise ValueError('Changed acceptance policy is a different study')
+    for split in ('train','validation','test'):
+        digest=hashlib.sha256((data/(split+'.jsonl')).read_bytes()).hexdigest()
+        if plan['dataset'][split]['sha256']!=digest:raise ValueError('Data differs from frozen plan')
+    if hashlib.sha256(probes.read_bytes()).hexdigest()!=plan['probe_sha256']:
+        raise ValueError('Probes differ from frozen plan')
+    if hashlib.sha256(policy.read_bytes()).hexdigest()!=plan['policy_sha256']:
+        raise ValueError('Instruction file differs from frozen plan')
+
 
 def literal_comparison(base,adapter,targets):
     base=index(base);adapter=index(adapter);targets=index(targets)
@@ -64,6 +99,9 @@ def main():
     args=parser.parse_args()
     if args.output.exists():parser.error('Use a new report file')
     plan=json.loads(args.plan.read_text(encoding='utf-8'))
+    policy=Path(plan['policy'])
+    validate_inputs(plan,args.data,args.probes,policy)
+    policy_text=policy.read_text(encoding='utf-8')
     test=load_rows(args.data/'test.jsonl');validation=load_rows(args.data/'validation.jsonl')
     targets=load_rows(args.probes)
     hashes={};bases={};results=[]
@@ -75,11 +113,13 @@ def main():
         name=config['id']
         if Path(name).name!=name or name in {r['id'] for r in results}:raise ValueError('Invalid or duplicate run ID')
         actual=read(name,'config.json')
+        validate_run(actual,policy_text)
         if any(actual[key]!=config[key] for key in ('model','revision','method','seed')):
             raise ValueError('Run differs from frozen model plan')
         key=(config['model'],config['revision'],config['method'])
         base_name=bases.setdefault(key,name)
         base_config=read(base_name,'config.json')
+        validate_run(base_config,policy_text)
         if any(actual.get(k)!=base_config.get(k) for k in ('instruction','dataset','template','precision')):
             raise ValueError('Base comparison context differs')
         for split in ('train','validation','test'):

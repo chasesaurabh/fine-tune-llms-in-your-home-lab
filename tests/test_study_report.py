@@ -1,8 +1,42 @@
+import copy
+import hashlib
+import json
+from pathlib import Path
+import tempfile
 import unittest
-from finetune_lab.study_report import literal_comparison,reconstruction,decision
+from finetune_lab.study_report import (literal_comparison,reconstruction,decision,
+    validate_run,validate_inputs,EXPECTED_RUN,EXPECTED_ACCEPTANCE)
 
 
 class StudyTests(unittest.TestCase):
+    def test_modified_budget_or_instruction_is_not_the_frozen_run(self):
+        policy='Shared task policy.\n'
+        config={**EXPECTED_RUN,'instruction':policy.strip(),
+            'instruction_sha256':hashlib.sha256(policy.strip().encode()).hexdigest()}
+        validate_run(config,policy)
+        for key,value in [('epochs',1),('learning_rate',0.0001),('rank',16),
+                          ('warmup_steps',3),('stop_after',4),('instruction','A different policy')]:
+            changed={**config,key:value}
+            with self.subTest(key=key),self.assertRaises(ValueError):validate_run(changed,policy)
+
+    def test_matching_run_data_cannot_replace_the_frozen_plan_inputs(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);plan={'acceptance':dict(EXPECTED_ACCEPTANCE),'dataset':{}}
+            for split in ('train','validation','test'):
+                raw=(split+'\n').encode();(root/(split+'.jsonl')).write_bytes(raw)
+                plan['dataset'][split]={'sha256':hashlib.sha256(raw).hexdigest()}
+            probes=root/'probes.jsonl';probes.write_bytes(b'probes\n')
+            policy=root/'policy.txt';policy.write_bytes(b'policy\n')
+            plan['probe_sha256']=hashlib.sha256(probes.read_bytes()).hexdigest()
+            plan['policy_sha256']=hashlib.sha256(policy.read_bytes()).hexdigest()
+            validate_inputs(plan,root,probes,policy)
+            changed=copy.deepcopy(plan);changed['acceptance']['exact_minimum']=100
+            with self.assertRaises(ValueError):validate_inputs(changed,root,probes,policy)
+            for file in (root/'test.jsonl',probes,policy):
+                original=file.read_bytes();file.write_bytes(original+b'changed')
+                with self.subTest(file=file.name),self.assertRaises(ValueError):validate_inputs(plan,root,probes,policy)
+                file.write_bytes(original)
+
     def test_equal_probe_totals_do_not_hide_a_lost_case(self):
         targets=[{'id':'a','target':'yes'},{'id':'b','target':'no'}]
         base=[dict(t,raw_output='yes',prompt_sha256=t['id'],exact_text_contract=True) for t in targets]
