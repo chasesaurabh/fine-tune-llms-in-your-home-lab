@@ -80,7 +80,7 @@ After all selected phases finish, recompute decisions from raw outputs:
   --output runs/ladder-001/decision-001.json
 ```
 
-The report uses the declared 144-case test, 96-case raw reconstruction and sixteen literal probes. It checks identities and preserves individual regressions. These correlated synthetic cases do not establish performance on real incidents. `wrapper_diagnostic` separately measures a post-hoc alternate consumer accepting one complete JSON Markdown fence; it never changes the primary strict scores or creates new confirmation evidence.
+The report uses the declared 144-case test, 96-case raw reconstruction and sixteen literal probes. It checks frozen training controls, instruction/data/probe hashes, acceptance rules and matched identities, and preserves individual regressions. Run the report from the source-archive root so its relative policy path resolves correctly. These correlated synthetic cases do not establish performance on real incidents. `wrapper_diagnostic` separately measures a post-hoc alternate consumer accepting one complete JSON Markdown fence; it never changes the primary strict scores or creates new confirmation evidence.
 
 Commands reject existing output directories and changed data identities. The official chat template, completion-only labels and scored end token are inspected before training. Examples exceeding the sequence cap are rejected rather than silently dropping the target. `--max-length 512` is a cap, not proof every batch contained 512 tokens.
 
