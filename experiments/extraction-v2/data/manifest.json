@@ -1,0 +1,49 @@
+{
+  "seed": 20261121,
+  "license": "CC0-1.0",
+  "generator": "scripts/generate_extraction_v2.py",
+  "grouping_key": "group_id",
+  "split_design": "Disjoint outer templates and disjoint symptom/impact wording; labels are shared.",
+  "limitations": [
+    "Original synthetic English single-incident records, not real support traffic.",
+    "Every case contains one asset and one unambiguous issue/impact; this study does not establish behavior for missing or conflicting evidence."
+  ],
+  "splits": {
+    "train": {
+      "rows": 192,
+      "groups": [
+        "v2-template-00",
+        "v2-template-01",
+        "v2-template-02",
+        "v2-template-03",
+        "v2-template-04",
+        "v2-template-05",
+        "v2-template-06",
+        "v2-template-07"
+      ],
+      "sha256": "219a436bb2db7ea476a303d70ed50d8a40224fc37f9844c51a3a5b90b62a5a30"
+    },
+    "validation": {
+      "rows": 96,
+      "groups": [
+        "v2-template-08",
+        "v2-template-09",
+        "v2-template-10",
+        "v2-template-11"
+      ],
+      "sha256": "588217612f4bd9594bea5698fbf7b546cf8166a896134d620a0c5c69c914c108"
+    },
+    "test": {
+      "rows": 144,
+      "groups": [
+        "v2-template-12",
+        "v2-template-13",
+        "v2-template-14",
+        "v2-template-15",
+        "v2-template-16",
+        "v2-template-17"
+      ],
+      "sha256": "5a63aa7ff9836ea4c6907b13f7f3fc20c785ea46e9aba19c508731c7082b5432"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{"id":"probe-01","prompt":"Return only the word violet, in lowercase, without punctuation.","target":"violet"}
+{"id":"probe-02","prompt":"Copy exactly this identifier and nothing else: W7-83Z","target":"W7-83Z"}
+{"id":"probe-03","prompt":"In the supplied fictional map, Northport belongs to Region C. Return only the region letter for Northport.","target":"C"}
+{"id":"probe-04","prompt":"What is 2 + 3? Return only the single digit.","target":"5"}
+{"id":"probe-05","prompt":"Convert dog to uppercase. Return only the converted word.","target":"DOG"}
+{"id":"probe-06","prompt":"Return exactly these two capital letters, without punctuation: OK","target":"OK"}
+{"id":"probe-07","prompt":"If the switch is off, output STOP. Otherwise output GO. The switch is off. Return only the specified word.","target":"STOP"}
+{"id":"probe-08","prompt":"Inventory: memory=RAM; storage=SSD. What is the storage value? Return only that value.","target":"SSD"}
+{"id":"probe-09","prompt":"Return the JSON array [1,2] exactly, with no spaces or other text.","target":"[1,2]"}
+{"id":"probe-10","prompt":"Sort 2 and 1 in ascending order. Return just the numbers separated by a comma, without spaces.","target":"1,2"}
+{"id":"probe-11","prompt":"Return exactly the three words keep logs private, without punctuation.","target":"keep logs private"}
+{"id":"probe-12","prompt":"The supplied record says color=green and shape=square. Return only the color value.","target":"green"}
+{"id":"probe-13","prompt":"How many letters are in cat? Return only the digit.","target":"3"}
+{"id":"probe-14","prompt":"Choose the first word from this list: copper, silver, gold. Return that word only.","target":"copper"}
+{"id":"probe-15","prompt":"Replace the hyphen in left-right with a space. Return only the resulting text.","target":"left right"}
+{"id":"probe-16","prompt":"Return the word no if the supplied value is zero, otherwise yes. Supplied value: 0. Return only the word.","target":"no"}

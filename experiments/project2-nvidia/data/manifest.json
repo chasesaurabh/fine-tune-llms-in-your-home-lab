@@ -1,0 +1,58 @@
+{
+  "generator": "scripts/generate_project2_dataset.py",
+  "grouping_key": "group_id",
+  "license": "CC0-1.0",
+  "limitations": [
+    "Fictional templated English data only.",
+    "Automated style proxies do not replace blind human review.",
+    "This dataset is tied to the recorded NVIDIA harness and does not imply alternate-runtime equivalence."
+  ],
+  "seed": 260921,
+  "splits": {
+    "test": {
+      "groups": [
+        "style-template-06"
+      ],
+      "rows": 30,
+      "sha256": "d9fea0afa97b22fb39ae809abf215b545bb5b3c36cf2b9b927aaa235f11f529d",
+      "terms": {
+        "Ember window": 6,
+        "Harbor token": 6,
+        "Lumen queue": 6,
+        "Northstar note": 6,
+        "Quiet flag": 6
+      }
+    },
+    "train": {
+      "groups": [
+        "style-template-01",
+        "style-template-02",
+        "style-template-03",
+        "style-template-04"
+      ],
+      "rows": 120,
+      "sha256": "2e259a0864ce01ccba267dc9b92766885b293de533ade8a3862084b00833ac4b",
+      "terms": {
+        "Ember window": 24,
+        "Harbor token": 24,
+        "Lumen queue": 24,
+        "Northstar note": 24,
+        "Quiet flag": 24
+      }
+    },
+    "validation": {
+      "groups": [
+        "style-template-05"
+      ],
+      "rows": 30,
+      "sha256": "8b798c053eda412faa2487b2f80837dc8bb5f96d1974becdac13de43f8745fef",
+      "terms": {
+        "Ember window": 6,
+        "Harbor token": 6,
+        "Lumen queue": 6,
+        "Northstar note": 6,
+        "Quiet flag": 6
+      }
+    }
+  }
+}

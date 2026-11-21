@@ -1,0 +1,58 @@
+{
+  "generator": "scripts/generate_project4_preferences.py",
+  "grouping_key": "group_id",
+  "license": "CC0-1.0",
+  "limitations": [
+    "Fictional templated English preference pairs only.",
+    "Pairwise model likelihood is not a substitute for blinded human preference.",
+    "One chosen/rejected formulation per prompt can encode surface shortcuts."
+  ],
+  "seed": 260923,
+  "splits": {
+    "test": {
+      "groups": [
+        "preference-template-06"
+      ],
+      "rows": 20,
+      "rules": {
+        "invented_source": 4,
+        "policy_override": 4,
+        "scope_overreach": 4,
+        "unnecessary_hedging": 4,
+        "unsupported_causal_claim": 4
+      },
+      "sha256": "842ff170936b052f6c4e834b0a5dac311048916dfd7ac71446f4a63bb743dfaa"
+    },
+    "train": {
+      "groups": [
+        "preference-template-01",
+        "preference-template-02",
+        "preference-template-03",
+        "preference-template-04"
+      ],
+      "rows": 80,
+      "rules": {
+        "invented_source": 16,
+        "policy_override": 16,
+        "scope_overreach": 16,
+        "unnecessary_hedging": 16,
+        "unsupported_causal_claim": 16
+      },
+      "sha256": "6bff622f42d413f75542b10eb49d658d5d888d6fe92837f6ae1e228dcd9f9d89"
+    },
+    "validation": {
+      "groups": [
+        "preference-template-05"
+      ],
+      "rows": 20,
+      "rules": {
+        "invented_source": 4,
+        "policy_override": 4,
+        "scope_overreach": 4,
+        "unnecessary_hedging": 4,
+        "unsupported_causal_claim": 4
+      },
+      "sha256": "c17e9849f7ea3e8995b643acb16a79ed108f24a70f65e65d06c8d78999a15106"
+    }
+  }
+}

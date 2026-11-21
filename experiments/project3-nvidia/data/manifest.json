@@ -1,0 +1,58 @@
+{
+  "generator": "scripts/generate_project3_dataset.py",
+  "grouping_key": "group_id",
+  "license": "CC0-1.0",
+  "limitations": [
+    "Fictional templated cases and deterministic policy only.",
+    "The simulator grants no credentials and executes no external action.",
+    "Passing these cases does not establish safety in an operational system."
+  ],
+  "seed": 260922,
+  "splits": {
+    "test": {
+      "case_types": {
+        "conflict": 6,
+        "known": 6,
+        "missing": 6,
+        "prohibited": 6,
+        "unknown": 6
+      },
+      "groups": [
+        "support-template-06"
+      ],
+      "rows": 30,
+      "sha256": "cea780a079a71770ae14f1c5bcb0e4b41fe1a3006c9be2eb1975ec6d81994c30"
+    },
+    "train": {
+      "case_types": {
+        "conflict": 24,
+        "known": 24,
+        "missing": 24,
+        "prohibited": 24,
+        "unknown": 24
+      },
+      "groups": [
+        "support-template-01",
+        "support-template-02",
+        "support-template-03",
+        "support-template-04"
+      ],
+      "rows": 120,
+      "sha256": "a56cd5b0427f8f1c81c15f72730da2c4c3b5aed1fdd51df5624fd0b02c16c932"
+    },
+    "validation": {
+      "case_types": {
+        "conflict": 6,
+        "known": 6,
+        "missing": 6,
+        "prohibited": 6,
+        "unknown": 6
+      },
+      "groups": [
+        "support-template-05"
+      ],
+      "rows": 30,
+      "sha256": "0b929678045e401bf4c42d80e3b117410b83aab4e262ec447fee126bdc503cbe"
+    }
+  }
+}

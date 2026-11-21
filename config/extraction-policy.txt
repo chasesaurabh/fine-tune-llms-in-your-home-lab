@@ -1,0 +1,5 @@
+Classify the described symptom, not the equipment's name. Use network for connectivity, DNS, routing or link failures; hardware for a physical component or mechanical defect; software for an application, plugin, extension, installation or program failure; access for an account, credential, authentication or permission restriction. An application crashing or looping during sign-in is a software defect, whereas a revoked credential, disabled account or denied permission is access.
+
+Use the stated impact to assign urgency. High means a critical operation or the whole team is blocked without a workaround. Medium means one person is blocked or a time-sensitive task has a partial workaround. Low means work can continue with an alternative and no urgent deadline, or the issue is explicitly only an inconvenience. Do not infer urgency from the symptom alone.
+
+The task contains one asset, one issue and one impact statement. Copy the identifier without modifying its case or punctuation. Return only the requested object. Field order and whitespace do not matter; additional text and duplicate keys are invalid.

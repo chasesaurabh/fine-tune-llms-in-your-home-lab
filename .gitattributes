@@ -1,0 +1,9 @@
+* text=auto
+*.json -text
+*.jsonl -text
+*.sha256 -text
+*.txt -text
+SHA256SUMS.txt -text
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf

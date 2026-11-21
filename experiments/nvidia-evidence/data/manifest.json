@@ -1,0 +1,95 @@
+{
+  "generator": "scripts/generate_extraction_evidence_dataset.py",
+  "group_assignment": {
+    "test": [
+      "phrase-family-11",
+      "phrase-family-12"
+    ],
+    "train": [
+      "phrase-family-01",
+      "phrase-family-02",
+      "phrase-family-03",
+      "phrase-family-04",
+      "phrase-family-05",
+      "phrase-family-06",
+      "phrase-family-07",
+      "phrase-family-08"
+    ],
+    "validation": [
+      "phrase-family-09",
+      "phrase-family-10"
+    ]
+  },
+  "grouping_key": "group_id",
+  "license": "CC0-1.0",
+  "limitations": [
+    "Fully synthetic templated dataset; it does not represent real support traffic.",
+    "Held-out phrase families test limited structural generalization only."
+  ],
+  "seed": 260916,
+  "splits": {
+    "test": {
+      "categories": {
+        "access": 16,
+        "hardware": 14,
+        "network": 15,
+        "software": 15
+      },
+      "groups": [
+        "phrase-family-11",
+        "phrase-family-12"
+      ],
+      "rows": 60,
+      "sha256": "7b0d4734003730142bd32d3da4d9a033a4237de6fcd73055a97fd926e845f081",
+      "urgencies": {
+        "high": 20,
+        "low": 20,
+        "medium": 20
+      }
+    },
+    "train": {
+      "categories": {
+        "access": 60,
+        "hardware": 60,
+        "network": 60,
+        "software": 60
+      },
+      "groups": [
+        "phrase-family-01",
+        "phrase-family-02",
+        "phrase-family-03",
+        "phrase-family-04",
+        "phrase-family-05",
+        "phrase-family-06",
+        "phrase-family-07",
+        "phrase-family-08"
+      ],
+      "rows": 240,
+      "sha256": "d7f25bcf23e20521ae1227aa1c0a0ecf7aec88982c341e86b232bb7380c5e153",
+      "urgencies": {
+        "high": 80,
+        "low": 80,
+        "medium": 80
+      }
+    },
+    "validation": {
+      "categories": {
+        "access": 14,
+        "hardware": 16,
+        "network": 15,
+        "software": 15
+      },
+      "groups": [
+        "phrase-family-09",
+        "phrase-family-10"
+      ],
+      "rows": 60,
+      "sha256": "ab172c46553243dda97ac61d6b2a78821562dea0f723e9818183e5f0c0a355e8",
+      "urgencies": {
+        "high": 20,
+        "low": 20,
+        "medium": 20
+      }
+    }
+  }
+}
