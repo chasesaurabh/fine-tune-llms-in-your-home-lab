@@ -1,44 +1,92 @@
 # Fine-Tune LLMs in Your Home Lab — code companion
 
-Runnable adapter-training labs, strict evaluation tools and original synthetic datasets for the book by Saurabh Chase. Code is MIT; the synthetic dataset manifests retain their CC0-1.0 dedication. Model weights are downloaded separately under their own licenses.
+Runnable adapter-training labs, strict evaluators and original synthetic datasets for the book by Saurabh Chase. Code is MIT; dataset manifests retain their CC0-1.0 dedication. Model weights are acquired separately under their own licenses.
 
-The Python package contains the lab tools. Use the source archive for the datasets, generators, tests and research files; a wheel alone does not include those resources. No model weights are bundled.
+Use the source archive for datasets, generators, tests and research files. The wheel installs the Python modules only. No model weights or trained adapters are bundled. Outputs belong under the ignored `runs/` directory; review actual file contents and Git history before sharing anything.
 
 ## CPU checks
 
-Python 3.11 or later can run the evaluator and policy checks without GPU libraries:
+Python 3.11 or later can run these checks without GPU libraries:
 
 ```powershell
 python -m venv .venv
-.venv\Scripts\python.exe -m pip install .
-.venv\Scripts\python.exe -m unittest discover -s tests -v
-.venv\Scripts\python.exe -m finetune_lab.data experiments/nvidia-evidence/data
+$py = '.\.venv\Scripts\python.exe'
+& $py -m pip install .
+& $py -m unittest discover -s tests -v
+& $py -m finetune_lab.data experiments/extraction-v2/data
 ```
 
-The split check validates file hashes, counts, case IDs and group separation. The scorer accepts one complete JSON object, rejects duplicate keys and extra prose, and separates valid syntax, valid schema and correct values. The triage validator accepts recommendation records only; it has no action executor.
+The split check validates hashes, counts, case IDs and group separation. The strict scorer accepts one complete JSON object, rejects duplicate keys and extra prose, and distinguishes syntax, schema and correct values. The triage validator checks recommendations; it has no action executor. HTTP unit tests use a declared fake model runtime and do not establish GPU model quality.
 
 ## NVIDIA training path
 
-The measured development path uses Windows, Python3.12, PyTorch2.9.0+cu129 and the versions in `requirements-gpu.txt`. NVIDIA driver and GPU support must match the selected PyTorch build. Other operating systems are not claimed as tested by this Windows run.
+The measured development environment is Windows, Python 3.12, PyTorch 2.9.0+cu129 and `requirements-gpu.txt`. Use an NVIDIA driver/GPU combination compatible with this build. Other operating systems are not claimed as tested by this Windows run.
 
-In a Python3.12 environment, install the GPU dependencies:
-
-```powershell
-python -m pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cu129
-python -m pip install -r requirements-gpu.txt
-python -m pip install .
-```
-
-Run the synthetic extraction lab from the source archive's root:
+In a Python 3.12 environment:
 
 ```powershell
-python -m finetune_lab.training --data experiments/nvidia-evidence/data --output runs/extraction-001 --revision c1899de289a04d12100db370d81485cdf75e47ca
-python -m finetune_lab.evaluation --run runs/extraction-001 --data experiments/nvidia-evidence/data --output runs/extraction-001/base-validation --mode base --task extraction
-python -m finetune_lab.evaluation --run runs/extraction-001 --data experiments/nvidia-evidence/data --output runs/extraction-001/adapter-validation --mode adapter --task extraction
+$py = '.\.venv\Scripts\python.exe'
+& $py -m pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cu129
+& $py -m pip install -r requirements-gpu.txt
+& $py -m pip install .
+& $py -m finetune_lab.preflight --help
 ```
 
-The model is Qwen3-0.6B at the exact revision shown. Training uses the official chat template, completion-only loss and a scored end token. Preflight rejects changed datasets, token-boundary mismatches and targets that would be truncated. Each output directory must be new. The evaluation command verifies the saved adapter hashes before loading it in its own process.
+Run from the source archive root. This two-step smoke exercise checks the pipeline; it is not the full learning budget:
 
-Inspect `loss-mask.json`, `training.json`, `adapter-hashes.json` and each evaluation's raw outputs and summary. A completed training job does not establish useful quality. The historical synthetic sets are teaching fixtures; do not treat repeated runs against them as new independent benchmarks.
+```powershell
+$data = 'experiments/extraction-v2/data'
+$revision = 'c1899de289a04d12100db370d81485cdf75e47ca'
+& $py -m finetune_lab.training `
+  --data $data --output runs/smoke-001 `
+  --model Qwen/Qwen3-0.6B --revision $revision `
+  --method lora --seed 20261121 --steps 2 `
+  --micro-batch 1 --accumulation 8 --max-length 512 `
+  --gradient-checkpointing `
+  --instruction-file config/extraction-policy.txt `
+  --in-memory-evaluation
 
-Use `--help` for explicit batch, accumulation, sequence, seed, LoRA/QLoRA and step options. Changing those settings creates a new experiment. Training fit must be tested through backward computation, saving and reload, not inferred from an inference-memory estimate.
+& $py -m finetune_lab.evaluation `
+  --run runs/smoke-001 --data $data `
+  --output runs/smoke-001/adapter-validation `
+  --mode adapter --task extraction `
+  --split validation --batch-size 1
+
+& $py -m finetune_lab.evaluation `
+  --run runs/smoke-001 --data $data `
+  --output runs/smoke-001/base-validation `
+  --mode base --task extraction `
+  --split validation --batch-size 1
+```
+
+Inspect `config.json`, `loss-mask.json`, `lengths.json`, `trainable.json`, `training.json`, `adapter-hashes.json` and evaluation outputs. The fresh adapter summary must report identical in-memory raw validation responses. Reconstruction does not establish answer correctness.
+
+The full extraction protocol replaces `--steps 2` with `--epochs 2` in a new run directory, producing 48 optimizer steps on 192 training examples. Use the same policy for base and adapter. Final-test data and literal regression probes are for a frozen decision, not repeated tuning. Several trained configurations fail the preset task gates; completing a run does not establish useful quality.
+
+Commands reject existing output directories and changed data identities. The official chat template, completion-only labels and scored end token are inspected before training. Examples exceeding the sequence cap are rejected rather than silently dropping the target. `--max-length 512` is a cap, not proof every batch contained 512 tokens.
+
+## Tools and reference projects
+
+Use each module's `--help` for its exact arguments:
+
+| Module | Purpose |
+| --- | --- |
+| `baseline` | Evaluate a pinned base before training |
+| `training`, `evaluation` | SFT and separate-process base/adapter scoring |
+| `paired` | Re-score matched raw responses and report gains/regressions |
+| `probes` | Literal response contracts outside the extraction task |
+| `compare_resume` | Compare adapter tensors and optimizer traces |
+| `preference`, `dpo`, `compare_preferences` | Pair likelihood, frozen-reference DPO and reference-adjusted comparison |
+| `capacity` | Fixed-length train/backward/optimizer/save/reload probe |
+| `bundle` | Create or verify an allowlisted local adapter/evidence bundle |
+| `serve` | Authenticated loopback extraction; no action executor |
+
+The response-style, triage and preference fixtures are in their respective `experiments/` directories. Historical fixtures are teaching sets; repeated use does not produce independent confirmation data. Preference pair likelihood is not a human-preference study. Response-style examples use supplied context and do not implement a retrieval engine.
+
+The service requires `LAB_API_TOKEN`, binds to 127.0.0.1, accepts one explicit asset per request and validates the output. It has token limits, not a hard inference wall-clock deadline. It is a local teaching service, not a complete multi-user gateway. Never expose its token in logs or commits.
+
+## Model identities and rights
+
+[config/models.json](config/models.json) pins the five model repositories, revisions, loading methods and license-file hashes. The listed Qwen3 models use Apache-2.0; Qwen2.5-72B-Instruct uses the separate Qwen LICENSE AGREEMENT. The companion's MIT license does not relicense models or derived adapters. Read the model terms for your intended use and distribution.
+
+Built with Qwen. The 72B configuration belongs to a different family from Qwen3, so cross-family results do not isolate parameter count as a causal variable. Hardware fit is conditional on actual lengths, batches, kernels and environment; measure the complete operation rather than inferring it from inference memory.
