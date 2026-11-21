@@ -1,0 +1,3004 @@
+{
+  "scope": "Descriptive frozen synthetic extraction decisions. No population confidence interval, human-preference or general safety inference.",
+  "results": [
+    {
+      "id": "qwen3-0.6b-20261121",
+      "base_run": "qwen3-0.6b-20261121",
+      "model": "Qwen/Qwen3-0.6B",
+      "method": "lora",
+      "seed": 20261121,
+      "overall": {
+        "cases": 144,
+        "base": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 65,
+          "fields": {
+            "asset": 134,
+            "category": 90,
+            "urgency": 109
+          }
+        },
+        "adapter": {
+          "cases": 144,
+          "valid_json_object": 124,
+          "schema_valid": 124,
+          "exact_object_match": 107,
+          "fields": {
+            "asset": 122,
+            "category": 109,
+            "urgency": 124
+          }
+        },
+        "gains": 50,
+        "regressions": 8
+      },
+      "slices": {
+        "group": {
+          "v2-template-12": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 10,
+              "fields": {
+                "asset": 22,
+                "category": 15,
+                "urgency": 18
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 21,
+              "fields": {
+                "asset": 24,
+                "category": 21,
+                "urgency": 24
+              }
+            },
+            "gains": 11,
+            "regressions": 0
+          },
+          "v2-template-13": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 12,
+              "fields": {
+                "asset": 23,
+                "category": 15,
+                "urgency": 19
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 21,
+              "fields": {
+                "asset": 24,
+                "category": 21,
+                "urgency": 24
+              }
+            },
+            "gains": 9,
+            "regressions": 0
+          },
+          "v2-template-14": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 8,
+              "fields": {
+                "asset": 24,
+                "category": 12,
+                "urgency": 16
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 21,
+              "fields": {
+                "asset": 24,
+                "category": 21,
+                "urgency": 24
+              }
+            },
+            "gains": 13,
+            "regressions": 0
+          },
+          "v2-template-15": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 10,
+              "fields": {
+                "asset": 24,
+                "category": 15,
+                "urgency": 16
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 4,
+              "schema_valid": 4,
+              "exact_object_match": 2,
+              "fields": {
+                "asset": 2,
+                "category": 4,
+                "urgency": 4
+              }
+            },
+            "gains": 0,
+            "regressions": 8
+          },
+          "v2-template-16": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 11,
+              "fields": {
+                "asset": 24,
+                "category": 15,
+                "urgency": 17
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 21,
+              "fields": {
+                "asset": 24,
+                "category": 21,
+                "urgency": 24
+              }
+            },
+            "gains": 10,
+            "regressions": 0
+          },
+          "v2-template-17": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 14,
+              "fields": {
+                "asset": 17,
+                "category": 18,
+                "urgency": 23
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 21,
+              "fields": {
+                "asset": 24,
+                "category": 21,
+                "urgency": 24
+              }
+            },
+            "gains": 7,
+            "regressions": 0
+          }
+        },
+        "category": {
+          "access": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 17,
+              "fields": {
+                "asset": 34,
+                "category": 21,
+                "urgency": 28
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 30,
+              "schema_valid": 30,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 30,
+                "urgency": 30
+              }
+            },
+            "gains": 15,
+            "regressions": 2
+          },
+          "hardware": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 8,
+              "fields": {
+                "asset": 32,
+                "category": 15,
+                "urgency": 25
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 31,
+              "schema_valid": 31,
+              "exact_object_match": 16,
+              "fields": {
+                "asset": 31,
+                "category": 16,
+                "urgency": 31
+              }
+            },
+            "gains": 9,
+            "regressions": 1
+          },
+          "network": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 15,
+              "fields": {
+                "asset": 35,
+                "category": 18,
+                "urgency": 28
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 32,
+              "schema_valid": 32,
+              "exact_object_match": 31,
+              "fields": {
+                "asset": 31,
+                "category": 32,
+                "urgency": 32
+              }
+            },
+            "gains": 17,
+            "regressions": 1
+          },
+          "software": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 25,
+              "fields": {
+                "asset": 33,
+                "category": 36,
+                "urgency": 28
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 31,
+              "schema_valid": 31,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 31,
+                "urgency": 31
+              }
+            },
+            "gains": 9,
+            "regressions": 4
+          }
+        },
+        "urgency": {
+          "high": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 26,
+              "fields": {
+                "asset": 44,
+                "category": 30,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 42,
+              "schema_valid": 42,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 41,
+                "category": 37,
+                "urgency": 42
+              }
+            },
+            "gains": 14,
+            "regressions": 4
+          },
+          "low": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 29,
+              "fields": {
+                "asset": 45,
+                "category": 30,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 42,
+              "schema_valid": 42,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 41,
+                "category": 37,
+                "urgency": 42
+              }
+            },
+            "gains": 11,
+            "regressions": 4
+          },
+          "medium": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 10,
+              "fields": {
+                "asset": 45,
+                "category": 30,
+                "urgency": 13
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 40,
+              "schema_valid": 40,
+              "exact_object_match": 35,
+              "fields": {
+                "asset": 40,
+                "category": 35,
+                "urgency": 40
+              }
+            },
+            "gains": 25,
+            "regressions": 0
+          }
+        }
+      },
+      "probe_base_correct": 10,
+      "probe_adapter_correct": 11,
+      "lost_probe_ids": [
+        "probe-09"
+      ],
+      "reconstruction": {
+        "cases": 96,
+        "raw_identical": true,
+        "different_ids": []
+      },
+      "training_seconds": 142.75297260005027,
+      "training_peak": {
+        "allocated_gib": 1.8578553199768066,
+        "reserved_gib": 2.103515625
+      },
+      "gates": {
+        "at_least137exact": false,
+        "all144schema": false,
+        "net_at_least8additional": true,
+        "no_new_probe_regressions": false,
+        "base_not_already_sufficient": true,
+        "exact_reconstruction": true
+      },
+      "accepted_for_stated_synthetic_task": false
+    },
+    {
+      "id": "qwen3-0.6b-20261122",
+      "base_run": "qwen3-0.6b-20261121",
+      "model": "Qwen/Qwen3-0.6B",
+      "method": "lora",
+      "seed": 20261122,
+      "overall": {
+        "cases": 144,
+        "base": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 65,
+          "fields": {
+            "asset": 134,
+            "category": 90,
+            "urgency": 109
+          }
+        },
+        "adapter": {
+          "cases": 144,
+          "valid_json_object": 125,
+          "schema_valid": 125,
+          "exact_object_match": 115,
+          "fields": {
+            "asset": 122,
+            "category": 117,
+            "urgency": 125
+          }
+        },
+        "gains": 58,
+        "regressions": 8
+      },
+      "slices": {
+        "group": {
+          "v2-template-12": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 10,
+              "fields": {
+                "asset": 22,
+                "category": 15,
+                "urgency": 18
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 21,
+              "fields": {
+                "asset": 24,
+                "category": 21,
+                "urgency": 24
+              }
+            },
+            "gains": 11,
+            "regressions": 0
+          },
+          "v2-template-13": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 12,
+              "fields": {
+                "asset": 23,
+                "category": 15,
+                "urgency": 19
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 23,
+              "fields": {
+                "asset": 24,
+                "category": 23,
+                "urgency": 24
+              }
+            },
+            "gains": 11,
+            "regressions": 0
+          },
+          "v2-template-14": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 8,
+              "fields": {
+                "asset": 24,
+                "category": 12,
+                "urgency": 16
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 23,
+              "fields": {
+                "asset": 24,
+                "category": 23,
+                "urgency": 24
+              }
+            },
+            "gains": 15,
+            "regressions": 0
+          },
+          "v2-template-15": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 10,
+              "fields": {
+                "asset": 24,
+                "category": 15,
+                "urgency": 16
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 5,
+              "schema_valid": 5,
+              "exact_object_match": 2,
+              "fields": {
+                "asset": 2,
+                "category": 4,
+                "urgency": 5
+              }
+            },
+            "gains": 0,
+            "regressions": 8
+          },
+          "v2-template-16": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 11,
+              "fields": {
+                "asset": 24,
+                "category": 15,
+                "urgency": 17
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 13,
+            "regressions": 0
+          },
+          "v2-template-17": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 14,
+              "fields": {
+                "asset": 17,
+                "category": 18,
+                "urgency": 23
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 22,
+              "fields": {
+                "asset": 24,
+                "category": 22,
+                "urgency": 24
+              }
+            },
+            "gains": 8,
+            "regressions": 0
+          }
+        },
+        "category": {
+          "access": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 17,
+              "fields": {
+                "asset": 34,
+                "category": 21,
+                "urgency": 28
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 30,
+              "schema_valid": 30,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 30,
+                "urgency": 30
+              }
+            },
+            "gains": 15,
+            "regressions": 2
+          },
+          "hardware": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 8,
+              "fields": {
+                "asset": 32,
+                "category": 15,
+                "urgency": 25
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 34,
+              "schema_valid": 34,
+              "exact_object_match": 25,
+              "fields": {
+                "asset": 32,
+                "category": 26,
+                "urgency": 34
+              }
+            },
+            "gains": 17,
+            "regressions": 0
+          },
+          "network": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 15,
+              "fields": {
+                "asset": 35,
+                "category": 18,
+                "urgency": 28
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 31,
+              "schema_valid": 31,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 31,
+                "urgency": 31
+              }
+            },
+            "gains": 17,
+            "regressions": 2
+          },
+          "software": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 25,
+              "fields": {
+                "asset": 33,
+                "category": 36,
+                "urgency": 28
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 30,
+              "schema_valid": 30,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 30,
+                "urgency": 30
+              }
+            },
+            "gains": 9,
+            "regressions": 4
+          }
+        },
+        "urgency": {
+          "high": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 26,
+              "fields": {
+                "asset": 44,
+                "category": 30,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 41,
+              "schema_valid": 41,
+              "exact_object_match": 37,
+              "fields": {
+                "asset": 41,
+                "category": 37,
+                "urgency": 41
+              }
+            },
+            "gains": 15,
+            "regressions": 4
+          },
+          "low": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 29,
+              "fields": {
+                "asset": 45,
+                "category": 30,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 43,
+              "schema_valid": 43,
+              "exact_object_match": 40,
+              "fields": {
+                "asset": 41,
+                "category": 42,
+                "urgency": 43
+              }
+            },
+            "gains": 15,
+            "regressions": 4
+          },
+          "medium": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 10,
+              "fields": {
+                "asset": 45,
+                "category": 30,
+                "urgency": 13
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 41,
+              "schema_valid": 41,
+              "exact_object_match": 38,
+              "fields": {
+                "asset": 40,
+                "category": 38,
+                "urgency": 41
+              }
+            },
+            "gains": 28,
+            "regressions": 0
+          }
+        }
+      },
+      "probe_base_correct": 10,
+      "probe_adapter_correct": 10,
+      "lost_probe_ids": [
+        "probe-01",
+        "probe-09"
+      ],
+      "reconstruction": {
+        "cases": 96,
+        "raw_identical": true,
+        "different_ids": []
+      },
+      "training_seconds": 145.45671239995863,
+      "training_peak": {
+        "allocated_gib": 1.857853889465332,
+        "reserved_gib": 2.103515625
+      },
+      "gates": {
+        "at_least137exact": false,
+        "all144schema": false,
+        "net_at_least8additional": true,
+        "no_new_probe_regressions": false,
+        "base_not_already_sufficient": true,
+        "exact_reconstruction": true
+      },
+      "accepted_for_stated_synthetic_task": false
+    },
+    {
+      "id": "qwen3-4b-20261121",
+      "base_run": "qwen3-4b-20261121",
+      "model": "Qwen/Qwen3-4B",
+      "method": "lora",
+      "seed": 20261121,
+      "overall": {
+        "cases": 144,
+        "base": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 119,
+          "fields": {
+            "asset": 120,
+            "category": 144,
+            "urgency": 143
+          }
+        },
+        "adapter": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 115,
+          "fields": {
+            "asset": 116,
+            "category": 144,
+            "urgency": 143
+          }
+        },
+        "gains": 1,
+        "regressions": 5
+      },
+      "slices": {
+        "group": {
+          "v2-template-12": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 22,
+              "fields": {
+                "asset": 22,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 22,
+              "fields": {
+                "asset": 22,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-13": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-14": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 23,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 23
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 23,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 23
+              }
+            },
+            "gains": 1,
+            "regressions": 1
+          },
+          "v2-template-15": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 2,
+              "fields": {
+                "asset": 2,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 2
+          },
+          "v2-template-16": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-17": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 22,
+              "fields": {
+                "asset": 22,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 2
+          }
+        },
+        "category": {
+          "access": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 29,
+              "fields": {
+                "asset": 29,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 26,
+              "fields": {
+                "asset": 27,
+                "category": 36,
+                "urgency": 35
+              }
+            },
+            "gains": 0,
+            "regressions": 3
+          },
+          "hardware": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 31,
+                "category": 36,
+                "urgency": 35
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 1,
+            "regressions": 1
+          },
+          "network": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "software": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 29,
+              "fields": {
+                "asset": 29,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 1
+          }
+        },
+        "urgency": {
+          "high": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 41,
+              "fields": {
+                "asset": 41,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 39,
+              "fields": {
+                "asset": 39,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 0,
+            "regressions": 2
+          },
+          "low": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 40,
+              "fields": {
+                "asset": 40,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 37,
+              "fields": {
+                "asset": 38,
+                "category": 48,
+                "urgency": 47
+              }
+            },
+            "gains": 0,
+            "regressions": 3
+          },
+          "medium": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 38,
+              "fields": {
+                "asset": 39,
+                "category": 48,
+                "urgency": 47
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 39,
+              "fields": {
+                "asset": 39,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 1,
+            "regressions": 0
+          }
+        }
+      },
+      "probe_base_correct": 16,
+      "probe_adapter_correct": 14,
+      "lost_probe_ids": [
+        "probe-09",
+        "probe-15"
+      ],
+      "reconstruction": {
+        "cases": 96,
+        "raw_identical": true,
+        "different_ids": []
+      },
+      "training_seconds": 186.15248049993534,
+      "training_peak": {
+        "allocated_gib": 8.478451251983643,
+        "reserved_gib": 8.75390625
+      },
+      "gates": {
+        "at_least137exact": false,
+        "all144schema": true,
+        "net_at_least8additional": false,
+        "no_new_probe_regressions": false,
+        "base_not_already_sufficient": true,
+        "exact_reconstruction": true
+      },
+      "accepted_for_stated_synthetic_task": false
+    },
+    {
+      "id": "qwen3-4b-20261122",
+      "base_run": "qwen3-4b-20261121",
+      "model": "Qwen/Qwen3-4B",
+      "method": "lora",
+      "seed": 20261122,
+      "overall": {
+        "cases": 144,
+        "base": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 119,
+          "fields": {
+            "asset": 120,
+            "category": 144,
+            "urgency": 143
+          }
+        },
+        "adapter": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 117,
+          "fields": {
+            "asset": 117,
+            "category": 144,
+            "urgency": 144
+          }
+        },
+        "gains": 1,
+        "regressions": 3
+      },
+      "slices": {
+        "group": {
+          "v2-template-12": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 22,
+              "fields": {
+                "asset": 22,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 22,
+              "fields": {
+                "asset": 22,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-13": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-14": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 23,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 23
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 1,
+            "regressions": 0
+          },
+          "v2-template-15": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 2,
+              "fields": {
+                "asset": 2,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 2
+          },
+          "v2-template-16": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-17": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 23,
+              "fields": {
+                "asset": 23,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 1
+          }
+        },
+        "category": {
+          "access": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 29,
+              "fields": {
+                "asset": 29,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 28,
+              "fields": {
+                "asset": 28,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 1
+          },
+          "hardware": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 31,
+                "category": 36,
+                "urgency": 35
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 1,
+            "regressions": 1
+          },
+          "network": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "software": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 30,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 29,
+              "fields": {
+                "asset": 29,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 1
+          }
+        },
+        "urgency": {
+          "high": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 41,
+              "fields": {
+                "asset": 41,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 40,
+              "fields": {
+                "asset": 40,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 0,
+            "regressions": 1
+          },
+          "low": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 40,
+              "fields": {
+                "asset": 40,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 38,
+              "fields": {
+                "asset": 38,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 0,
+            "regressions": 2
+          },
+          "medium": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 38,
+              "fields": {
+                "asset": 39,
+                "category": 48,
+                "urgency": 47
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 39,
+              "fields": {
+                "asset": 39,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 1,
+            "regressions": 0
+          }
+        }
+      },
+      "probe_base_correct": 16,
+      "probe_adapter_correct": 14,
+      "lost_probe_ids": [
+        "probe-09",
+        "probe-15"
+      ],
+      "reconstruction": {
+        "cases": 96,
+        "raw_identical": true,
+        "different_ids": []
+      },
+      "training_seconds": 190.9240759999957,
+      "training_peak": {
+        "allocated_gib": 8.478451251983643,
+        "reserved_gib": 8.751953125
+      },
+      "gates": {
+        "at_least137exact": false,
+        "all144schema": true,
+        "net_at_least8additional": false,
+        "no_new_probe_regressions": false,
+        "base_not_already_sufficient": true,
+        "exact_reconstruction": true
+      },
+      "accepted_for_stated_synthetic_task": false
+    },
+    {
+      "id": "qwen3-14b-20261121",
+      "base_run": "qwen3-14b-20261121",
+      "model": "Qwen/Qwen3-14B",
+      "method": "qlora",
+      "seed": 20261121,
+      "overall": {
+        "cases": 144,
+        "base": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 126,
+          "fields": {
+            "asset": 128,
+            "category": 144,
+            "urgency": 142
+          }
+        },
+        "adapter": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 139,
+          "fields": {
+            "asset": 139,
+            "category": 144,
+            "urgency": 144
+          }
+        },
+        "gains": 18,
+        "regressions": 5
+      },
+      "slices": {
+        "group": {
+          "v2-template-12": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-13": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-14": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 22,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 22
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 2,
+            "regressions": 0
+          },
+          "v2-template-15": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 19,
+              "fields": {
+                "asset": 19,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 5
+          },
+          "v2-template-16": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-17": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 8,
+              "fields": {
+                "asset": 8,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 16,
+            "regressions": 0
+          }
+        },
+        "category": {
+          "access": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 35,
+              "fields": {
+                "asset": 35,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 1,
+            "regressions": 0
+          },
+          "hardware": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 28,
+              "fields": {
+                "asset": 30,
+                "category": 36,
+                "urgency": 34
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 33,
+              "fields": {
+                "asset": 33,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 8,
+            "regressions": 3
+          },
+          "network": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 31,
+              "fields": {
+                "asset": 31,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 35,
+              "fields": {
+                "asset": 35,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 5,
+            "regressions": 1
+          },
+          "software": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 32,
+              "fields": {
+                "asset": 32,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 35,
+              "fields": {
+                "asset": 35,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 4,
+            "regressions": 1
+          }
+        },
+        "urgency": {
+          "high": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 44,
+              "fields": {
+                "asset": 44,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 47,
+              "fields": {
+                "asset": 47,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 4,
+            "regressions": 1
+          },
+          "low": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 42,
+              "fields": {
+                "asset": 42,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 46,
+              "fields": {
+                "asset": 46,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 6,
+            "regressions": 2
+          },
+          "medium": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 40,
+              "fields": {
+                "asset": 42,
+                "category": 48,
+                "urgency": 46
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 46,
+              "fields": {
+                "asset": 46,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 8,
+            "regressions": 2
+          }
+        }
+      },
+      "probe_base_correct": 16,
+      "probe_adapter_correct": 16,
+      "lost_probe_ids": [],
+      "reconstruction": {
+        "cases": 96,
+        "raw_identical": true,
+        "different_ids": []
+      },
+      "training_seconds": 266.74076030007564,
+      "training_peak": {
+        "allocated_gib": 14.779376983642578,
+        "reserved_gib": 15.466796875
+      },
+      "gates": {
+        "at_least137exact": true,
+        "all144schema": true,
+        "net_at_least8additional": true,
+        "no_new_probe_regressions": true,
+        "base_not_already_sufficient": true,
+        "exact_reconstruction": true
+      },
+      "accepted_for_stated_synthetic_task": true
+    },
+    {
+      "id": "qwen3-32b-20261121",
+      "base_run": "qwen3-32b-20261121",
+      "model": "Qwen/Qwen3-32B",
+      "method": "qlora",
+      "seed": 20261121,
+      "overall": {
+        "cases": 144,
+        "base": {
+          "cases": 144,
+          "valid_json_object": 0,
+          "schema_valid": 0,
+          "exact_object_match": 0,
+          "fields": {
+            "asset": 0,
+            "category": 0,
+            "urgency": 0
+          }
+        },
+        "adapter": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 142,
+          "fields": {
+            "asset": 144,
+            "category": 144,
+            "urgency": 142
+          }
+        },
+        "gains": 142,
+        "regressions": 0
+      },
+      "slices": {
+        "group": {
+          "v2-template-12": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 24,
+            "regressions": 0
+          },
+          "v2-template-13": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 24,
+            "regressions": 0
+          },
+          "v2-template-14": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 22,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 22
+              }
+            },
+            "gains": 22,
+            "regressions": 0
+          },
+          "v2-template-15": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 24,
+            "regressions": 0
+          },
+          "v2-template-16": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 24,
+            "regressions": 0
+          },
+          "v2-template-17": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 24,
+            "regressions": 0
+          }
+        },
+        "category": {
+          "access": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 35,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 35
+              }
+            },
+            "gains": 35,
+            "regressions": 0
+          },
+          "hardware": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 36,
+            "regressions": 0
+          },
+          "network": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 35,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 35
+              }
+            },
+            "gains": 35,
+            "regressions": 0
+          },
+          "software": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 36,
+            "regressions": 0
+          }
+        },
+        "urgency": {
+          "high": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 48,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 48,
+            "regressions": 0
+          },
+          "low": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 46,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 46
+              }
+            },
+            "gains": 46,
+            "regressions": 0
+          },
+          "medium": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 0,
+              "schema_valid": 0,
+              "exact_object_match": 0,
+              "fields": {
+                "asset": 0,
+                "category": 0,
+                "urgency": 0
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 48,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 48,
+            "regressions": 0
+          }
+        }
+      },
+      "probe_base_correct": 16,
+      "probe_adapter_correct": 16,
+      "lost_probe_ids": [],
+      "reconstruction": {
+        "cases": 96,
+        "raw_identical": true,
+        "different_ids": []
+      },
+      "training_seconds": 405.31186699995305,
+      "training_peak": {
+        "allocated_gib": 23.824039459228516,
+        "reserved_gib": 24.998046875
+      },
+      "gates": {
+        "at_least137exact": true,
+        "all144schema": true,
+        "net_at_least8additional": true,
+        "no_new_probe_regressions": true,
+        "base_not_already_sufficient": true,
+        "exact_reconstruction": true
+      },
+      "accepted_for_stated_synthetic_task": true
+    },
+    {
+      "id": "qwen2.5-72b-instruct-20261121",
+      "base_run": "qwen2.5-72b-instruct-20261121",
+      "model": "Qwen/Qwen2.5-72B-Instruct",
+      "method": "qlora",
+      "seed": 20261121,
+      "overall": {
+        "cases": 144,
+        "base": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 144,
+          "fields": {
+            "asset": 144,
+            "category": 144,
+            "urgency": 144
+          }
+        },
+        "adapter": {
+          "cases": 144,
+          "valid_json_object": 144,
+          "schema_valid": 144,
+          "exact_object_match": 144,
+          "fields": {
+            "asset": 144,
+            "category": 144,
+            "urgency": 144
+          }
+        },
+        "gains": 0,
+        "regressions": 0
+      },
+      "slices": {
+        "group": {
+          "v2-template-12": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-13": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-14": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-15": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-16": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "v2-template-17": {
+            "cases": 24,
+            "base": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "adapter": {
+              "cases": 24,
+              "valid_json_object": 24,
+              "schema_valid": 24,
+              "exact_object_match": 24,
+              "fields": {
+                "asset": 24,
+                "category": 24,
+                "urgency": 24
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          }
+        },
+        "category": {
+          "access": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "hardware": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "network": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "software": {
+            "cases": 36,
+            "base": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "adapter": {
+              "cases": 36,
+              "valid_json_object": 36,
+              "schema_valid": 36,
+              "exact_object_match": 36,
+              "fields": {
+                "asset": 36,
+                "category": 36,
+                "urgency": 36
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          }
+        },
+        "urgency": {
+          "high": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 48,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 48,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "low": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 48,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 48,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          },
+          "medium": {
+            "cases": 48,
+            "base": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 48,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "adapter": {
+              "cases": 48,
+              "valid_json_object": 48,
+              "schema_valid": 48,
+              "exact_object_match": 48,
+              "fields": {
+                "asset": 48,
+                "category": 48,
+                "urgency": 48
+              }
+            },
+            "gains": 0,
+            "regressions": 0
+          }
+        }
+      },
+      "probe_base_correct": 16,
+      "probe_adapter_correct": 15,
+      "lost_probe_ids": [
+        "probe-11"
+      ],
+      "reconstruction": {
+        "cases": 96,
+        "raw_identical": true,
+        "different_ids": []
+      },
+      "training_seconds": 745.227591099916,
+      "training_peak": {
+        "allocated_gib": 47.649375915527344,
+        "reserved_gib": 48.763671875
+      },
+      "gates": {
+        "at_least137exact": true,
+        "all144schema": true,
+        "net_at_least8additional": false,
+        "no_new_probe_regressions": false,
+        "base_not_already_sufficient": false,
+        "exact_reconstruction": true
+      },
+      "accepted_for_stated_synthetic_task": false
+    }
+  ],
+  "source_hashes": {
+    "qwen3-0.6b-20261121/config.json": "577ccb4f8f607ff5056c510ee5043187841a285f5fe9d3d17226a76d6b0f99c4",
+    "qwen3-0.6b-20261121/base-test/summary.json": "a96174471ac34ad49422ab1a6fe5dcf11d7f24bf9cdb4ec30e04a56792042a2f",
+    "qwen3-0.6b-20261121/base-probes/summary.json": "ea81be3a0ea8a00fa26f480501f6ea2034a32e48aed20933e29a6f43bf502f80",
+    "qwen3-0.6b-20261121/adapter-test/summary.json": "7f7b78f6d9262359a4b0b43dbe328629e2bb6432722abcc936fc57b79e0d08a5",
+    "qwen3-0.6b-20261121/adapter-probes/summary.json": "dee901144983ef22ba16291c1c50c0af5031ba281350ac8336c8a6546d2ced6b",
+    "qwen3-0.6b-20261121/base-probes/outputs.json": "f1b9df5d3f669e3913113125d624522faa17ebe5cd84b252ddddf0c66ca77011",
+    "qwen3-0.6b-20261121/adapter-probes/outputs.json": "d3c0e1f5a9ea2efc2df03e7aeb598ed3afa5ec4693667934a094c1f9b3e590a3",
+    "qwen3-0.6b-20261121/base-test/outputs.json": "b0e8fbe9960f01aae1589db1350985d0a9c7f0ce7b88d88ffa705f6e2ef339dc",
+    "qwen3-0.6b-20261121/adapter-test/outputs.json": "11a002c73e3aa73bc9edb3c7c9e52fea906532c112dc9c31b7ee8912d2ee73c8",
+    "qwen3-0.6b-20261121/in-memory-validation.json": "c170b712c9234e548a2ef0fff84ba1641aaee232297eae6fb98475f52524ecd8",
+    "qwen3-0.6b-20261121/adapter-validation/outputs.json": "c170b712c9234e548a2ef0fff84ba1641aaee232297eae6fb98475f52524ecd8",
+    "qwen3-0.6b-20261121/training.json": "575e355cae50bd9d3e8f2c512e1114bfbb089ff67f0c19635d382034958dea5a",
+    "qwen3-0.6b-20261122/config.json": "a60c419706bf444a8d32806eec44ba59766cc135cb5a67c969e175130e477485",
+    "qwen3-0.6b-20261122/adapter-test/summary.json": "293104b72a2f681f8b8bca9e9f224d0b505fdefb704bb9a06917ca14b9474ca3",
+    "qwen3-0.6b-20261122/adapter-probes/summary.json": "d8689c7febb650a5392858d2d642aa0fe213482f13c6c953dccb0e9c655a20b8",
+    "qwen3-0.6b-20261122/adapter-probes/outputs.json": "b85b427d32d0d98d3a0d131ff05fabc91fd63d66d1613e4c371fe8c1884c5a7b",
+    "qwen3-0.6b-20261122/adapter-test/outputs.json": "1944ad177f6a5f89ea831e565e2bfacc135a7e23ce7d834884d997d0e011d041",
+    "qwen3-0.6b-20261122/in-memory-validation.json": "dd16e53778f26520b405b68e8fcc10e2cc1223938d4d0cd5bf13baa1ec0bcc0c",
+    "qwen3-0.6b-20261122/adapter-validation/outputs.json": "dd16e53778f26520b405b68e8fcc10e2cc1223938d4d0cd5bf13baa1ec0bcc0c",
+    "qwen3-0.6b-20261122/training.json": "21a505bdab18c147212bf031d8a2ad71cdb681fb7e9f36a44b5be4d16bcfaa1d",
+    "qwen3-4b-20261121/config.json": "db5dd668b17f95cdfca3c8b674d2035c2c50a231208d7fd9162e3c9ad4276d55",
+    "qwen3-4b-20261121/base-test/summary.json": "14d9facd3a6694c2568b48004c7cc8bfc978e1f25dab126508ab7069de46657a",
+    "qwen3-4b-20261121/base-probes/summary.json": "027b263cf22eccac1d7ef619352c59d49a71f2e525bdee30257761b62655c5f6",
+    "qwen3-4b-20261121/adapter-test/summary.json": "a66b16c40ce57fbd2ff12288a532b61d010717f37b3538d8a68582ecac3e3935",
+    "qwen3-4b-20261121/adapter-probes/summary.json": "cccb4417bf46b58c0e4aa11660c673e73fe97e2b14d6a96710c3cc2b3bc065da",
+    "qwen3-4b-20261121/base-probes/outputs.json": "9c053ec994cf0c7412ac7bc2fca7e03fd991a75cbdb235055cd8868be9b83d9d",
+    "qwen3-4b-20261121/adapter-probes/outputs.json": "6367a1ae7db8e5eb38934c55da3ac91281fdc7888af84edd38c98e21e9b871ed",
+    "qwen3-4b-20261121/base-test/outputs.json": "b7a028835614c95ddfeb86240459ceb7a9682e0ba0fa19c7cd00b52294d16289",
+    "qwen3-4b-20261121/adapter-test/outputs.json": "6a065ba850ab335ee2dd56a93543df35170f18f976ac1ae9f9623297417bef29",
+    "qwen3-4b-20261121/in-memory-validation.json": "c9e91ec3026733f66a655d626f8c2f79a36a7138effa2bac3c93710f38d04bd2",
+    "qwen3-4b-20261121/adapter-validation/outputs.json": "c9e91ec3026733f66a655d626f8c2f79a36a7138effa2bac3c93710f38d04bd2",
+    "qwen3-4b-20261121/training.json": "15dc571c6bb0bf3fbae738ea3bb0619b56dd6c725be0dda8ccaa9f255eb4705a",
+    "qwen3-4b-20261122/config.json": "a8c731d5daee65d834a024154c6fceacc9019e99f9b78442f1e4b079b8d396ff",
+    "qwen3-4b-20261122/adapter-test/summary.json": "1684fa20ea22f2f0f2acdebe00e9e9328d72b4c7eaeacd0819946f8fcd1b97fa",
+    "qwen3-4b-20261122/adapter-probes/summary.json": "cccb4417bf46b58c0e4aa11660c673e73fe97e2b14d6a96710c3cc2b3bc065da",
+    "qwen3-4b-20261122/adapter-probes/outputs.json": "6367a1ae7db8e5eb38934c55da3ac91281fdc7888af84edd38c98e21e9b871ed",
+    "qwen3-4b-20261122/adapter-test/outputs.json": "656cf2d18a2bfc9295b4fe2585f4b54d95e1c3aec050f74b6b6bd2d1dd924e09",
+    "qwen3-4b-20261122/in-memory-validation.json": "1235238395bec39703161722745692e6cdce527dd9da6b70e0257880d2d06868",
+    "qwen3-4b-20261122/adapter-validation/outputs.json": "1235238395bec39703161722745692e6cdce527dd9da6b70e0257880d2d06868",
+    "qwen3-4b-20261122/training.json": "a3388e67bf0e823d49c589520360c9559aed9bb6050d1a7e4cf8088f4491873b",
+    "qwen3-14b-20261121/config.json": "baa1d7a0a1e609152976fd603344e98844cc44fd8a5867d3986c93bda9e5f6b5",
+    "qwen3-14b-20261121/base-test/summary.json": "5baffb18ad9f9a3f1936943c55527115b74f8fddb303b610cff0598536baa7f6",
+    "qwen3-14b-20261121/base-probes/summary.json": "3f0ef34b4d3e423a2feccd73b5c5809180850198322433138314809ccb8873ce",
+    "qwen3-14b-20261121/adapter-test/summary.json": "2541d11671a6e74ba0d31ccfdc7697785ef1bc85c292e54756455e726e2a310b",
+    "qwen3-14b-20261121/adapter-probes/summary.json": "8f55246ec0ed88e10a84278721a33716ab1c3642034fd8567be657bd87d0818e",
+    "qwen3-14b-20261121/base-probes/outputs.json": "9c053ec994cf0c7412ac7bc2fca7e03fd991a75cbdb235055cd8868be9b83d9d",
+    "qwen3-14b-20261121/adapter-probes/outputs.json": "9c053ec994cf0c7412ac7bc2fca7e03fd991a75cbdb235055cd8868be9b83d9d",
+    "qwen3-14b-20261121/base-test/outputs.json": "93b91122ff5792e9e4e1a4c99279c387bdac68e209ae06709834d284e8e85ae0",
+    "qwen3-14b-20261121/adapter-test/outputs.json": "a040a13ba6f27785705a2b0ca86b28ca502229469b676b819147d289d940243b",
+    "qwen3-14b-20261121/in-memory-validation.json": "49b2118c82d976c17940b59253d6d0c91ff2400757b59ddc575701cfc8276a77",
+    "qwen3-14b-20261121/adapter-validation/outputs.json": "49b2118c82d976c17940b59253d6d0c91ff2400757b59ddc575701cfc8276a77",
+    "qwen3-14b-20261121/training.json": "7ad08e25534e220c150723bc0ca917851686c71902340eb1501ab6242e720c0f",
+    "qwen3-32b-20261121/config.json": "edb3ef8f337b91198e8fffdbbe7525d704c0306757980a2d96ab0ec1ed660873",
+    "qwen3-32b-20261121/base-test/summary.json": "7eb399ff9059fb946bed71a2de4b00e12438f9d2c800b9cd820f1ff71ac0cf72",
+    "qwen3-32b-20261121/base-probes/summary.json": "3d7c6c480ce95e319c9193f32f6a363834de22d82e8aee566c8941a9448de8d1",
+    "qwen3-32b-20261121/adapter-test/summary.json": "cb52cd90ed361eab4bf6da98712cfe3424b937315d3754fef5f6a66e6911296b",
+    "qwen3-32b-20261121/adapter-probes/summary.json": "a33ea69346e4fcf95946b1ca0d4baceb5e8c25681ae9a6f5ab4e9f3216933d47",
+    "qwen3-32b-20261121/base-probes/outputs.json": "9c053ec994cf0c7412ac7bc2fca7e03fd991a75cbdb235055cd8868be9b83d9d",
+    "qwen3-32b-20261121/adapter-probes/outputs.json": "9c053ec994cf0c7412ac7bc2fca7e03fd991a75cbdb235055cd8868be9b83d9d",
+    "qwen3-32b-20261121/base-test/outputs.json": "f3827204671a3b524951248d0303e9e6afe212ed3f8e8ca63e29989ff3bab89d",
+    "qwen3-32b-20261121/adapter-test/outputs.json": "73c96bfcb51dcd8426f650d796c12278ea1bcc5d53c9709b5bacaf9f7d3accf7",
+    "qwen3-32b-20261121/in-memory-validation.json": "c170b712c9234e548a2ef0fff84ba1641aaee232297eae6fb98475f52524ecd8",
+    "qwen3-32b-20261121/adapter-validation/outputs.json": "c170b712c9234e548a2ef0fff84ba1641aaee232297eae6fb98475f52524ecd8",
+    "qwen3-32b-20261121/training.json": "728a633c2c3719050b2c2c34a85eb304505d3cdfb60125f156ea2043223369fa",
+    "qwen2.5-72b-instruct-20261121/config.json": "f8950d65d51ee3cb6ced0257175021e2b1a5b83e38d732e6a3c9bccf3291d956",
+    "qwen2.5-72b-instruct-20261121/base-test/summary.json": "34e1d5b58cc526dabfd31cefa839cd121ac6bb9df0b58f86ab122f5826d353f7",
+    "qwen2.5-72b-instruct-20261121/base-probes/summary.json": "7227662432e0a8d7d999af2b7f53518d7f2dc7cf2663d04388f0ca20c5b6726b",
+    "qwen2.5-72b-instruct-20261121/adapter-test/summary.json": "191f24544cb1b75b9002236666c3dbdd8bca6a950603614aa6919a06d5a55aa6",
+    "qwen2.5-72b-instruct-20261121/adapter-probes/summary.json": "d9f5920427da98339937df5f4d31bcbc1d037ac8abab8a3ccc554cea57563f8d",
+    "qwen2.5-72b-instruct-20261121/base-probes/outputs.json": "5d19a88f09faa47e216a8dfc36919141d86ba32544664587df72e98d0f8b1681",
+    "qwen2.5-72b-instruct-20261121/adapter-probes/outputs.json": "0f8724040be0f9f0211d3557dc683d9b2a28cb64ca7e1f634f12e7f8e82c96f7",
+    "qwen2.5-72b-instruct-20261121/base-test/outputs.json": "32081d90e42a2120a3642a4a03ba45d429a084b0d78c77a73200ce9dbe3e49f0",
+    "qwen2.5-72b-instruct-20261121/adapter-test/outputs.json": "385c697a60c2f3f95c59a5976b40bd2466b5d2e86a8f3c92f451bb92d3b5b100",
+    "qwen2.5-72b-instruct-20261121/in-memory-validation.json": "1db0e7d23d87bc9fdbe3167bc0ef1513ccb854e17d6cef6bdefc1252864a4b5f",
+    "qwen2.5-72b-instruct-20261121/adapter-validation/outputs.json": "1db0e7d23d87bc9fdbe3167bc0ef1513ccb854e17d6cef6bdefc1252864a4b5f",
+    "qwen2.5-72b-instruct-20261121/training.json": "990e390f1c2477416a86639f57664cc7d0accd76304dee967de8166cf9418804"
+  },
+  "plan_sha256": "060721de9ba28f573ff754ff4e67305ec9f6f18775a79b96fe36901ed4c298a7",
+  "probe_sha256": "65d1bc8bbf898bbda77f7296ee9ec262b64119d8c5fd11d6a5245cd21f15d8c3",
+  "analyzer_sha256": "3a0567c82f33618b4627982d4496049b15d37e5d88e0d837708572bef414cc85"
+}
