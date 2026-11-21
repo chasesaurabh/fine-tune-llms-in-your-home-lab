@@ -1,0 +1,3314 @@
+[
+  {
+    "id": "v2-13-14",
+    "raw_output": "{\"asset\":\"LAB-921F6B17\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-921F6B17",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "599105a0714161523bd13b90d02b316c7f38932dfb817f133ce4f6a05a1ed153",
+    "parsed": {
+      "asset": "LAB-921F6B17",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-02",
+    "raw_output": "{\"asset\":\"LAB-1729D3F9\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-1729D3F9",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "9bef54c6b57c216acbabd5630caa762505013aaa595044b76e72f09341f65a84",
+    "parsed": {
+      "asset": "LAB-1729D3F9",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-05",
+    "raw_output": "{\"asset\":\"LAB-EEBEFC60\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-EEBEFC60",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "e80a9b67ea1928e6ea6504d6f1425b570406a8a4e9819afcc3d8506193188d2f",
+    "parsed": {
+      "asset": "LAB-EEBEFC60",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-10",
+    "raw_output": "{\"asset\":\"LAB-2C3E840A\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-2C3E840A",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "f8765f5578fdab899aebe24ab4b07d3935a8d55f3de7acdcbce52360486e9e3e",
+    "parsed": {
+      "asset": "LAB-2C3E840A",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-12",
+    "raw_output": "{\"asset\":\"LAB-4547655E\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-4547655E",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "66878562ff53ed8c349b5bcafd48e60c304d2887b8e1438998ef074815816704",
+    "parsed": {
+      "asset": "LAB-4547655E",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-19",
+    "raw_output": "{\"asset\":\"LAB-DAFB0A50\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-DAFB0A50",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "c080dc034fdcf49763328c87d9f2636c43f4df71036a455b466bf145cc94832d",
+    "parsed": {
+      "asset": "LAB-DAFB0A50",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-22",
+    "raw_output": "{\"asset\":\"LAB-AC2DC68E\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-AC2DC68E",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "6a32704fb328f92d8ceef57891842e8eefdac3ba15eb3e42f78ee73cfba26153",
+    "parsed": {
+      "asset": "LAB-AC2DC68E",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-05",
+    "raw_output": "{\"asset\":\"[LAB-A19E1ECD]\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-A19E1ECD",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "a5f40d9963deb4bae75286a1ce6c2519cfaac431a7ab89e4a85317f4b96ac6aa",
+    "parsed": {
+      "asset": "[LAB-A19E1ECD]",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-15",
+    "raw_output": "{\"asset\":\"LAB-8EB5B716\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-8EB5B716",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "aa06f83cc779d1c2d46c32159dd997490a84384b83a439c205718561d6b5f336",
+    "parsed": {
+      "asset": "LAB-8EB5B716",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-20",
+    "raw_output": "{\"asset\":\"LAB-AC853713\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-AC853713",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "3395810699798fc67ab3094f346b3d332f62137da0ac1ea04c49dd73873e032e",
+    "parsed": {
+      "asset": "LAB-AC853713",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-00",
+    "raw_output": "{\"asset\":\"LAB-DC48748E\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-DC48748E",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "49269a2f485edffa7c15cd0246b84b529392f3274186de9aa6b3208a875bd224",
+    "parsed": {
+      "asset": "LAB-DC48748E",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-16",
+    "raw_output": "{\"asset\":\"LAB-BDD555C7\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-BDD555C7",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "eaad16c824f2db25c7fca8d2ecbc3585f77bf9fd1bd22fe694d7df02a40d7d2d",
+    "parsed": {
+      "asset": "LAB-BDD555C7",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-20",
+    "raw_output": "{\"asset\":\"LAB-2C2E214D\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-2C2E214D",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "f784f05457c234b7e3985fd2da51caa74e4bd31f7d7714c30357628c4ad9126b",
+    "parsed": {
+      "asset": "LAB-2C2E214D",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-03",
+    "raw_output": "{\"asset\":\"LAB-405F3786\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-405F3786",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "9e2c5724cb1983f917f02e2a367999956e6de89b407afda0e4dbe7244ae41683",
+    "parsed": {
+      "asset": "LAB-405F3786",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-08",
+    "raw_output": "{\"asset\":\"LAB-26578BB7\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-26578BB7",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "bf823e8ba2dba24f62e36446b84900015b93f0c01387be882e3ebd87e80648b7",
+    "parsed": {
+      "asset": "LAB-26578BB7",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-04",
+    "raw_output": "{\"asset\":\"LAB-D4F5081B\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-D4F5081B",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "2d62dea300dfebbe2962ac23fb355204bb54d82e5c673f8caf489ba90f5c2083",
+    "parsed": {
+      "asset": "LAB-D4F5081B",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-13",
+    "raw_output": "{\"asset\":\"[LAB-EF111856]\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-EF111856",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "ec088d429e4acf6e8ee9559805adf4a55bb0d7a62b22076d932c87f0bdf6714a",
+    "parsed": {
+      "asset": "[LAB-EF111856]",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-00",
+    "raw_output": "{\"asset\":\"LAB-D9D9A8CC\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-D9D9A8CC",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "5896afc2b8d7208c5251ff7ca3e0661da8020a233b1f86be93183458cf643258",
+    "parsed": {
+      "asset": "LAB-D9D9A8CC",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-21",
+    "raw_output": "{\"asset\":\"LAB-43F64D68\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-43F64D68",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "718da9edb82d6e2427f07022cab8d07fdc355348a6967c530f8c17e28cb29eb9",
+    "parsed": {
+      "asset": "LAB-43F64D68",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-04",
+    "raw_output": "{\"asset\":\"LAB-0C40F455\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-0C40F455",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "a3ee6c0831034e4f409f9274e5e300d5896d49d78666ca779d70ae38b50ac1c2",
+    "parsed": {
+      "asset": "LAB-0C40F455",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-15",
+    "raw_output": "{\"asset\":\"LAB-23604114\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-23604114",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "2af9bd2432ea4a28a995d849facecf4a6f18cd9775cf3155a9935ca046f757f4",
+    "parsed": {
+      "asset": "LAB-23604114",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-14",
+    "raw_output": "{\"asset\":\"LAB-E03DA337\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-E03DA337",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "61e4d30f360b328dc7c3c90cd7d66fe2883c265da3d6e8371fceec969c7f499a",
+    "parsed": {
+      "asset": "LAB-E03DA337",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-02",
+    "raw_output": "{\"asset\":\"LAB-09644CCC\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-09644CCC",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "3a6d3b55f71c4d4acfd1822a5c4359659e0b0977b62fa0ee4af2547e81e8110d",
+    "parsed": {
+      "asset": "LAB-09644CCC",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-10",
+    "raw_output": "{\"asset\":\"LAB-8CD3119A\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-8CD3119A",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "65ebf48e1c3e48c27fad47ddcf6fb2bea2faa471c81a268f07e95027eedd66f4",
+    "parsed": {
+      "asset": "LAB-8CD3119A",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-03",
+    "raw_output": "{\"asset\":\"LAB-7479E538\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-7479E538",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "673ad75c859fb11ddcaa5679ed7236771363780d89f7b7bea6d92d25bc00a080",
+    "parsed": {
+      "asset": "LAB-7479E538",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-01",
+    "raw_output": "{\"asset\":\"LAB-C9118170\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-C9118170",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "931b7e4e3c5d2f664cf7a1bebf22763f5290b16c59c3661f0812b354a05a49c4",
+    "parsed": {
+      "asset": "LAB-C9118170",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-22",
+    "raw_output": "{\"asset\":\"LAB-1BFB9828\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-1BFB9828",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "8be2a18d88a9d4800bc0f0f4765eabd58b5492144d8a8338803e775a59967145",
+    "parsed": {
+      "asset": "LAB-1BFB9828",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-06",
+    "raw_output": "{\"asset\":\"LAB-37CCEBFE\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-37CCEBFE",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "0e20c937a0fc773505899a00f8bcd6b66d2f22c29495bf90b30984bb5a3bdaf0",
+    "parsed": {
+      "asset": "LAB-37CCEBFE",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-07",
+    "raw_output": "{\"asset\":\"LAB-3E0E594C\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-3E0E594C",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "318bc80d58633063bf0f1dddca26da2babe32f57b15a5d280d8af0cc0a8ba953",
+    "parsed": {
+      "asset": "LAB-3E0E594C",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-15",
+    "raw_output": "{\"asset\":\"LAB-37314215\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-37314215",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "7f7d702e3826ecbcbea493b471b412606f0ad9d14d914dfe450eb770a6d7af0f",
+    "parsed": {
+      "asset": "LAB-37314215",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-23",
+    "raw_output": "{\"asset\":\"LAB-CE64F575\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-CE64F575",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "a829b1e5ad8a67ec2d20f1ed135846cc352215b2f02b2c63b88cb30e20c4bfc7",
+    "parsed": {
+      "asset": "LAB-CE64F575",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-08",
+    "raw_output": "{\"asset\":\"LAB-85D929AF\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-85D929AF",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "91669b82dbe53ea39da22614eca2cb26f8b5d061995e8a46657f4612420993ba",
+    "parsed": {
+      "asset": "LAB-85D929AF",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-17",
+    "raw_output": "{\"asset\":\"LAB-E354225A\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-E354225A",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "63688c47e53864704c7c672142a5e106f903acd45f16c067eff125896a62ad4d",
+    "parsed": {
+      "asset": "LAB-E354225A",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-10",
+    "raw_output": "{\"asset\":\"LAB-AF8FB42A\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-AF8FB42A",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "f7479ff2a88313b0c1551c4dbefc7badcc93824be5c543beb4900a1fb9358c40",
+    "parsed": {
+      "asset": "LAB-AF8FB42A",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-23",
+    "raw_output": "{\"asset\":\"LAB-0BF71176\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-0BF71176",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "d42282c253285ad304bff1426991000e4db528d69e617a7ee7af32fb94343bc5",
+    "parsed": {
+      "asset": "LAB-0BF71176",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-09",
+    "raw_output": "{\"asset\":\"LAB-3AC4EF6C\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-3AC4EF6C",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "c75f3f92ce65fffe1a64c0c9318ff5f75bbd7eebaeb4ae6320788bd9fd82280d",
+    "parsed": {
+      "asset": "LAB-3AC4EF6C",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-23",
+    "raw_output": "{\"asset\":\"LAB-68FD8745\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-68FD8745",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "5781029d741d606355f68e6c5e130df7d3170d002f9a833fef246a22e5a07336",
+    "parsed": {
+      "asset": "LAB-68FD8745",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-01",
+    "raw_output": "{\"asset\":\"LAB-EA8AFD43\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-EA8AFD43",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "55fa17a6d98d917ce67d96da769d320f673396855628bcb9b05ebd72ba749108",
+    "parsed": {
+      "asset": "LAB-EA8AFD43",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-02",
+    "raw_output": "{\"asset\":\"LAB-14B625FE\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-14B625FE",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "c832b80663fc0ebedfb36c5a38b183c1be3fdbbd0b187a47478e8600d8b3e4dc",
+    "parsed": {
+      "asset": "LAB-14B625FE",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-05",
+    "raw_output": "{\"asset\":\"LAB-C5DDDA69\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-C5DDDA69",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "1bbef1c53a6c44076359252f3de013c96d3461e0895067c03bd2ca095a36fb8b",
+    "parsed": {
+      "asset": "LAB-C5DDDA69",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-06",
+    "raw_output": "{\"asset\":\"LAB-3FC89D78\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-3FC89D78",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "619365532b63f154fd589e3623b7eee56482df4bcd6b0499a5a6b7f5fea10195",
+    "parsed": {
+      "asset": "LAB-3FC89D78",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-09",
+    "raw_output": "{\"asset\":\"LAB-38FC70D7\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-38FC70D7",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "fd26124223115a9b1bd2cd2d94e100da91a6242ab5dfea3732a3219bef6e46b1",
+    "parsed": {
+      "asset": "LAB-38FC70D7",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-13",
+    "raw_output": "{\"asset\":\"LAB-882C03A0\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-882C03A0",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "c96a8ee36a4e83af6303ee461af0b5172168538f3b1603172615e5b617c10a0f",
+    "parsed": {
+      "asset": "LAB-882C03A0",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-21",
+    "raw_output": "{\"asset\":\"LAB-E321FE07\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-E321FE07",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "60f18293e07dcb425d7ef6659957248d5aee6b309cd1eb1c14e93e5898953bd9",
+    "parsed": {
+      "asset": "LAB-E321FE07",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-09",
+    "raw_output": "{\"asset\":\"LAB-2DDBF4CC\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-2DDBF4CC",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "e6cff317f9c18036f983bcc314dde9b4afaa0ab083b2263f2998aa6959ea6c46",
+    "parsed": {
+      "asset": "LAB-2DDBF4CC",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-08",
+    "raw_output": "{\"asset\":\"LAB-7372076B\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-7372076B",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "bbaf309419efa460e311f98bf9ad09935830a28f0f6f1e620220ebf0b7c0e4cc",
+    "parsed": {
+      "asset": "LAB-7372076B",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-02",
+    "raw_output": "{\"asset\":\"LAB-456746D6\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-456746D6",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "736061ef93fb8b4c23b83ba3e492ae814bda4b7289b630cd2a25b8f16ed6d7be",
+    "parsed": {
+      "asset": "LAB-456746D6",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-20",
+    "raw_output": "{\"asset\":\"LAB-903ED775\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-903ED775",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "7cd8ba5d310386acf88e693f63d6b83bd6f19860111fb46b8e1f034a4ecf9ffb",
+    "parsed": {
+      "asset": "LAB-903ED775",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-14",
+    "raw_output": "{\"asset\":\"LAB-FC3628C4\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-FC3628C4",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "25e097379795c16f56ac03219c7248af0023704aee95e399216a09f1dc570526",
+    "parsed": {
+      "asset": "LAB-FC3628C4",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-11",
+    "raw_output": "{\"asset\":\"LAB-D9CB0C20\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-D9CB0C20",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "5f51be371a22abd106b0bf3d5702bcc113dd9a1cdbb1ea21527d02631aff7a0e",
+    "parsed": {
+      "asset": "LAB-D9CB0C20",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-10",
+    "raw_output": "{\"asset\":\"LAB-7CA0696D\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-7CA0696D",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "90741684c6f7385b88d5afb2b6fe26e60d41f30a1ef6e69bbebb7fb5b4ea4a7d",
+    "parsed": {
+      "asset": "LAB-7CA0696D",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-17",
+    "raw_output": "{\"asset\":\"LAB-0DC83987\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-0DC83987",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "9a7e9bf81ac6ea5c4314259bb86700f6cf1d6e23c8648ed62930392eb491c797",
+    "parsed": {
+      "asset": "LAB-0DC83987",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-17",
+    "raw_output": "{\"asset\":\"LAB-6132AF8C\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-6132AF8C",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "ac644c62b8791e84d543c72d077a985ca53bca6406bf2bde708f34d5ed2192e5",
+    "parsed": {
+      "asset": "LAB-6132AF8C",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-20",
+    "raw_output": "{\"asset\":\"LAB-CD4B740B\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-CD4B740B",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "8f013ef571cd5c642c589ff233d2764e7cba5751afe0174ed44f2f51bc9068de",
+    "parsed": {
+      "asset": "LAB-CD4B740B",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-16",
+    "raw_output": "{\"asset\":\"LAB-80CE1743\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-80CE1743",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "b7a9d81033162b096aebf2ff8c6df1e5590a27a9eff369e5e3e97f32b7703335",
+    "parsed": {
+      "asset": "LAB-80CE1743",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-23",
+    "raw_output": "{\"asset\":\"LAB-D4147966\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-D4147966",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "cc81929968ec293b24e3e58c4d1f4d2b578e2bef7b5d28344e92da7679fc9472",
+    "parsed": {
+      "asset": "LAB-D4147966",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-18",
+    "raw_output": "{\"asset\":\"LAB-EC6C952B\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-EC6C952B",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "5b2dc13f373a83a0059fadfaa92e1d3d3f4f748d3bb309001c71a8c3b5e5afae",
+    "parsed": {
+      "asset": "LAB-EC6C952B",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-23",
+    "raw_output": "{\"asset\":\"LAB-118522FD\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-118522FD",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "df30a87390094b154a965e897dfd34391376885f6c3a1d93846779040b4f157e",
+    "parsed": {
+      "asset": "LAB-118522FD",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-03",
+    "raw_output": "{\"asset\":\"LAB-F0752AD3\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-F0752AD3",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "6ec90549340b9866e9bdcc477595f624fbd18113e0462abf64621be2e93d4596",
+    "parsed": {
+      "asset": "LAB-F0752AD3",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-17",
+    "raw_output": "{\"asset\":\"LAB-32C6D6C9\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-32C6D6C9",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "ada324881a0364f1c250b81cb350c176018ef66d204085a1c08a7b633101ca39",
+    "parsed": {
+      "asset": "LAB-32C6D6C9",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-13",
+    "raw_output": "{\"asset\":\"LAB-8C6D97B7\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-8C6D97B7",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "2ca96e381a9a3e5332636a342ebf97ed8cd370662c3399f1f70fb5d8167a6e49",
+    "parsed": {
+      "asset": "LAB-8C6D97B7",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-19",
+    "raw_output": "{\"asset\":\"LAB-67B7FD2D\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-67B7FD2D",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "bebb2268284ba09c6414d8fc50147b907fed9baab69871b8d605e3ccf54506e4",
+    "parsed": {
+      "asset": "LAB-67B7FD2D",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-01",
+    "raw_output": "{\"asset\":\"LAB-E0EB1279\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-E0EB1279",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "456cd16c567c600c363986dcb4230e69418f0849cbb1a4056e2d490838276977",
+    "parsed": {
+      "asset": "LAB-E0EB1279",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-05",
+    "raw_output": "{\"asset\":\"LAB-38F1A845\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-38F1A845",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "2df8998a2bee3c7aec491f0e16bd74f1930d0bbbe621f07a601a542855c19aca",
+    "parsed": {
+      "asset": "LAB-38F1A845",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-16",
+    "raw_output": "{\"asset\":\"LAB-4490D0CC\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-4490D0CC",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "4f090d414bf54ac868aff3a13f2f620b89daa960bdaf1d045e72b9c637c1a67f",
+    "parsed": {
+      "asset": "LAB-4490D0CC",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-07",
+    "raw_output": "{\"asset\":\"LAB-A1D1E537\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-A1D1E537",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "9fb5c932726c2510ba6cb595d10b7eeb8faa0806444ff7c777db340675e80407",
+    "parsed": {
+      "asset": "LAB-A1D1E537",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-12",
+    "raw_output": "{\"asset\":\"LAB-03AB5BAB\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-03AB5BAB",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "4e8c8871b27942dc230b2562868d178eef628e9a4494ee7fa1cf17fbbaf147d9",
+    "parsed": {
+      "asset": "LAB-03AB5BAB",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-13",
+    "raw_output": "{\"asset\":\"LAB-DA0B112B\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-DA0B112B",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "bb2599e46441e46c32eeb8be580ab5ac36ca1a64b9c0f12c78140d2d332eb4ab",
+    "parsed": {
+      "asset": "LAB-DA0B112B",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-12",
+    "raw_output": "{\"asset\":\"LAB-99F22266\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-99F22266",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "cf2ec360842209253a1741647ff374f605c8372d64a156ba3baedcd502c4be4d",
+    "parsed": {
+      "asset": "LAB-99F22266",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-22",
+    "raw_output": "{\"asset\":\"LAB-84EB3CEE\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-84EB3CEE",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "4fd7dce5671fa2815ecab086c3417664c985a94b3de3da84a355b7a98e35135f",
+    "parsed": {
+      "asset": "LAB-84EB3CEE",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-19",
+    "raw_output": "{\"asset\":\"LAB-4B75B78F\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-4B75B78F",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "158aba3c45cccb5c9c3a9ef057eed03a830892446cc1a37ddf451ac5fc198f4d",
+    "parsed": {
+      "asset": "LAB-4B75B78F",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-07",
+    "raw_output": "{\"asset\":\"LAB-3573734B\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-3573734B",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "04f4f466aee9786fb3e81ac9660b471fcd636d2a8e992d7bb11ff8290b705dff",
+    "parsed": {
+      "asset": "LAB-3573734B",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-02",
+    "raw_output": "{\"asset\":\"LAB-507BB74F\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-507BB74F",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "ccf3a429ed62f675c7eb39c729a66dac4921b6a33b32b692d92a7d51d2f73e34",
+    "parsed": {
+      "asset": "LAB-507BB74F",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-09",
+    "raw_output": "{\"asset\":\"LAB-892EFC92\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-892EFC92",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "735a4251abd715a2ccbddb402ae731989e7b5f635e6ec76f1be02c5331015f1a",
+    "parsed": {
+      "asset": "LAB-892EFC92",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-21",
+    "raw_output": "{\"asset\":\"LAB-120A2E16\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-120A2E16",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "7a3254d8e87e43048531c9f4662d60c88ffdb41b2fd72ad8e76076a8bf77ca06",
+    "parsed": {
+      "asset": "LAB-120A2E16",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-13",
+    "raw_output": "{\"asset\":\"LAB-68017F77\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-68017F77",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "00d99b2969133f30b05ebe64801208871afc17136be82a85ff61861941870cc0",
+    "parsed": {
+      "asset": "LAB-68017F77",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-06",
+    "raw_output": "{\"asset\":\"LAB-421C4D07\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-421C4D07",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "323be457a5fcb1eebfd7b077cb57a5d3429b78d1e5a58effa109fa60d207305c",
+    "parsed": {
+      "asset": "LAB-421C4D07",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-08",
+    "raw_output": "{\"asset\":\"LAB-8369573F\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-8369573F",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "e0100d15cb89ae4c10894da8faf4a4e998836c4322b9b71b7baaebabf9d02105",
+    "parsed": {
+      "asset": "LAB-8369573F",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-08",
+    "raw_output": "{\"asset\":\"LAB-327FAF30\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-327FAF30",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "51b11251a268944f9ebd9ffa90fbeef0854566279c7f03f1ebb971320ccc25b5",
+    "parsed": {
+      "asset": "LAB-327FAF30",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-00",
+    "raw_output": "{\"asset\":\"LAB-D3E3BA4F\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-D3E3BA4F",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "262729fb3953562d4a3f8c2c596ec9a903c65bc551a24afac893f0ae501a12da",
+    "parsed": {
+      "asset": "LAB-D3E3BA4F",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-12",
+    "raw_output": "{\"asset\":\"LAB-4DFE602D\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-4DFE602D",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "313ca9acb540eee638c95b6c8935c9aa38db379bc6475dc3ae8f1beb12da4efe",
+    "parsed": {
+      "asset": "LAB-4DFE602D",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-19",
+    "raw_output": "{\"asset\":\"LAB-C60EDE0B\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-C60EDE0B",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "74cac36490d56a490dae27727d168b403d3cfed66ef383ee588f463307822e00",
+    "parsed": {
+      "asset": "LAB-C60EDE0B",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-18",
+    "raw_output": "{\"asset\":\"LAB-6E472C5F\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-6E472C5F",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "4d451e773abd0fce71bff0066e91efda03b0819e6dad2ad1be15fb5365aab432",
+    "parsed": {
+      "asset": "LAB-6E472C5F",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-14",
+    "raw_output": "{\"asset\":\"[LAB-E1FFF22F]\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-E1FFF22F",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "ca40d909dcfcf8a083b47bb7e531ee98ee8f4f475b4ad11b826288cc730e2c05",
+    "parsed": {
+      "asset": "[LAB-E1FFF22F]",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-11",
+    "raw_output": "{\"asset\":\"LAB-7A0A11F0\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-7A0A11F0",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "eee7202fc264868a1c32008c6e4272f5fbedd5b894dc8a537e790370ce1a9b2c",
+    "parsed": {
+      "asset": "LAB-7A0A11F0",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-11",
+    "raw_output": "{\"asset\":\"LAB-6D5E74CF\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-6D5E74CF",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "d634e02ea96991efe67ef023732de191e8630fbd559efee9c8098ef4743ea1e1",
+    "parsed": {
+      "asset": "LAB-6D5E74CF",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-04",
+    "raw_output": "{\"asset\":\"[LAB-A440FCD6]\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-A440FCD6",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "e3a7654f6c80469bcb1be421b3dba671c2832f68885f190821986c3aec2b78bd",
+    "parsed": {
+      "asset": "[LAB-A440FCD6]",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-23",
+    "raw_output": "{\"asset\":\"LAB-8D81E8E9\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-8D81E8E9",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "70a7c153765d4152325f86ca10bc1560d91db304fbaf4e5574319e6621645684",
+    "parsed": {
+      "asset": "LAB-8D81E8E9",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-15",
+    "raw_output": "{\"asset\":\"LAB-36E948C7\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-36E948C7",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "40bdf34630608b8e07cdd14a4dd5c3c7f233a11d68b574c4116989f0ce64fe4c",
+    "parsed": {
+      "asset": "LAB-36E948C7",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-09",
+    "raw_output": "{\"asset\":\"[LAB-C4E154B0]\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-C4E154B0",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "b07499c81b65bdfab955d63750a91fb6ca962cc8aa6dcb7de00a43a757281dae",
+    "parsed": {
+      "asset": "[LAB-C4E154B0]",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": false,
+    "fields": {
+      "asset": false,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-22",
+    "raw_output": "{\"asset\":\"LAB-4FB6C107\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-4FB6C107",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "7c696f31efb11e0e898acaed6373cc952e82528580de52e0be9bfbdb9c3f1df2",
+    "parsed": {
+      "asset": "LAB-4FB6C107",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-15",
+    "raw_output": "{\"asset\":\"LAB-2A691B73\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-2A691B73",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "e5e40abb13fa376c20c1f58f7f4da5e38cf7d2052d491648c3d48aa3790711a0",
+    "parsed": {
+      "asset": "LAB-2A691B73",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-14",
+    "raw_output": "{\"asset\":\"LAB-18D23818\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-18D23818",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "4eefde0bd2bc61fc63be30e5bcaca17959d261d96c25a8f080edadda315a67c2",
+    "parsed": {
+      "asset": "LAB-18D23818",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-20",
+    "raw_output": "{\"asset\":\"LAB-70F753C9\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-70F753C9",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "ac893fdb4dc20e598c784e4796f290b5da165133ea9982ad8fdbafbcf3f2055e",
+    "parsed": {
+      "asset": "LAB-70F753C9",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-06",
+    "raw_output": "{\"asset\":\"LAB-52557FFD\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-52557FFD",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "51dadd8e4334f764587dbb6d1ed6cdf89dc091ab207b881aec2f20869f3cb8bf",
+    "parsed": {
+      "asset": "LAB-52557FFD",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-16",
+    "raw_output": "{\"asset\":\"LAB-5E468562\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-5E468562",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "130fb4326f9065f5216796c317ea5c83916a68bbf52641c1c478e2af476a00b2",
+    "parsed": {
+      "asset": "LAB-5E468562",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-20",
+    "raw_output": "{\"asset\":\"LAB-7F3994AD\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-7F3994AD",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "ca26a1cd551010c2b7f9effe3e554504683cafd9f7589763e7d4fa588fd7b56a",
+    "parsed": {
+      "asset": "LAB-7F3994AD",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-17",
+    "raw_output": "{\"asset\":\"LAB-0AECE5E3\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-0AECE5E3",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "5c92e4f5956f1d0cb0e194e15ca738af4d775b40e29e6c74afe976c79a7cd9c3",
+    "parsed": {
+      "asset": "LAB-0AECE5E3",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-21",
+    "raw_output": "{\"asset\":\"LAB-7EB77A4D\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-7EB77A4D",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "33a6024e0f7204b19ea5777bad0142218539ea64929219b53009b0f0af52472e",
+    "parsed": {
+      "asset": "LAB-7EB77A4D",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-16",
+    "raw_output": "{\"asset\":\"LAB-8B1D5103\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-8B1D5103",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "9bed828ac48b455ca6516c44bef80697b63eb21334981a3c4ffa3c4b1c7bf65f",
+    "parsed": {
+      "asset": "LAB-8B1D5103",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-11",
+    "raw_output": "{\"asset\":\"LAB-5D244A48\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-5D244A48",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "0f69274bfbb1d2200a3f88a8ad0c4a5dde99f61c40f3509b7e8b61c81f08be22",
+    "parsed": {
+      "asset": "LAB-5D244A48",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-17",
+    "raw_output": "{\"asset\":\"LAB-245619BA\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-245619BA",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "a357d9c8e8a4aed62ac5348e41c8feb56de9ec5660856c2576f9c08ef709af52",
+    "parsed": {
+      "asset": "LAB-245619BA",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-04",
+    "raw_output": "{\"asset\":\"LAB-B8AD935A\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-B8AD935A",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "dd99171b5fbde5121506b6d2f9e0fbcde3569ae6264590bc9dfca13a454b418c",
+    "parsed": {
+      "asset": "LAB-B8AD935A",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-00",
+    "raw_output": "{\"asset\":\"LAB-6B9E5EC9\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-6B9E5EC9",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "970bab177f52883ba60318178f81594ef4562752f33e34155dc58b2f7400720c",
+    "parsed": {
+      "asset": "LAB-6B9E5EC9",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-10",
+    "raw_output": "{\"asset\":\"LAB-B2699DFA\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-B2699DFA",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "8b006d974ff0196ac51cc09b3ed968b06a4ba08c5fb344c0fd19fefe4a4f62fe",
+    "parsed": {
+      "asset": "LAB-B2699DFA",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-05",
+    "raw_output": "{\"asset\":\"LAB-B5FCA3D2\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-B5FCA3D2",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "3cd338dacd8c847a249bd07afe5934b1831053c6387aedf0f0ab6d06f83799bd",
+    "parsed": {
+      "asset": "LAB-B5FCA3D2",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-15",
+    "raw_output": "{\"asset\":\"LAB-375E90CC\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-375E90CC",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "6966eba196ca61c8c7e95baea1d7a94a95e22d68103c71a27b609c382c2525d7",
+    "parsed": {
+      "asset": "LAB-375E90CC",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-18",
+    "raw_output": "{\"asset\":\"LAB-8FEB5907\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-8FEB5907",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "07059b0cf3ecf3f597f9c8bb3b33dc95966c19b7e1642ff4c9d5f1588e8485c3",
+    "parsed": {
+      "asset": "LAB-8FEB5907",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-22",
+    "raw_output": "{\"asset\":\"LAB-881F4D5F\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-881F4D5F",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "59b7401623cab8f2318e18c3a4d6e48cce87a8e36736f14aaab652ab0a527cf7",
+    "parsed": {
+      "asset": "LAB-881F4D5F",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-04",
+    "raw_output": "{\"asset\":\"LAB-1BC20624\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-1BC20624",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "c66a211b83f7b47e11d10f7194970c65210b5220afc83f559a1cf945132ddcac",
+    "parsed": {
+      "asset": "LAB-1BC20624",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-21",
+    "raw_output": "{\"asset\":\"LAB-6FFB324C\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-6FFB324C",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "f50ed0a7995da54a37697222428212a5ce7bc0012728066d8e34720f7fad7aea",
+    "parsed": {
+      "asset": "LAB-6FFB324C",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-12",
+    "raw_output": "{\"asset\":\"LAB-06468958\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-06468958",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "eff87d4e319b19f125330cf61c9a187480f570c60c3c90321a0cbd1c4603fe7a",
+    "parsed": {
+      "asset": "LAB-06468958",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-02",
+    "raw_output": "{\"asset\":\"LAB-582A5DD2\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-582A5DD2",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "c4040a001f2c22c4357a62873c48328212e65e307df533fe9b8c2e22b9bd2dbc",
+    "parsed": {
+      "asset": "LAB-582A5DD2",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-11",
+    "raw_output": "{\"asset\":\"LAB-D7460C4F\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-D7460C4F",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "d744e5d4cc136b458a3ba44d7b810f230e3634f7b779f180a97d5d41056e1888",
+    "parsed": {
+      "asset": "LAB-D7460C4F",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-03",
+    "raw_output": "{\"asset\":\"LAB-00941652\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-00941652",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "56b20ab67085086e1fb874ca68948a19c923ff5eea62a0c860f38cc2f5ebb7d7",
+    "parsed": {
+      "asset": "LAB-00941652",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-07",
+    "raw_output": "{\"asset\":\"LAB-A90730DC\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-A90730DC",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "eb942b8772b70651e118f0a1107fe718f4943bd818619d579a003fce0fde51a8",
+    "parsed": {
+      "asset": "LAB-A90730DC",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-05",
+    "raw_output": "{\"asset\":\"LAB-56A28F47\",\"category\":\"hardware\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-56A28F47",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "8007ef54ff3d693b4657096e6041526ebcbe9f275f2100cf9c917e2c2fae521c",
+    "parsed": {
+      "asset": "LAB-56A28F47",
+      "category": "hardware",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-19",
+    "raw_output": "{\"asset\":\"LAB-54B40639\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-54B40639",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "9e5b1202f24e9b6f63dea440ffb51201f1358d7900fc33e9273d8cebde6202b5",
+    "parsed": {
+      "asset": "LAB-54B40639",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-01",
+    "raw_output": "{\"asset\":\"LAB-5839F78D\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-5839F78D",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "ae987f3a8b168f7b18ebb1099fd90a3f25e3b8bd2bf46beed009b6354a7422a2",
+    "parsed": {
+      "asset": "LAB-5839F78D",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-07",
+    "raw_output": "{\"asset\":\"LAB-2D6F6C9D\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-2D6F6C9D",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "57e6394dc90b10fd4767e8e6952314f5a063a4d4816cc2033431d8ab44268ca2",
+    "parsed": {
+      "asset": "LAB-2D6F6C9D",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-18",
+    "raw_output": "{\"asset\":\"LAB-1EE8EEF2\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-1EE8EEF2",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "6659d90b78ea7c9ce6929c144d2f9347af88378fbc3aa1e79ead8c1261fce209",
+    "parsed": {
+      "asset": "LAB-1EE8EEF2",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-22",
+    "raw_output": "{\"asset\":\"LAB-DFA12C39\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-DFA12C39",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "0a64acd5fdc21ffdc03ede8032c57047ec4fe8678d9ac96ec75c77cb1511a597",
+    "parsed": {
+      "asset": "LAB-DFA12C39",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-00",
+    "raw_output": "{\"asset\":\"LAB-65C45364\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-65C45364",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "01e62a6d362f8b488a92df39572d414091dfd49ce97a8a96ffbf44be6c327b65",
+    "parsed": {
+      "asset": "LAB-65C45364",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-11",
+    "raw_output": "{\"asset\":\"LAB-4A9035E6\",\"category\":\"access\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-4A9035E6",
+      "category": "access",
+      "urgency": "high"
+    },
+    "prompt_sha256": "13abbc2592de6bd8c1f8484688460af429ba9ea5a293afd45f0694d59c3fad69",
+    "parsed": {
+      "asset": "LAB-4A9035E6",
+      "category": "access",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-10",
+    "raw_output": "{\"asset\":\"LAB-9AEE22CD\",\"category\":\"software\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-9AEE22CD",
+      "category": "software",
+      "urgency": "high"
+    },
+    "prompt_sha256": "b7b8bf198a2e0dee6dd5a9961cb98d83d0469ac9b3b730520b366da744b2fef7",
+    "parsed": {
+      "asset": "LAB-9AEE22CD",
+      "category": "software",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-04",
+    "raw_output": "{\"asset\":\"LAB-F7C36F8B\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-F7C36F8B",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "167129f4faeee88cbb6f1f721dbb9579590a93a1054ef459d8ac4b7bac729d67",
+    "parsed": {
+      "asset": "LAB-F7C36F8B",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-19",
+    "raw_output": "{\"asset\":\"LAB-25F4F07E\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-25F4F07E",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "c0e785ebe02e7b951122be4b71329124fc76686c3fe17a3c29065d5f5e33cc58",
+    "parsed": {
+      "asset": "LAB-25F4F07E",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-09",
+    "raw_output": "{\"asset\":\"LAB-E4EED06E\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-E4EED06E",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "fc16ebb7c06be39d15cd503c629016683951547eddb0a95abb6c264f15bcb290",
+    "parsed": {
+      "asset": "LAB-E4EED06E",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-06",
+    "raw_output": "{\"asset\":\"LAB-52F24B44\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-52F24B44",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "d47188c5b00e56e93032dd8d63efad6fe17b96d4fa98b0703dfbcdc3642363fc",
+    "parsed": {
+      "asset": "LAB-52F24B44",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-03",
+    "raw_output": "{\"asset\":\"LAB-ECD95669\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-ECD95669",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "8968e7e675d16f5c6862ee9515706ea94e3ead1b0d30c18124b5efd9502b746f",
+    "parsed": {
+      "asset": "LAB-ECD95669",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-03",
+    "raw_output": "{\"asset\":\"LAB-16E51BDB\",\"category\":\"access\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-16E51BDB",
+      "category": "access",
+      "urgency": "low"
+    },
+    "prompt_sha256": "8381826296b9ebf0b38387a16d30e116123404cf12079ce17ff864506d97dfc1",
+    "parsed": {
+      "asset": "LAB-16E51BDB",
+      "category": "access",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-01",
+    "raw_output": "{\"asset\":\"LAB-2777EE02\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-2777EE02",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "8f92df23f0fbd61350b11ee36c31ce2d08c15e23ad41e045d4aa36f172769b04",
+    "parsed": {
+      "asset": "LAB-2777EE02",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-21",
+    "raw_output": "{\"asset\":\"LAB-3F32EF58\",\"category\":\"hardware\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-3F32EF58",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "prompt_sha256": "f8d0c54fd85920097e221067861ea6a5c48d57025b269c6b87eb56f8215b02ce",
+    "parsed": {
+      "asset": "LAB-3F32EF58",
+      "category": "hardware",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-15-12",
+    "raw_output": "{\"asset\":\"LAB-2B6A0F38\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-2B6A0F38",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "5e9f697a9878c71b782160777e92aa78a828ca609b083ee941d0c2daec714f35",
+    "parsed": {
+      "asset": "LAB-2B6A0F38",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-00",
+    "raw_output": "{\"asset\":\"LAB-0BCF231A\",\"category\":\"network\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-0BCF231A",
+      "category": "network",
+      "urgency": "low"
+    },
+    "prompt_sha256": "93bd656382ee1eb294e1a6d618bbd744223a31ca35b0e6259bd9c954d9b4676b",
+    "parsed": {
+      "asset": "LAB-0BCF231A",
+      "category": "network",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-13",
+    "raw_output": "{\"asset\":\"LAB-2A417BF0\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-2A417BF0",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "95f0a45b528243ac76946791793a2c2e38d986f71ae8fc7f109e01ea7dc3f600",
+    "parsed": {
+      "asset": "LAB-2A417BF0",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-16-16",
+    "raw_output": "{\"asset\":\"LAB-63B0EBF3\",\"category\":\"network\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-63B0EBF3",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "97d68c52ffc589c9819bbd9116a01efb5d8a491c2d0db6810d150b58feaeaa7a",
+    "parsed": {
+      "asset": "LAB-63B0EBF3",
+      "category": "network",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-01",
+    "raw_output": "{\"asset\":\"LAB-0C7BD2FD\",\"category\":\"hardware\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-0C7BD2FD",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "prompt_sha256": "f9efaa978d6bd9650d123ab27ff96403a470cbbba922db157092889cdb6e9e54",
+    "parsed": {
+      "asset": "LAB-0C7BD2FD",
+      "category": "hardware",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-14-14",
+    "raw_output": "{\"asset\":\"LAB-B2553021\",\"category\":\"software\",\"urgency\":\"low\"}",
+    "target": {
+      "asset": "LAB-B2553021",
+      "category": "software",
+      "urgency": "low"
+    },
+    "prompt_sha256": "abb09404b0a40c365c3ec48dd61ced201e1324bd173eeab2e7bc98543cb0a572",
+    "parsed": {
+      "asset": "LAB-B2553021",
+      "category": "software",
+      "urgency": "low"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-13-06",
+    "raw_output": "{\"asset\":\"LAB-58E711E1\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-58E711E1",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "f06d6666efaec8dd5ab3692a8dd5692c2ca8ee5c6c06f7a257ee3eb73f2cf358",
+    "parsed": {
+      "asset": "LAB-58E711E1",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-17-18",
+    "raw_output": "{\"asset\":\"LAB-FD4335D4\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-FD4335D4",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "fce9d9aadb395896804230640745b56d37f9897a3577541816d9f4a30ad85eaf",
+    "parsed": {
+      "asset": "LAB-FD4335D4",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-08",
+    "raw_output": "{\"asset\":\"LAB-537B6A06\",\"category\":\"network\",\"urgency\":\"high\"}",
+    "target": {
+      "asset": "LAB-537B6A06",
+      "category": "network",
+      "urgency": "high"
+    },
+    "prompt_sha256": "3b77f49cc9f7f5a727ae4254cebef21daea0275e6a8aafee6a7773fe74dba633",
+    "parsed": {
+      "asset": "LAB-537B6A06",
+      "category": "network",
+      "urgency": "high"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-18",
+    "raw_output": "{\"asset\":\"LAB-1A94BF08\",\"category\":\"software\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-1A94BF08",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "10368bc42c0e5f28f0648976ee8694900c68b898c58f3036b3b3e4c6d5e59145",
+    "parsed": {
+      "asset": "LAB-1A94BF08",
+      "category": "software",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  },
+  {
+    "id": "v2-12-07",
+    "raw_output": "{\"asset\":\"LAB-F254C68F\",\"category\":\"access\",\"urgency\":\"medium\"}",
+    "target": {
+      "asset": "LAB-F254C68F",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "prompt_sha256": "4bf068a6951c3fc9009c1e0018ce31ef2233f741deba7ab24e0300954da0f5a8",
+    "parsed": {
+      "asset": "LAB-F254C68F",
+      "category": "access",
+      "urgency": "medium"
+    },
+    "valid_json_object": true,
+    "schema_valid": true,
+    "exact_object_match": true,
+    "fields": {
+      "asset": true,
+      "category": true,
+      "urgency": true
+    }
+  }
+]

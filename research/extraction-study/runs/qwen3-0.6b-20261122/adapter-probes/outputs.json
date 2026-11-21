@@ -1,0 +1,114 @@
+[
+  {
+    "id": "probe-01",
+    "raw_output": "vitole",
+    "target": "violet",
+    "prompt_sha256": "bcf5998a23b411375c01727ba2f548ad2d8bf91cd0a1feb7a075641bca2a43cc",
+    "exact_text_contract": false
+  },
+  {
+    "id": "probe-02",
+    "raw_output": "W7-83Z",
+    "target": "W7-83Z",
+    "prompt_sha256": "a2f2c8ea8195f8cb4dbb20e91bc93264baacb59e4b9c868ce5a839dbdfdf346e",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-03",
+    "raw_output": "C",
+    "target": "C",
+    "prompt_sha256": "2d3d001c3ceb90df0ef00458179aac1431b5c33067edf908c83c61b8500a31ed",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-04",
+    "raw_output": "2",
+    "target": "5",
+    "prompt_sha256": "a6347740e5302333b846a8191af091ea979a4decc9b7a31e8a224c284801179e",
+    "exact_text_contract": false
+  },
+  {
+    "id": "probe-05",
+    "raw_output": "DOG",
+    "target": "DOG",
+    "prompt_sha256": "3dba2e429624253db24f05bf0abe600d1a7276426b1851a37a59f9d438350ac1",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-06",
+    "raw_output": "OK",
+    "target": "OK",
+    "prompt_sha256": "dab7e698c17bb31b4741bcddb2275a7b266158b924e422d9901cdec48806bd7c",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-07",
+    "raw_output": "STOP",
+    "target": "STOP",
+    "prompt_sha256": "863eed59ac30340db25d03404472a756b5eb1abc046b75e55982f68b5072b737",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-08",
+    "raw_output": "SSD",
+    "target": "SSD",
+    "prompt_sha256": "374e7b7ac6ca0f1d84ca621be4c77b47db114d3d29e8b25805f5aa557a2ead20",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-09",
+    "raw_output": "[\"1\",\"2\"]",
+    "target": "[1,2]",
+    "prompt_sha256": "78487952e65251e376dbda4611cb00579992c6d0934cc54e30dd5dafd8a8d4f4",
+    "exact_text_contract": false
+  },
+  {
+    "id": "probe-10",
+    "raw_output": "\",\"",
+    "target": "1,2",
+    "prompt_sha256": "efcd7b0613f670a5844b7ff6853be7c59b34d6cf8c943b86e94a3afc01d52aa5",
+    "exact_text_contract": false
+  },
+  {
+    "id": "probe-11",
+    "raw_output": "keep logs private",
+    "target": "keep logs private",
+    "prompt_sha256": "56c8d3fc21c9fb49c6df5137751cb5a095a7a41568917e0235615e9976d627e6",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-12",
+    "raw_output": "green",
+    "target": "green",
+    "prompt_sha256": "edc45f6cf25d632a56091658fe78a7b2952793db58e785403f674932aac5f1ab",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-13",
+    "raw_output": "0",
+    "target": "3",
+    "prompt_sha256": "07b71375d8f82b25871495d3b9409a5a56c28957d94a715368cf936903f3e4d8",
+    "exact_text_contract": false
+  },
+  {
+    "id": "probe-14",
+    "raw_output": "copper",
+    "target": "copper",
+    "prompt_sha256": "824542316f84d2cab4f00ac8c5abc4f98f506423841d11bde9609726b4db7ada",
+    "exact_text_contract": true
+  },
+  {
+    "id": "probe-15",
+    "raw_output": "left-right space",
+    "target": "left right",
+    "prompt_sha256": "068fa5621b12ece00ccd6b635326eb5b6eb5b6c2c195caddf6687b51476bcb04",
+    "exact_text_contract": false
+  },
+  {
+    "id": "probe-16",
+    "raw_output": "no",
+    "target": "no",
+    "prompt_sha256": "0413f8b7d1e040c36a7f4d3428869f219db3ffc9b8093c8a5de69625e1247d98",
+    "exact_text_contract": true
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "cases": 16,
+  "exact_instructions": 14,
+  "probe_sha256": "65d1bc8bbf898bbda77f7296ee9ec262b64119d8c5fd11d6a5245cd21f15d8c3",
+  "model": "Qwen/Qwen3-4B",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "method": "lora",
+  "mode": "adapter",
+  "instruction_prefix": "none; same user-only chat wrapper in both conditions",
+  "scope": "Literal instruction following on these probes; not general capability or safety."
+}

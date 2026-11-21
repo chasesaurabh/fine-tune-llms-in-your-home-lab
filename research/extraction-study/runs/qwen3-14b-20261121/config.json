@@ -1,0 +1,42 @@
+{
+  "model": "Qwen/Qwen3-14B",
+  "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+  "method": "qlora",
+  "seed": 20261121,
+  "epochs": 2.0,
+  "steps": -1,
+  "micro_batch": 1,
+  "accumulation": 8,
+  "max_length": 512,
+  "gradient_checkpointing": true,
+  "in_memory_evaluation": true,
+  "task": "extraction",
+  "instruction": "Classify the described symptom, not the equipment's name. Use network for connectivity, DNS, routing or link failures; hardware for a physical component or mechanical defect; software for an application, plugin, extension, installation or program failure; access for an account, credential, authentication or permission restriction. An application crashing or looping during sign-in is a software defect, whereas a revoked credential, disabled account or denied permission is access.\n\nUse the stated impact to assign urgency. High means a critical operation or the whole team is blocked without a workaround. Medium means one person is blocked or a time-sensitive task has a partial workaround. Low means work can continue with an alternative and no urgent deadline, or the issue is explicitly only an inconvenience. Do not infer urgency from the symptom alone.\n\nThe task contains one asset, one issue and one impact statement. Copy the identifier without modifying its case or punctuation. Return only the requested object. Field order and whitespace do not matter; additional text and duplicate keys are invalid.",
+  "instruction_sha256": "b5e5022ba33bb496e3952cbf382ec1935ad313ce3fd833db175ec868b1f36ce9",
+  "dataset": {
+    "train": {
+      "rows": 192,
+      "groups": 8,
+      "sha256": "219a436bb2db7ea476a303d70ed50d8a40224fc37f9844c51a3a5b90b62a5a30"
+    },
+    "validation": {
+      "rows": 96,
+      "groups": 4,
+      "sha256": "588217612f4bd9594bea5698fbf7b546cf8166a896134d620a0c5c69c914c108"
+    },
+    "test": {
+      "rows": 144,
+      "groups": 6,
+      "sha256": "5a63aa7ff9836ea4c6907b13f7f3fc20c785ea46e9aba19c508731c7082b5432"
+    }
+  },
+  "learning_rate": 0.0002,
+  "rank": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "targets": "all-linear",
+  "template": "official; one user message; thinking disabled",
+  "precision": "bfloat16",
+  "completion_only_loss": true,
+  "packing": false
+}
