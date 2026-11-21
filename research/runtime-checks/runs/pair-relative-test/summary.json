@@ -1,0 +1,6 @@
+{
+  "cases": 20,
+  "positive_reference_adjusted_margins": 20,
+  "mean_reference_adjusted_sum_margin": 50.35797680914402,
+  "scope": "Likelihood change relative to the exact frozen SFT parent; not a human preference score."
+}

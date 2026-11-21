@@ -1,0 +1,11 @@
+{
+  "load": {
+    "seconds": 50.41773780004587,
+    "allocated_gib": 22.268224716186523,
+    "reserved_gib": 24.994140625
+  },
+  "last_logits_identical": true,
+  "top_token": 271,
+  "last_logits_sha256": "2f2169e4dfdd58f30b6aeb532068cd4fd5d5bfb7015043c216a8bca522eb613c",
+  "input_ids_sha256": "5b049c225c7bea732e6fbc5d6028903a048003c98f1c73421ec875871cafdd4c"
+}

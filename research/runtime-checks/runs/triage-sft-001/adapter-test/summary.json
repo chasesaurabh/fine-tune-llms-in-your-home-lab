@@ -1,0 +1,53 @@
+{
+  "cases": 30,
+  "counts": {
+    "action_executed": 0,
+    "exact": 29,
+    "policy_schema_valid": 30,
+    "valid_json_object": 30
+  },
+  "mode": "adapter",
+  "task": "triage",
+  "split": "test",
+  "batch_size": 1,
+  "model": "Qwen/Qwen3-0.6B",
+  "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "method": "lora",
+  "max_new_tokens": 128,
+  "greedy": true,
+  "dataset": {
+    "train": {
+      "rows": 120,
+      "groups": 4,
+      "sha256": "a56cd5b0427f8f1c81c15f72730da2c4c3b5aed1fdd51df5624fd0b02c16c932"
+    },
+    "validation": {
+      "rows": 30,
+      "groups": 1,
+      "sha256": "0b929678045e401bf4c42d80e3b117410b83aab4e262ec447fee126bdc503cbe"
+    },
+    "test": {
+      "rows": 30,
+      "groups": 1,
+      "sha256": "cea780a079a71770ae14f1c5bcb0e4b41fe1a3006c9be2eb1975ec6d81994c30"
+    }
+  },
+  "inference_precision": "explicit CUDA BF16 autocast; TF32 disabled",
+  "elapsed_seconds": 28.455849300022237,
+  "peak_allocated_gib": 1.1822896003723145,
+  "peak_reserved_gib": 1.59375,
+  "script_sha256": "d61131eb7c332c5d0febda4843ca757d0c8274e5f69d352b358b4c9b7343c697",
+  "renderer_sha256": "8f8e0ec63698a8c4b4d1c97c93cb53f7e17916127856e90f3ed26a5458840457",
+  "scorer_sha256": "3f631d268123ae4467f12991d60d4bf423b76fc9eaab16d3cd4c7bca8b998bf6",
+  "environment": {
+    "python": "3.12.14",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "cuda": "12.9",
+    "packages": {
+      "torch": "2.9.0+cu129",
+      "transformers": "5.17.0",
+      "peft": "0.21.0",
+      "bitsandbytes": "0.50.2"
+    }
+  }
+}

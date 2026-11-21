@@ -1,0 +1,27 @@
+{
+  "python": "3.12.14",
+  "system": "Windows",
+  "machine": "AMD64",
+  "packages": {
+    "torch": "2.9.0+cu129",
+    "transformers": "5.17.0",
+    "peft": "0.21.0",
+    "trl": "1.13.0",
+    "datasets": "5.0.1",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.15.0"
+  },
+  "cuda": {
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "total_gib": 95.59234619140625,
+    "compute_capability": [
+      12,
+      0
+    ],
+    "torch_cuda_runtime": "12.9",
+    "bf16_matmul_passed": true,
+    "driver_report": [
+      "NVIDIA RTX PRO 6000 Blackwell Workstation Edition, 582.16, 97887 MiB"
+    ]
+  }
+}

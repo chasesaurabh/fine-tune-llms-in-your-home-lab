@@ -1,0 +1,28 @@
+{
+  "resume_step": 4,
+  "control_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "resumed_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "step_traces_identical": true,
+  "tensors_identical": true,
+  "changed_tensors": [],
+  "maximum_absolute_tensor_difference": 0.0,
+  "scope": "Exact comparison in the recorded environment; not a cross-device determinism guarantee."
+}

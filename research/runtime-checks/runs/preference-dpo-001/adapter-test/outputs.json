@@ -1,0 +1,142 @@
+[
+  {
+    "id": "p4-g06-009",
+    "raw_output": "The test failure is confirmed, but production impact is unknown. Check production telemetry before concluding.",
+    "target": "The test failure is confirmed, but production impact is unknown. Check production telemetry before concluding.",
+    "prompt_sha256": "05259e36e091460a0764bf78e088988b1ef2154157f2f252b54ecf1822bbd173",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-002",
+    "raw_output": "The evidence confirms that the original file is corrupted. Replace it with the verified clean copy.",
+    "target": "The evidence confirms that the original file is corrupted. Replace it with the verified clean copy.",
+    "prompt_sha256": "edb52a1d3b65879daef3a4b5f1eed8eed2f5fdbe4ba52bad2cc16225a1854a9e",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-013",
+    "raw_output": "The installed version cannot be confirmed from the supplied evidence. Provide package metadata or version output.",
+    "target": "The installed version cannot be confirmed from the supplied evidence. Provide package metadata or version output.",
+    "prompt_sha256": "cd52c7134c81883d9673229a7bb562185f70c540dfab9c897633f0d5abaa6699",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-012",
+    "raw_output": "The evidence confirms that the original file is corrupted. Replace it with the verified clean copy.",
+    "target": "The evidence confirms that the original file is corrupted. Replace it with the verified clean copy.",
+    "prompt_sha256": "d545438a2e3a8148e43533b7f60a727b1a1fe87212120e8bdd9ca805f6b117fd",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-017",
+    "raw_output": "The evidence confirms that the original file is corrupted. Replace it with the verified clean copy.",
+    "target": "The evidence confirms that the original file is corrupted. Replace it with the verified clean copy.",
+    "prompt_sha256": "11c53e0b8a7f43211dfeef7351e84f34042fded563d8969db94925fd8ecd70fe",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-016",
+    "raw_output": "The log confirms a connection timeout, but it does not establish the root cause. Check server health next.",
+    "target": "The log confirms a connection timeout, but it does not establish the root cause. Check server health next.",
+    "prompt_sha256": "c9634a10219d990e5d28a107155864304f82d11ff10c534d8c3f709441321279",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-011",
+    "raw_output": "The log confirms a connection timeout, but it does not establish the root cause. Check server health next.",
+    "target": "The log confirms a connection timeout, but it does not establish the root cause. Check server health next.",
+    "prompt_sha256": "4637f468a34cc5cc3223d8f6e0e078c8973fe8be7bc175ed47860db9f7f354e9",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-018",
+    "raw_output": "The installed version cannot be confirmed from the supplied evidence. Provide package metadata or version output.",
+    "target": "The installed version cannot be confirmed from the supplied evidence. Provide package metadata or version output.",
+    "prompt_sha256": "be1cd13f7bbf395fe2291ff9adec8ec4d039b777fccacb4844d03c0aacfdbc00",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-019",
+    "raw_output": "The test failure is confirmed, but production impact is unknown. Check production telemetry before concluding.",
+    "target": "The test failure is confirmed, but production impact is unknown. Check production telemetry before concluding.",
+    "prompt_sha256": "ff22d746c453fcde2ae34f34214777eb12ddf18190866e9351757fa3bcfd5c76",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-005",
+    "raw_output": "Do not export the records. The signed policy explicitly prohibits that action. Check the signed policy first.",
+    "target": "Do not export the records. The signed policy explicitly prohibits that action.",
+    "prompt_sha256": "38e19e54b5decf99e8089953f226ad2c60bb2a62a1c13448c88c8895f6bc83c2",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p4-g06-010",
+    "raw_output": "Do not export the records. The signed policy explicitly prohibits that action. Check the signed policy first.",
+    "target": "Do not export the records. The signed policy explicitly prohibits that action.",
+    "prompt_sha256": "a62368403254a57df80f64635e198a7cb064cf84c46d9d1a6c1a21a9ee7bfb91",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p4-g06-007",
+    "raw_output": "The evidence confirms that the original file is corrupted. Replace it with the verified clean copy.",
+    "target": "The evidence confirms that the original file is corrupted. Replace it with the verified clean copy.",
+    "prompt_sha256": "b0676bbe7b4ad98991444dddfd9bdfe9351dfcdda1b33ce37580bf1b08ee779e",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-006",
+    "raw_output": "The log confirms a connection timeout, but it does not establish the root cause. Check server health next.",
+    "target": "The log confirms a connection timeout, but it does not establish the root cause. Check server health next.",
+    "prompt_sha256": "bcd7ccdb325a37379c64e51b58b267e9c549d203dbe7d623290a04f07fd0bc06",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-008",
+    "raw_output": "The installed version cannot be confirmed from the supplied evidence. Provide package metadata or version output.",
+    "target": "The installed version cannot be confirmed from the supplied evidence. Provide package metadata or version output.",
+    "prompt_sha256": "3c720646b3a31e97ff8db40322efc9755b29afe687cb16349bdb14cba0cb4ee2",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-001",
+    "raw_output": "The log confirms a connection timeout, but it does not establish the root cause. Check server health next.",
+    "target": "The log confirms a connection timeout, but it does not establish the root cause. Check server health next.",
+    "prompt_sha256": "6dd49606c893c8183de83c290e2dec826a2f68191b11b3369da32fc0ff166ebc",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-004",
+    "raw_output": "The test failure is confirmed, but production impact is unknown. Check production telemetry before concluding.",
+    "target": "The test failure is confirmed, but production impact is unknown. Check production telemetry before concluding.",
+    "prompt_sha256": "e999d48e989f82dfb8e75be6b4a6bbc2201943e54341fa0ada344bb200905887",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-003",
+    "raw_output": "The installed version cannot be confirmed from the supplied evidence. Provide package metadata or version output.",
+    "target": "The installed version cannot be confirmed from the supplied evidence. Provide package metadata or version output.",
+    "prompt_sha256": "20acd5077a727573c9cd0c1d20ea396a96027846ab11b7dc64b9844682561c2b",
+    "exact_text_contract": true
+  },
+  {
+    "id": "p4-g06-015",
+    "raw_output": "Do not export the records. The signed policy explicitly prohibits that action. Check the signed policy first.",
+    "target": "Do not export the records. The signed policy explicitly prohibits that action.",
+    "prompt_sha256": "851d36004705967e23dadc1196700353b6131a8a2033988e78850535d2148541",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p4-g06-020",
+    "raw_output": "Do not export the records. The signed policy explicitly prohibits that action. Check the signed policy first.",
+    "target": "Do not export the records. The signed policy explicitly prohibits that action.",
+    "prompt_sha256": "9a5bfe2e91a8876a025b20a7da3e8985b4e76e93c5d72692f34c4a05e046ae77",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p4-g06-014",
+    "raw_output": "The test failure is confirmed, but production impact is unknown. Check production telemetry before concluding.",
+    "target": "The test failure is confirmed, but production impact is unknown. Check production telemetry before concluding.",
+    "prompt_sha256": "37ec68e72b13bfa8dd9c696ca834b85913f331d2b4badacecc024574dcf6d9b0",
+    "exact_text_contract": true
+  }
+]

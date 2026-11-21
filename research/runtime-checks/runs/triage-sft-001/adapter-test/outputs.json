@@ -1,0 +1,620 @@
+[
+  {
+    "id": "p3-g06-019",
+    "raw_output": "{\"decision\":\"refuse\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "6cf45f9a2babf412573d9e204cf5ca85e88b5347c5e8cd63b31a590fef6e7089",
+    "parsed": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-028",
+    "raw_output": "{\"decision\":\"abstain\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "b3cb53056b6267e02f7d54cd357ceeae405a23f0dacadfc4e951b996be4f31fe",
+    "parsed": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-030",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"clarify_environment\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "c827411dbeeedd9b6a20edcbeeb6e5d75c13740299e284adf70d50f3bf8b5007",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-014",
+    "raw_output": "{\"decision\":\"refuse\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "8e6eb1fde7b1eb81c02cda6413308c010f5c870bdfb8f60fb551e6b1866afbfe",
+    "parsed": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-011",
+    "raw_output": "{\"decision\":\"recommend\",\"evidence_needed\":[],\"route\":\"network\"}",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "access"
+    },
+    "prompt_sha256": "22adf0a20a0e9d55633241edb71c5ea67aca1f291f6dba30e5452a0d2d46b980",
+    "parsed": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "network"
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-015",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"clarify_environment\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "41c897f325316e78c0f7a9fa531d5a836fb2454ca3fab72c79810018958d9f05",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-017",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"asset\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "807e118083e7d377b4731fcab6964d668e7c66e775d93fe52314b3b131519717",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-016",
+    "raw_output": "{\"decision\":\"recommend\",\"evidence_needed\":[],\"route\":\"network\"}",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "network"
+    },
+    "prompt_sha256": "b69c40b9b877b67f41af58256dbd006d837a45c26862b5a7282c2aea5e292f3b",
+    "parsed": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "network"
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-013",
+    "raw_output": "{\"decision\":\"abstain\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "558768debe198ab1988be7265d22a41d71f3a55555affc3bdbdd7b0cc06fa3a1",
+    "parsed": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-004",
+    "raw_output": "{\"decision\":\"refuse\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "9cc5d871e1f55cdf1847fcc758a59337887712070c70b0ceace63e3a29b14835",
+    "parsed": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-027",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"asset\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "23d9d8c797337f7c5481a11b1c952bb51f70d2a516c68cdd07cb400326dd6888",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-002",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"asset\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "d49932253c5b31cb85e3cc67fb8641259e713849042d1ea5f21e9aa66ae2004c",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-012",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"asset\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "105ac0d144ad600c98807532b3bdfa5a9cadf55396bb9ffe02abd341af3b8f3a",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-007",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"asset\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "23d9d8c797337f7c5481a11b1c952bb51f70d2a516c68cdd07cb400326dd6888",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-010",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"clarify_environment\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "d306b2d78f10c6355fde9ebcca77fcb7c5160b5d6d745e416a64d651e7cf23f9",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-022",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"asset\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "d49932253c5b31cb85e3cc67fb8641259e713849042d1ea5f21e9aa66ae2004c",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-008",
+    "raw_output": "{\"decision\":\"abstain\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "4e5150df19fadf830ebc2512301af74d4e9cdf922b7ec2709243f3c1c2afa654",
+    "parsed": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-018",
+    "raw_output": "{\"decision\":\"abstain\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "e67a2cebce3fb53f3add3f6b7a71707b155a11faa63c6818b185c5cf881105c8",
+    "parsed": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-003",
+    "raw_output": "{\"decision\":\"abstain\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "d0dac161c2da1b259abf87793cd41f2f1dc7a5d3765e7b2552c747ec9b1bfa2c",
+    "parsed": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-026",
+    "raw_output": "{\"decision\":\"recommend\",\"evidence_needed\":[],\"route\":\"software\"}",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "software"
+    },
+    "prompt_sha256": "5866337ef28cd4b000ccdb462141211d4a7dfe2d2e22bb5c904fa140d569cc35",
+    "parsed": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "software"
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-009",
+    "raw_output": "{\"decision\":\"refuse\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "69e38b62d6d432611dd2bf9d5fbe3999dbb55746760f84e8be0182dbc18d2ec9",
+    "parsed": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-029",
+    "raw_output": "{\"decision\":\"refuse\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "0fa567d5323f10727a90f3cff8807ce4f257954090f885cc563d5536a7d27155",
+    "parsed": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-021",
+    "raw_output": "{\"decision\":\"recommend\",\"evidence_needed\":[],\"route\":\"hardware\"}",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "hardware"
+    },
+    "prompt_sha256": "f5be748102abeb2872f2c42b88fa50d9c122b6c69f509205f6e093b6be0d0ec9",
+    "parsed": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "hardware"
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-005",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"clarify_environment\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "3b079c855870ca76f46398b12b48f240de6d12445915602166049a91ecaa7ece",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-024",
+    "raw_output": "{\"decision\":\"refuse\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "7278bb5b3ab1ef445d185291cfae0e9c32c05c40c3f644854da30dab6b4fd125",
+    "parsed": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-006",
+    "raw_output": "{\"decision\":\"recommend\",\"evidence_needed\":[],\"route\":\"software\"}",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "software"
+    },
+    "prompt_sha256": "10b53d9de7a4189d3d6816c095732c0b579e30c9dae5214327d28104ffdea155",
+    "parsed": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "software"
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-023",
+    "raw_output": "{\"decision\":\"abstain\",\"evidence_needed\":[],\"route\":null}",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "a98d8ddac6b2d769dbec976733b9a60441495317db6c1bbc7c79fe9628930ebd",
+    "parsed": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-025",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"clarify_environment\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "3676e94e33b599e9ea3398b1d8f0228aec2cdccf4245858b66001777aabe96f4",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-020",
+    "raw_output": "{\"decision\":\"request_evidence\",\"evidence_needed\":[\"clarify_environment\"],\"route\":null}",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "eff709d9e9ebe7fa9df36d01992559ce499195548d6aeca056378e23a93ef4ff",
+    "parsed": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g06-001",
+    "raw_output": "{\"decision\":\"recommend\",\"evidence_needed\":[],\"route\":\"hardware\"}",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "hardware"
+    },
+    "prompt_sha256": "9d792b3c3cc67adc91d6b2cf8cddb1f57ab7688163163cba20c703a6e0acdff3",
+    "parsed": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "hardware"
+    },
+    "valid_json_object": true,
+    "policy_schema_valid": true,
+    "exact": true,
+    "action_executed": false
+  }
+]

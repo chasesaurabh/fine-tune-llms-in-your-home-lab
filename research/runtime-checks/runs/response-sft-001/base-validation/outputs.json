@@ -1,0 +1,212 @@
+[
+  {
+    "id": "p2-g05-009",
+    "raw_output": "The Ember window means the scheduled maintenance period. Based on the supplied context, the Ember window starts Monday at 02:00 UTC.",
+    "target": "Ember window means the scheduled maintenance period. Based on the supplied context, it starts Monday at 02:00 UTC.",
+    "prompt_sha256": "afd902c9fbe14a11ef90720937efb83f6871b2be20303824aac76a582a0a2573",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-006",
+    "raw_output": "The Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, the Quiet flag remains active for 35 minutes.",
+    "target": "Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, it remains active for 35 minutes.",
+    "prompt_sha256": "0e9e41486fcf34ec8943c40164ff3f8307caf37222c0829ff5f7799cca2d50b8",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-027",
+    "raw_output": "The Lumen queue means the nightly batch list. Based on the supplied context, the Lumen queue closes at 18:00 UTC.",
+    "target": "Lumen queue means the nightly batch list. Based on the supplied context, it closes at 18:00 UTC.",
+    "prompt_sha256": "53e875b379afc6a22e552c3552f244acdc2519d1d89c108bd52afd42c3b6961b",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-024",
+    "raw_output": "The Ember window means the scheduled maintenance period. Based on the supplied context, the Ember window starts Thursday at 02:00 UTC.",
+    "target": "Ember window means the scheduled maintenance period. Based on the supplied context, it starts Thursday at 02:00 UTC.",
+    "prompt_sha256": "e450ede037f865fa70c6f75b0425141fc42981d6b6a8f6dd46f2c3a9fb511ecd",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-001",
+    "raw_output": "The Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, the Quiet flag remains active for 30 minutes.",
+    "target": "Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, it remains active for 30 minutes.",
+    "prompt_sha256": "7f2feade785ca2f432713c83b566926b9e89d0fe65eb70be291d574273f11237",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-022",
+    "raw_output": "The Lumen queue means the nightly batch list. Based on the supplied context, the Lumen queue closes at 19:00 UTC.",
+    "target": "Lumen queue means the nightly batch list. Based on the supplied context, it closes at 19:00 UTC.",
+    "prompt_sha256": "51a78ed1c816e446e651b559b21d620c0a3e179446ceeb03c0cab4aa2ecf0f34",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-008",
+    "raw_output": "The Harbor token means a read-only access credential. Based on the supplied context, it expires after 24 days.",
+    "target": "Harbor token means a read-only access credential. Based on the supplied context, it is valid for 24 days.",
+    "prompt_sha256": "d7a535cfe93672180b2cd38717b7bfc5b7d790be26c9eb104c72a80ed95a3abe",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-029",
+    "raw_output": "The Ember window means the scheduled maintenance period. Based on the supplied context, the Ember window starts Wednesday at 02:00 UTC.",
+    "target": "Ember window means the scheduled maintenance period. Based on the supplied context, it starts Wednesday at 02:00 UTC.",
+    "prompt_sha256": "5c4998bc0ee15d784ffd85ca86093837e37d30c16b0e86b1e7304923f7c22da7",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-007",
+    "raw_output": "The Lumen queue means the nightly batch list. Based on the supplied context, the Lumen queue closes at 22:00 UTC.",
+    "target": "Lumen queue means the nightly batch list. Based on the supplied context, it closes at 22:00 UTC.",
+    "prompt_sha256": "19fce0b43257789d378045e20b5fe2ce74807299a13a4f13860edf5738f1d8b1",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-017",
+    "raw_output": "The Lumen queue means the nightly batch list. Based on the supplied context, the Lumen queue closes at 20:00 UTC.",
+    "target": "Lumen queue means the nightly batch list. Based on the supplied context, it closes at 20:00 UTC.",
+    "prompt_sha256": "74e2f2aac9fc79e21cb20c9f174181dd97f5aa0e8f14c2640cd702dc4bc9ba70",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-020",
+    "raw_output": "The Northstar note is a one-sentence status summary. Based on the supplied context, the Northstar note may contain at most 16 words.",
+    "target": "Northstar note means a one-sentence status summary. Based on the supplied context, its limit is 16 words.",
+    "prompt_sha256": "20657a6b159ed9686de3d3009a4923be2b8fb3a566067cbef7d050f892500789",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-016",
+    "raw_output": "The Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, the Quiet flag remains active for 45 minutes.",
+    "target": "Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, it remains active for 45 minutes.",
+    "prompt_sha256": "9f10c84986265db3f8ff1f4f1bca44a0278f3df4fcafc20c9bb3ef7fcf6e55d4",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-014",
+    "raw_output": "The Ember window means the scheduled maintenance period. Based on the supplied context, the Ember window starts Saturday at 02:00 UTC.",
+    "target": "Ember window means the scheduled maintenance period. Based on the supplied context, it starts Saturday at 02:00 UTC.",
+    "prompt_sha256": "b641d1e426433de36b799a0105839cf5a6803dc7038dd6540505aeee5ecf9f2d",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-030",
+    "raw_output": "The Northstar note is a one-sentence status summary. Based on the supplied context, the Northstar note may contain at most 26 words.",
+    "target": "Northstar note means a one-sentence status summary. Based on the supplied context, its limit is 26 words.",
+    "prompt_sha256": "33de5a1fcdbbfd81ea4a72b754dd1d2718da043b9970bd01d4fe462dc3d22f53",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-011",
+    "raw_output": "The Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, the Quiet flag remains active for 40 minutes.",
+    "target": "Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, it remains active for 40 minutes.",
+    "prompt_sha256": "bfa68429e5d26b5908c5cf9ba840bb57449ec02ad87813cd2c5bab8046b5345e",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-010",
+    "raw_output": "The Northstar note is a one-sentence status summary. Based on the supplied context, the Northstar note may contain at most 25 words.",
+    "target": "Northstar note means a one-sentence status summary. Based on the supplied context, its limit is 25 words.",
+    "prompt_sha256": "f0af54e555e319b559269be448cd26f43b23600841fa5ce3d2bb60134d66efaa",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-013",
+    "raw_output": "The Harbor token means a read-only access credential. Based on the supplied context, it expires after 29 days.",
+    "target": "Harbor token means a read-only access credential. Based on the supplied context, it is valid for 29 days.",
+    "prompt_sha256": "9795c3f810734771e080092a64a25261f6c615a073f7d6cf0159d40d50845560",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-015",
+    "raw_output": "The Northstar note is a one-sentence status summary. Based on the supplied context, the Northstar note may contain at most 30 words.",
+    "target": "Northstar note means a one-sentence status summary. Based on the supplied context, its limit is 30 words.",
+    "prompt_sha256": "b160028a2ab5ccda3347d1008a1c5246fd1cd8098dfe1ae08e85a9ffe354c072",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-028",
+    "raw_output": "The Harbor token means a read-only access credential. Based on the supplied context, it expires after 19 days.",
+    "target": "Harbor token means a read-only access credential. Based on the supplied context, it is valid for 19 days.",
+    "prompt_sha256": "6e91044fcdc47dd8dbac3f08df98f51a51ac42faeaa6a096b63ff3dd5706332a",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-004",
+    "raw_output": "The Ember window means the scheduled maintenance period. Based on the supplied context, the Ember window starts Tuesday at 02:00 UTC.",
+    "target": "Ember window means the scheduled maintenance period. Based on the supplied context, it starts Tuesday at 02:00 UTC.",
+    "prompt_sha256": "43b06bd7519fe09b899e56cd083aa934bb8c22a1c60e0bc15b616fda816f8d75",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-003",
+    "raw_output": "The Harbor token means a read-only access credential. Based on the supplied context, it expires after 19 days.",
+    "target": "Harbor token means a read-only access credential. Based on the supplied context, it is valid for 19 days.",
+    "prompt_sha256": "6e91044fcdc47dd8dbac3f08df98f51a51ac42faeaa6a096b63ff3dd5706332a",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-012",
+    "raw_output": "The Lumen queue means the nightly batch list. Based on the supplied context, the Lumen queue closes at 21:00 UTC.",
+    "target": "Lumen queue means the nightly batch list. Based on the supplied context, it closes at 21:00 UTC.",
+    "prompt_sha256": "a0104291caa2603f7189d29dfbd20b2a268b00ad3538b05506aa7a3eda42fed7",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-018",
+    "raw_output": "The Harbor token means a read-only access credential. Based on the supplied context, the token expires after 9 days.",
+    "target": "Harbor token means a read-only access credential. Based on the supplied context, it is valid for 9 days.",
+    "prompt_sha256": "2dd6baaaf00ee70772bf103f796c00fa956e6359aee12837ededc9701e211f94",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-021",
+    "raw_output": "The Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, the Quiet flag remains active for 50 minutes.",
+    "target": "Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, it remains active for 50 minutes.",
+    "prompt_sha256": "4f26cf46fe1fe455ff566642ade322ad99007393348ebfd92e2f8f887353a84c",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-025",
+    "raw_output": "The Northstar note is a one-sentence status summary. Based on the supplied context, the Northstar note may contain at most 21 words.",
+    "target": "Northstar note means a one-sentence status summary. Based on the supplied context, its limit is 21 words.",
+    "prompt_sha256": "54286f441a14ba6bd8f226cf0bb9d1aa921aa1bb69c8d3f70f241bdb3f9daba7",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-019",
+    "raw_output": "The Ember window means the scheduled maintenance period. Based on the supplied context, the Ember window starts Friday at 02:00 UTC.",
+    "target": "Ember window means the scheduled maintenance period. Based on the supplied context, it starts Friday at 02:00 UTC.",
+    "prompt_sha256": "aa05ba4493f3d57cc11ee413a1e2f4fc7ae7075f30639f76db5d9be38ce0923a",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-023",
+    "raw_output": "The Harbor token means a read-only access credential. Based on the supplied context, it expires after 14 days.",
+    "target": "Harbor token means a read-only access credential. Based on the supplied context, it is valid for 14 days.",
+    "prompt_sha256": "4357c331f90d4188a06bb6e30d54aaee119c47851787e92c198b60f24131c1aa",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-005",
+    "raw_output": "The Northstar note is a one-sentence status summary. Based on the supplied context, the Northstar note may contain at most 20 words.",
+    "target": "Northstar note means a one-sentence status summary. Based on the supplied context, its limit is 20 words.",
+    "prompt_sha256": "50412a00bcbc6e53dc62eb28b01d79c6d9c121098eae3d40988bdd1bc19a8f49",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-002",
+    "raw_output": "The Lumen queue means the nightly batch list. Based on the supplied context, the Lumen queue closes at 23:00 UTC.",
+    "target": "Lumen queue means the nightly batch list. Based on the supplied context, it closes at 23:00 UTC.",
+    "prompt_sha256": "0916ca2673c8805b132edcb6f36d5d76f4d29af04a12222e541fe9b83f8c818d",
+    "exact_text_contract": false
+  },
+  {
+    "id": "p2-g05-026",
+    "raw_output": "The Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, the Quiet flag remains active for 55 minutes.",
+    "target": "Quiet flag means a temporary suppression of noncritical alerts. Based on the supplied context, it remains active for 55 minutes.",
+    "prompt_sha256": "5bcdcfdefbe68615bf4f54bb70304db5e7db97b057bd81690a6523f697ea4fbd",
+    "exact_text_contract": false
+  }
+]

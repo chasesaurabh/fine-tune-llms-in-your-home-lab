@@ -1,0 +1,202 @@
+[
+  {
+    "id": "p4-g06-009",
+    "rule": "scope_overreach",
+    "sum_margin": 89.26433885097504,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.900491026731638,
+    "chosen_higher_mean": true,
+    "length_delta": 6,
+    "reference_adjusted_sum_margin": 49.46703660488129
+  },
+  {
+    "id": "p4-g06-002",
+    "rule": "unnecessary_hedging",
+    "sum_margin": 130.3987752199173,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.863093432627226,
+    "chosen_higher_mean": true,
+    "length_delta": 0,
+    "reference_adjusted_sum_margin": 53.03945565223694
+  },
+  {
+    "id": "p4-g06-013",
+    "rule": "invented_source",
+    "sum_margin": 92.44601374864578,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.1719714438706115,
+    "chosen_higher_mean": true,
+    "length_delta": 4,
+    "reference_adjusted_sum_margin": 45.744882464408875
+  },
+  {
+    "id": "p4-g06-012",
+    "rule": "unnecessary_hedging",
+    "sum_margin": 130.78638005256653,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.883493686977185,
+    "chosen_higher_mean": true,
+    "length_delta": 0,
+    "reference_adjusted_sum_margin": 53.750319957733154
+  },
+  {
+    "id": "p4-g06-017",
+    "rule": "unnecessary_hedging",
+    "sum_margin": 131.41600501537323,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.916631842914381,
+    "chosen_higher_mean": true,
+    "length_delta": 0,
+    "reference_adjusted_sum_margin": 54.312026262283325
+  },
+  {
+    "id": "p4-g06-016",
+    "rule": "unsupported_causal_claim",
+    "sum_margin": 87.70778661966324,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.777815841503077,
+    "chosen_higher_mean": true,
+    "length_delta": 9,
+    "reference_adjusted_sum_margin": 51.06414598226547
+  },
+  {
+    "id": "p4-g06-011",
+    "rule": "unsupported_causal_claim",
+    "sum_margin": 87.21117424964905,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.7375830378565755,
+    "chosen_higher_mean": true,
+    "length_delta": 9,
+    "reference_adjusted_sum_margin": 50.5085813999176
+  },
+  {
+    "id": "p4-g06-018",
+    "rule": "invented_source",
+    "sum_margin": 92.0705406665802,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.1465394296144185,
+    "chosen_higher_mean": true,
+    "length_delta": 4,
+    "reference_adjusted_sum_margin": 45.33035731315613
+  },
+  {
+    "id": "p4-g06-019",
+    "rule": "scope_overreach",
+    "sum_margin": 89.17680430412292,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.89581555876172,
+    "chosen_higher_mean": true,
+    "length_delta": 6,
+    "reference_adjusted_sum_margin": 49.409717202186584
+  },
+  {
+    "id": "p4-g06-005",
+    "rule": "policy_override",
+    "sum_margin": 136.11802411079407,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 9.733010907400223,
+    "chosen_higher_mean": true,
+    "length_delta": 1,
+    "reference_adjusted_sum_margin": 52.42497140169144
+  },
+  {
+    "id": "p4-g06-010",
+    "rule": "policy_override",
+    "sum_margin": 135.9109230041504,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 9.71756108601888,
+    "chosen_higher_mean": true,
+    "length_delta": 1,
+    "reference_adjusted_sum_margin": 51.98786425590515
+  },
+  {
+    "id": "p4-g06-007",
+    "rule": "unnecessary_hedging",
+    "sum_margin": 131.406888961792,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.9161520506206315,
+    "chosen_higher_mean": true,
+    "length_delta": 0,
+    "reference_adjusted_sum_margin": 54.250542998313904
+  },
+  {
+    "id": "p4-g06-006",
+    "rule": "unsupported_causal_claim",
+    "sum_margin": 87.55929946899414,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.766000374213799,
+    "chosen_higher_mean": true,
+    "length_delta": 9,
+    "reference_adjusted_sum_margin": 50.71012997627258
+  },
+  {
+    "id": "p4-g06-008",
+    "rule": "invented_source",
+    "sum_margin": 91.87117326259613,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.133649332899797,
+    "chosen_higher_mean": true,
+    "length_delta": 4,
+    "reference_adjusted_sum_margin": 45.03576809167862
+  },
+  {
+    "id": "p4-g06-001",
+    "rule": "unsupported_causal_claim",
+    "sum_margin": 87.47775375843048,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.758832433423796,
+    "chosen_higher_mean": true,
+    "length_delta": 9,
+    "reference_adjusted_sum_margin": 50.736104130744934
+  },
+  {
+    "id": "p4-g06-004",
+    "rule": "scope_overreach",
+    "sum_margin": 89.10005617141724,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.890222752142532,
+    "chosen_higher_mean": true,
+    "length_delta": 6,
+    "reference_adjusted_sum_margin": 49.09493684768677
+  },
+  {
+    "id": "p4-g06-003",
+    "rule": "invented_source",
+    "sum_margin": 92.70917946100235,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.189372803662953,
+    "chosen_higher_mean": true,
+    "length_delta": 4,
+    "reference_adjusted_sum_margin": 46.33304435014725
+  },
+  {
+    "id": "p4-g06-015",
+    "rule": "policy_override",
+    "sum_margin": 136.1651930809021,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 9.7365154675075,
+    "chosen_higher_mean": true,
+    "length_delta": 1,
+    "reference_adjusted_sum_margin": 52.094555020332336
+  },
+  {
+    "id": "p4-g06-020",
+    "rule": "policy_override",
+    "sum_margin": 136.1192910671234,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 9.732813228879657,
+    "chosen_higher_mean": true,
+    "length_delta": 1,
+    "reference_adjusted_sum_margin": 52.31136745214462
+  },
+  {
+    "id": "p4-g06-014",
+    "rule": "scope_overreach",
+    "sum_margin": 89.29898226261139,
+    "chosen_higher_sum": true,
+    "mean_token_margin": 6.906173108077725,
+    "chosen_higher_mean": true,
+    "length_delta": 6,
+    "reference_adjusted_sum_margin": 49.55372881889343
+  }
+]

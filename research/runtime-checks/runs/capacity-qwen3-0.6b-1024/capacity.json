@@ -1,0 +1,33 @@
+{
+  "load": {
+    "seconds": 1.4221151999663562,
+    "allocated_gib": 1.545426845550537,
+    "reserved_gib": 1.5703125
+  },
+  "training": {
+    "seconds": 2.721512099960819,
+    "allocated_gib": 3.01017427444458,
+    "reserved_gib": 3.3671875,
+    "micro_losses": [
+      13.909773826599121,
+      13.909773826599121,
+      13.909773826599121,
+      13.909773826599121,
+      13.909773826599121,
+      13.909773826599121,
+      13.909773826599121,
+      13.909773826599121
+    ]
+  },
+  "actual_tokens": 1024,
+  "actual_supervised_tokens": 64,
+  "input_ids_sha256": "508fe8dca3ed2d8d2d27c2beecaa4eeb25532431a5106bb6dbefe4127a55c2d5",
+  "last_logits_sha256": "03e2d72447a8cb9a043bc1698e3e9ebd40029115a12c184d5d8ed1edd4de3c4c",
+  "top_token": 9588,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda": "12.9",
+  "parameter_devices": [
+    "cuda:0"
+  ],
+  "script_sha256": "dd53ba631ea82b01ef19c9593bc5310954cfd73133ae9f6f0e83959b54732c36"
+}

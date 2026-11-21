@@ -1,0 +1,7 @@
+{
+  "cases": 96,
+  "same_case_prompt_raw_outputs": true,
+  "original_source": "6da18889a1c4e369f324ea78e6de714d2ed548c7",
+  "current_source": "8f05eeea89121fc12e72c8c3f0a4997fa11179d7",
+  "adapter_tensors_identical": true
+}

@@ -1,0 +1,17 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "method": "lora",
+  "tokens": 1024,
+  "micro_batch": 1,
+  "accumulation": 8,
+  "optimizer_steps": 1,
+  "rank": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "seed": 20261121,
+  "data_seed": 91,
+  "supervised_tokens": 64,
+  "targets": "all-linear",
+  "scope": "Fixed random token IDs; dense attention; capacity only, no quality claim"
+}

@@ -1,0 +1,606 @@
+{
+  "train": [
+    {
+      "id": "p4-g03-015",
+      "prompt_tokens": 85,
+      "total_tokens": 104,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-012",
+      "prompt_tokens": 76,
+      "total_tokens": 95,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-020",
+      "prompt_tokens": 76,
+      "total_tokens": 95,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-011",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g03-014",
+      "prompt_tokens": 82,
+      "total_tokens": 104,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g03-018",
+      "prompt_tokens": 83,
+      "total_tokens": 98,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g04-010",
+      "prompt_tokens": 76,
+      "total_tokens": 95,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-018",
+      "prompt_tokens": 77,
+      "total_tokens": 99,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g02-009",
+      "prompt_tokens": 81,
+      "total_tokens": 96,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g03-011",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-006",
+      "prompt_tokens": 78,
+      "total_tokens": 97,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-007",
+      "prompt_tokens": 76,
+      "total_tokens": 95,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-011",
+      "prompt_tokens": 73,
+      "total_tokens": 95,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g02-020",
+      "prompt_tokens": 80,
+      "total_tokens": 102,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g02-007",
+      "prompt_tokens": 79,
+      "total_tokens": 98,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-003",
+      "prompt_tokens": 72,
+      "total_tokens": 91,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-009",
+      "prompt_tokens": 74,
+      "total_tokens": 93,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-019",
+      "prompt_tokens": 80,
+      "total_tokens": 99,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-003",
+      "prompt_tokens": 77,
+      "total_tokens": 99,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g04-001",
+      "prompt_tokens": 78,
+      "total_tokens": 97,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-002",
+      "prompt_tokens": 79,
+      "total_tokens": 98,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-010",
+      "prompt_tokens": 74,
+      "total_tokens": 89,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g01-001",
+      "prompt_tokens": 73,
+      "total_tokens": 95,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g04-017",
+      "prompt_tokens": 78,
+      "total_tokens": 93,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g04-015",
+      "prompt_tokens": 76,
+      "total_tokens": 95,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-007",
+      "prompt_tokens": 78,
+      "total_tokens": 93,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g03-006",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-018",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-004",
+      "prompt_tokens": 80,
+      "total_tokens": 99,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-014",
+      "prompt_tokens": 74,
+      "total_tokens": 93,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-019",
+      "prompt_tokens": 81,
+      "total_tokens": 96,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g02-012",
+      "prompt_tokens": 79,
+      "total_tokens": 98,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-017",
+      "prompt_tokens": 76,
+      "total_tokens": 95,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g03-005",
+      "prompt_tokens": 85,
+      "total_tokens": 104,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-009",
+      "prompt_tokens": 80,
+      "total_tokens": 99,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-005",
+      "prompt_tokens": 76,
+      "total_tokens": 95,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-002",
+      "prompt_tokens": 78,
+      "total_tokens": 93,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g01-019",
+      "prompt_tokens": 74,
+      "total_tokens": 93,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-004",
+      "prompt_tokens": 81,
+      "total_tokens": 96,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g03-007",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-013",
+      "prompt_tokens": 77,
+      "total_tokens": 99,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g03-010",
+      "prompt_tokens": 85,
+      "total_tokens": 104,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-008",
+      "prompt_tokens": 72,
+      "total_tokens": 91,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-020",
+      "prompt_tokens": 74,
+      "total_tokens": 89,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g03-013",
+      "prompt_tokens": 83,
+      "total_tokens": 98,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g02-008",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-013",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-017",
+      "prompt_tokens": 79,
+      "total_tokens": 98,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-011",
+      "prompt_tokens": 78,
+      "total_tokens": 97,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-004",
+      "prompt_tokens": 74,
+      "total_tokens": 93,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-015",
+      "prompt_tokens": 74,
+      "total_tokens": 89,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g01-002",
+      "prompt_tokens": 76,
+      "total_tokens": 95,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-015",
+      "prompt_tokens": 80,
+      "total_tokens": 102,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g04-012",
+      "prompt_tokens": 78,
+      "total_tokens": 93,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g02-014",
+      "prompt_tokens": 81,
+      "total_tokens": 96,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g03-016",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g03-001",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g03-004",
+      "prompt_tokens": 82,
+      "total_tokens": 104,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g01-013",
+      "prompt_tokens": 72,
+      "total_tokens": 91,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-001",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-016",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-016",
+      "prompt_tokens": 73,
+      "total_tokens": 95,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g03-020",
+      "prompt_tokens": 85,
+      "total_tokens": 104,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-016",
+      "prompt_tokens": 78,
+      "total_tokens": 97,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g03-008",
+      "prompt_tokens": 83,
+      "total_tokens": 98,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g02-003",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g01-018",
+      "prompt_tokens": 72,
+      "total_tokens": 91,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-010",
+      "prompt_tokens": 80,
+      "total_tokens": 102,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g01-005",
+      "prompt_tokens": 74,
+      "total_tokens": 89,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g01-006",
+      "prompt_tokens": 73,
+      "total_tokens": 95,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g04-008",
+      "prompt_tokens": 77,
+      "total_tokens": 99,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g03-012",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g03-017",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g03-002",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g04-014",
+      "prompt_tokens": 80,
+      "total_tokens": 99,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g02-005",
+      "prompt_tokens": 80,
+      "total_tokens": 102,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g03-003",
+      "prompt_tokens": 83,
+      "total_tokens": 98,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g03-009",
+      "prompt_tokens": 82,
+      "total_tokens": 104,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g02-006",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g03-019",
+      "prompt_tokens": 82,
+      "total_tokens": 104,
+      "target_tokens": 22
+    }
+  ],
+  "validation": [
+    {
+      "id": "p4-g05-015",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-011",
+      "prompt_tokens": 81,
+      "total_tokens": 96,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g05-016",
+      "prompt_tokens": 81,
+      "total_tokens": 96,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g05-001",
+      "prompt_tokens": 81,
+      "total_tokens": 96,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g05-017",
+      "prompt_tokens": 80,
+      "total_tokens": 102,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g05-020",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-007",
+      "prompt_tokens": 80,
+      "total_tokens": 102,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g05-019",
+      "prompt_tokens": 79,
+      "total_tokens": 98,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-013",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-002",
+      "prompt_tokens": 80,
+      "total_tokens": 102,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g05-009",
+      "prompt_tokens": 79,
+      "total_tokens": 98,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-012",
+      "prompt_tokens": 80,
+      "total_tokens": 102,
+      "target_tokens": 22
+    },
+    {
+      "id": "p4-g05-006",
+      "prompt_tokens": 81,
+      "total_tokens": 96,
+      "target_tokens": 15
+    },
+    {
+      "id": "p4-g05-003",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-014",
+      "prompt_tokens": 79,
+      "total_tokens": 98,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-004",
+      "prompt_tokens": 79,
+      "total_tokens": 98,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-010",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-018",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-005",
+      "prompt_tokens": 81,
+      "total_tokens": 100,
+      "target_tokens": 19
+    },
+    {
+      "id": "p4-g05-008",
+      "prompt_tokens": 83,
+      "total_tokens": 102,
+      "target_tokens": 19
+    }
+  ]
+}

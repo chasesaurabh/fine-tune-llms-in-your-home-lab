@@ -1,0 +1,50 @@
+{
+  "cases": 20,
+  "mode": "adapter",
+  "split": "test",
+  "chosen_higher_sum": 20,
+  "chosen_higher_mean": 20,
+  "eos_scored": true,
+  "prompt_scored": false,
+  "dataset": {
+    "train": {
+      "rows": 80,
+      "groups": 4,
+      "sha256": "6bff622f42d413f75542b10eb49d658d5d888d6fe92837f6ae1e228dcd9f9d89"
+    },
+    "validation": {
+      "rows": 20,
+      "groups": 1,
+      "sha256": "c17e9849f7ea3e8995b643acb16a79ed108f24a70f65e65d06c8d78999a15106"
+    },
+    "test": {
+      "rows": 20,
+      "groups": 1,
+      "sha256": "842ff170936b052f6c4e834b0a5dac311048916dfd7ac71446f4a63bb743dfaa"
+    }
+  },
+  "scope": "Fixed synthetic pairs; sum likelihood, token means and generated behavior are distinct. No human preference inference.",
+  "model": "Qwen/Qwen3-0.6B",
+  "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "method": "lora",
+  "algorithm": "DPO sigmoid",
+  "parent_adapter_hashes": {
+    "adapter_config.json": "030b4174a2849a75063f8f79a9df6542720adf1991547592aee2321bf8b68dae",
+    "adapter_model.safetensors": "a8a493f3f13eefc925ad456fafaff78e8bfb99409926a3be380db64a36df0475",
+    "chat_template.jinja": "51fa65c79bb57f058dc7ef8734884bd325fe9d45bb03a61bfef59785d3bc2da9",
+    "README.md": "0c37a12350dc0a1ff4e60a8adeafc4449d7bf1a51a4e92f5c9a787f213bf5004",
+    "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "tokenizer_config.json": "154e5ff1e7c152d964edf30da854ea62465c767719ac8e97e58babf2d4fa9079",
+    "training_args.bin": "f40dbb7436a27b3d57ee7b46c46367c3f0543094a08cb1f470a98c8a83310deb"
+  },
+  "adapter_hashes": {
+    "adapter_config.json": "ed66d3a74b291fefabc93479f19b490e60da3665695455fa8ffe2caaf6225f26",
+    "adapter_model.safetensors": "cc41f03886c423f29f8d5ef177cd05fd2f8b5a07b1ecb84932c96b82eef7cba3",
+    "chat_template.jinja": "51fa65c79bb57f058dc7ef8734884bd325fe9d45bb03a61bfef59785d3bc2da9",
+    "README.md": "8901ea801b458db8c491325bb6a24142f0fee63501eb31d18f3527e634ce3865",
+    "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "tokenizer_config.json": "154e5ff1e7c152d964edf30da854ea62465c767719ac8e97e58babf2d4fa9079",
+    "training_args.bin": "dd706748cd7de55b102cc655ea4eccab514fd98bc21449fde0a5b65d79a77b76"
+  },
+  "script_sha256": "fbad88171cca7567d37dd5ce244e790fc4798f499c42c896857f0b4632adc4ca"
+}

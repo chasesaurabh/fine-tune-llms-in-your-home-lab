@@ -1,0 +1,15 @@
+{
+  "checkpoint-2": {
+    "adapter_config.json": "5fddcbdda5350e38fe4ed78e925fbbe52b54a748d62782bd35d9620098a91327",
+    "adapter_model.safetensors": "b713cfa21e88c7d960657ba3a8d6859159c58c59b4289756d7622d03ae4ff432",
+    "chat_template.jinja": "51fa65c79bb57f058dc7ef8734884bd325fe9d45bb03a61bfef59785d3bc2da9",
+    "optimizer.pt": "12c3a20d5b8de43eb0ea4f6add32851140fb5817b869a8c12ccfb63543afec18",
+    "README.md": "0c37a12350dc0a1ff4e60a8adeafc4449d7bf1a51a4e92f5c9a787f213bf5004",
+    "rng_state.pth": "8fa05a0a0e3e43b5525b6e3b57304c71f55a1223362c9a8508fbe6852bdb91d2",
+    "scheduler.pt": "303c35c463c3bb2a0b70da4e0a5ea0ef4e339cf013f9b63563c9600f8f304004",
+    "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "tokenizer_config.json": "154e5ff1e7c152d964edf30da854ea62465c767719ac8e97e58babf2d4fa9079",
+    "trainer_state.json": "e83cc982223284fee9093d7b57f7d8eb0b4aef825378ddd47742dc041bd29aa3",
+    "training_args.bin": "badb031477a48704a9d2c28e47e526678fcc1ad014d55984f9e15572f580f051"
+  }
+}

@@ -1,0 +1,476 @@
+[
+  {
+    "id": "p3-g05-028",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"no asset identifier provided\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "0637cba875aaaaaed129c74daef6a410c4fb6d5719b71f43fe5888f0b5177677",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-017",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"DNS requests time out while local applications remain responsive\"]\n}\n```",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "network"
+    },
+    "prompt_sha256": "2e2946d21da9bb23bb4eeb0bf38925d7486cd0862da87c0cf5e402b477f3afdb",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-013",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"DNS requests time out while local applications remain responsive\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "dff9bb5d6a2648834ad646bb0ce0a79f3e8fc4b6cd1fc3a290d881357c1821db",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-010",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"unapproved command\"]\n}\n```",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "d48984ead78f6107397ac66450b26ae94b08cf6090fe38580620e45b889d8361",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-007",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"approved editor closes when opening a project\", \"asset identifier and environment are confirmed\"]\n}\n```",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "software"
+    },
+    "prompt_sha256": "9e7fbbed21694bb31bc604253dbbbee02370dc90a9d0ce40f81b8021d6d86eac",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-004",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"Zeta-9 is not a matching approved issue family\"]\n}\n```",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "5063bc6de6885ea740b4cae9f29e9df804b4b42c12cc734def7cbc15237d24fc",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-014",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"Zeta-9 is not a matching approved issue family\"]\n}\n```",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "3029abc97c2b8fb0fc7ff1ced95ed177b57ec3cee24d31b889cd60628ba03b47",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-008",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"no asset identifier provided\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "0637cba875aaaaaed129c74daef6a410c4fb6d5719b71f43fe5888f0b5177677",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-015",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"unapproved command\"]\n}\n```",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "426bf745c981e05ad812a36c12696704fafea23b6e840a9a4f6258b48cc56e8c",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-027",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"approved editor closes when opening a project\", \"asset identifier and environment are confirmed\"]\n}\n```",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "software"
+    },
+    "prompt_sha256": "17420f6a391129cc8608afb64a0c8ee7958e4630d32bd10e86eaf29ce1ae8d10",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-020",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"unapproved command\"]\n}\n```",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "1be951bcaa2534770a85338e0b6b6b273d3cc19b09fbc73f98915f5b00b37d47",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-021",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"null\",\n  \"evidence_needed\": [\"DNS requests time out while local applications remain responsive\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "88174ccc1fbcd12b42ac5065f6362d4d09d7a19c38a90e5e159d6ea49a35e170",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-001",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"null\",\n  \"evidence_needed\": [\"DNS requests time out while local applications remain responsive\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "1f0d43cda4899eb741f1da8595a2b84b311d2005a951c9bf8e6188206a892add",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-019",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"Zeta-9 is not a matching approved issue family\"]\n}\n```",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "aeb3d8b7b7bc6f8b7dfd1ec572c821933945a285d8610a78fcff2e08f1c61bcf",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-025",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"unapproved command\"]\n}\n```",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "f4fc5627383ba0acf483fa9e4d95730a9b6a8c43519dd55b59976e4cfac14361",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-024",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"Zeta-9 is not a matching approved issue family\"]\n}\n```",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "6a14211af21a996fe32a8b17ca100f8b7bf1f27fd3d5bf5545c5f5734af19771",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-012",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"the account receives permission denied on the approved folder\", \"the asset identifier and environment are confirmed\"]\n}\n```",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "access"
+    },
+    "prompt_sha256": "e24164947dcff9e50e1aeed5bb45b53b06af62a53421a94ee224d204aa4cf875",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-022",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"cooling fan reports a mechanical fault\"]\n}\n```",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "hardware"
+    },
+    "prompt_sha256": "a79bdfd4a3f35c1e8e8504e82a702ce7c496185c2d6572fd08d3624c14d3f64d",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-030",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"unapproved command\"]\n}\n```",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "8a35476a90113d267c548838ccbcec3a0e6da54a0da23a97ce1402d31356ec4f",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-011",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"null\",\n  \"evidence_needed\": []\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "3ac2f63ca2fcca023e4c50d404f23338a535de01778d27deaacb328abdf40677",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-029",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"Zeta-9 is not a matching approved issue family\"]\n}\n```",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "b7d392f2658b0fe6cebcaf3eaa10b4c97a6f883794fb991a1c19c7e1aa7c7725",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-009",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"Zeta-9 is not a matching approved issue family\"]\n}\n```",
+    "target": {
+      "decision": "abstain",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "7b77f51b80d4a7a52d06fdf59eb548a422b6c88fb7dc0d38a41a33cb3657853b",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-026",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"null\",\n  \"evidence_needed\": [\"production\", \"test\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "67073747e8b5bf197df6a7de9809bbe1ee307f45f9233b8bfa8bf58b63243d32",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-016",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"null\",\n  \"evidence_needed\": []\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "210cf749d3f6e92ad8635109daa58896dd6a48a8172ab10efc51620e09af658e",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-005",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"unapproved command\"]\n}\n```",
+    "target": {
+      "decision": "refuse",
+      "evidence_needed": [],
+      "route": null
+    },
+    "prompt_sha256": "072abfeb63108fb44667449afa1fc75c7bdfb4b60f232a23fb384fbab2db5353",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-003",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"no asset identifier provided\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "734d6cef3ec84fab6fa3fba49c006a613ef2be0bad532e6bc666d16de857294c",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-002",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"cooling fan reports a mechanical fault\"]\n}\n```",
+    "target": {
+      "decision": "recommend",
+      "evidence_needed": [],
+      "route": "hardware"
+    },
+    "prompt_sha256": "6d570488c6487e3df4c6f12d9c52efb1b5a817071702d876cd556bd00b8de861",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-006",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"production\", \"test\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "clarify_environment"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "7d8a04da8da26f2b83eb44c3a31cae124a3c92c942a208d9eb1630c30358c78c",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-018",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"no asset identifier\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "c234ea39e653ac5a3492b4e9f47d8ae66c431e515a44cc55c7dd8ccec176b9c3",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  },
+  {
+    "id": "p3-g05-023",
+    "raw_output": "```json\n{\n  \"decision\": \"abstain\",\n  \"route\": \"network\",\n  \"evidence_needed\": [\"no asset identifier provided\"]\n}\n```",
+    "target": {
+      "decision": "request_evidence",
+      "evidence_needed": [
+        "asset"
+      ],
+      "route": null
+    },
+    "prompt_sha256": "734d6cef3ec84fab6fa3fba49c006a613ef2be0bad532e6bc666d16de857294c",
+    "parsed": null,
+    "valid_json_object": false,
+    "policy_schema_valid": false,
+    "exact": false,
+    "action_executed": false
+  }
+]

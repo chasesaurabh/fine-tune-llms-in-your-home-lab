@@ -1,0 +1,1059 @@
+{
+  "scope": "Recorded sequential Python module invocations from the companion root. Requires GPU/model dependencies; existing output paths are rejected. Model licenses apply separately.",
+  "source_commit": "8f05eeea89121fc12e72c8c3f0a4997fa11179d7",
+  "jobs": [
+    {
+      "label": "cuda-preflight",
+      "module": "finetune_lab.preflight",
+      "arguments": [
+        "--cuda",
+        "--output",
+        "runs/preflight.json"
+      ],
+      "gate": null
+    },
+    {
+      "label": "base-first",
+      "module": "finetune_lab.baseline",
+      "arguments": [
+        "--data",
+        "experiments/extraction-v2/data",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--instruction-file",
+        "config/extraction-policy.txt",
+        "--output",
+        "runs/base-first-001"
+      ],
+      "gate": null
+    },
+    {
+      "label": "smoke",
+      "module": "finetune_lab.training",
+      "arguments": [
+        "--data",
+        "experiments/extraction-v2/data",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--seed",
+        "20261121",
+        "--micro-batch",
+        "1",
+        "--accumulation",
+        "8",
+        "--max-length",
+        "512",
+        "--gradient-checkpointing",
+        "--instruction-file",
+        "config/extraction-policy.txt",
+        "--in-memory-evaluation",
+        "--steps",
+        "2",
+        "--output",
+        "runs/smoke-001"
+      ],
+      "gate": null
+    },
+    {
+      "label": "smoke-reload",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/smoke-001",
+        "--data",
+        "experiments/extraction-v2/data",
+        "--output",
+        "runs/smoke-001/adapter-validation",
+        "--mode",
+        "adapter",
+        "--task",
+        "extraction",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": "runs/smoke-001/adapter-validation/summary.json"
+    },
+    {
+      "label": "recovery-control",
+      "module": "finetune_lab.training",
+      "arguments": [
+        "--data",
+        "experiments/extraction-v2/data",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--seed",
+        "20261121",
+        "--micro-batch",
+        "1",
+        "--accumulation",
+        "8",
+        "--max-length",
+        "512",
+        "--gradient-checkpointing",
+        "--instruction-file",
+        "config/extraction-policy.txt",
+        "--in-memory-evaluation",
+        "--steps",
+        "8",
+        "--output",
+        "runs/recovery-control"
+      ],
+      "gate": null
+    },
+    {
+      "label": "recovery-interrupted",
+      "module": "finetune_lab.training",
+      "arguments": [
+        "--data",
+        "experiments/extraction-v2/data",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--seed",
+        "20261121",
+        "--micro-batch",
+        "1",
+        "--accumulation",
+        "8",
+        "--max-length",
+        "512",
+        "--gradient-checkpointing",
+        "--instruction-file",
+        "config/extraction-policy.txt",
+        "--in-memory-evaluation",
+        "--steps",
+        "8",
+        "--output",
+        "runs/recovery-interrupted",
+        "--stop-after-step",
+        "4"
+      ],
+      "gate": null
+    },
+    {
+      "label": "recovery-resumed",
+      "module": "finetune_lab.training",
+      "arguments": [
+        "--data",
+        "experiments/extraction-v2/data",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--seed",
+        "20261121",
+        "--micro-batch",
+        "1",
+        "--accumulation",
+        "8",
+        "--max-length",
+        "512",
+        "--gradient-checkpointing",
+        "--instruction-file",
+        "config/extraction-policy.txt",
+        "--in-memory-evaluation",
+        "--steps",
+        "8",
+        "--output",
+        "runs/recovery-resumed",
+        "--resume-from",
+        "runs/recovery-interrupted/checkpoints/checkpoint-4"
+      ],
+      "gate": null
+    },
+    {
+      "label": "recovery-compare",
+      "module": "finetune_lab.compare_resume",
+      "arguments": [
+        "--control",
+        "runs/recovery-control",
+        "--resumed",
+        "runs/recovery-resumed",
+        "--output",
+        "runs/recovery-comparison.json"
+      ],
+      "gate": null
+    },
+    {
+      "label": "recovery-reload",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/recovery-resumed",
+        "--data",
+        "experiments/extraction-v2/data",
+        "--output",
+        "runs/recovery-resumed/adapter-validation",
+        "--mode",
+        "adapter",
+        "--task",
+        "extraction",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": "runs/recovery-resumed/adapter-validation/summary.json"
+    },
+    {
+      "label": "source-equivalence",
+      "module": "finetune_lab.training",
+      "arguments": [
+        "--data",
+        "experiments/extraction-v2/data",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--seed",
+        "20261121",
+        "--micro-batch",
+        "1",
+        "--accumulation",
+        "8",
+        "--max-length",
+        "512",
+        "--gradient-checkpointing",
+        "--instruction-file",
+        "config/extraction-policy.txt",
+        "--in-memory-evaluation",
+        "--epochs",
+        "2",
+        "--output",
+        "runs/source-equivalence"
+      ],
+      "gate": null
+    },
+    {
+      "label": "source-equivalence-reload",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/source-equivalence",
+        "--data",
+        "experiments/extraction-v2/data",
+        "--output",
+        "runs/source-equivalence/adapter-validation",
+        "--mode",
+        "adapter",
+        "--task",
+        "extraction",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": "runs/source-equivalence/adapter-validation/summary.json"
+    },
+    {
+      "label": "response-train",
+      "module": "finetune_lab.training",
+      "arguments": [
+        "--data",
+        "experiments/project2-nvidia/data",
+        "--output",
+        "runs/response-sft-001",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--seed",
+        "20261121",
+        "--epochs",
+        "2",
+        "--task",
+        "response",
+        "--in-memory-evaluation"
+      ],
+      "gate": null
+    },
+    {
+      "label": "response-adapter-validation",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/response-sft-001",
+        "--data",
+        "experiments/project2-nvidia/data",
+        "--output",
+        "runs/response-sft-001/adapter-validation",
+        "--mode",
+        "adapter",
+        "--task",
+        "response",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": "runs/response-sft-001/adapter-validation/summary.json"
+    },
+    {
+      "label": "response-base-validation",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/response-sft-001",
+        "--data",
+        "experiments/project2-nvidia/data",
+        "--output",
+        "runs/response-sft-001/base-validation",
+        "--mode",
+        "base",
+        "--task",
+        "response",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "response-base-test",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/response-sft-001",
+        "--data",
+        "experiments/project2-nvidia/data",
+        "--output",
+        "runs/response-sft-001/base-test",
+        "--mode",
+        "base",
+        "--task",
+        "response",
+        "--split",
+        "test",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "response-adapter-test",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/response-sft-001",
+        "--data",
+        "experiments/project2-nvidia/data",
+        "--output",
+        "runs/response-sft-001/adapter-test",
+        "--mode",
+        "adapter",
+        "--task",
+        "response",
+        "--split",
+        "test",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "triage-train",
+      "module": "finetune_lab.training",
+      "arguments": [
+        "--data",
+        "experiments/project3-nvidia/data",
+        "--output",
+        "runs/triage-sft-001",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--seed",
+        "20261121",
+        "--epochs",
+        "2",
+        "--task",
+        "triage",
+        "--in-memory-evaluation"
+      ],
+      "gate": null
+    },
+    {
+      "label": "triage-adapter-validation",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/triage-sft-001",
+        "--data",
+        "experiments/project3-nvidia/data",
+        "--output",
+        "runs/triage-sft-001/adapter-validation",
+        "--mode",
+        "adapter",
+        "--task",
+        "triage",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": "runs/triage-sft-001/adapter-validation/summary.json"
+    },
+    {
+      "label": "triage-base-validation",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/triage-sft-001",
+        "--data",
+        "experiments/project3-nvidia/data",
+        "--output",
+        "runs/triage-sft-001/base-validation",
+        "--mode",
+        "base",
+        "--task",
+        "triage",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "triage-base-test",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/triage-sft-001",
+        "--data",
+        "experiments/project3-nvidia/data",
+        "--output",
+        "runs/triage-sft-001/base-test",
+        "--mode",
+        "base",
+        "--task",
+        "triage",
+        "--split",
+        "test",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "triage-adapter-test",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/triage-sft-001",
+        "--data",
+        "experiments/project3-nvidia/data",
+        "--output",
+        "runs/triage-sft-001/adapter-test",
+        "--mode",
+        "adapter",
+        "--task",
+        "triage",
+        "--split",
+        "test",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "preference-train",
+      "module": "finetune_lab.training",
+      "arguments": [
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/preference-sft-001",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--seed",
+        "20261121",
+        "--epochs",
+        "2",
+        "--task",
+        "preference",
+        "--in-memory-evaluation"
+      ],
+      "gate": null
+    },
+    {
+      "label": "preference-adapter-validation",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/preference-sft-001/adapter-validation",
+        "--mode",
+        "adapter",
+        "--task",
+        "preference",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": "runs/preference-sft-001/adapter-validation/summary.json"
+    },
+    {
+      "label": "preference-base-validation",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/preference-sft-001/base-validation",
+        "--mode",
+        "base",
+        "--task",
+        "preference",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "preference-base-test",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/preference-sft-001/base-test",
+        "--mode",
+        "base",
+        "--task",
+        "preference",
+        "--split",
+        "test",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "preference-adapter-test",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/preference-sft-001/adapter-test",
+        "--mode",
+        "adapter",
+        "--task",
+        "preference",
+        "--split",
+        "test",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "dpo-train",
+      "module": "finetune_lab.dpo",
+      "arguments": [
+        "--sft-run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/preference-dpo-001",
+        "--epochs",
+        "1",
+        "--seed",
+        "20261121"
+      ],
+      "gate": null
+    },
+    {
+      "label": "dpo-validation",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/preference-dpo-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/preference-dpo-001/adapter-validation",
+        "--mode",
+        "adapter",
+        "--task",
+        "preference",
+        "--split",
+        "validation",
+        "--batch-size",
+        "1"
+      ],
+      "gate": "runs/preference-dpo-001/adapter-validation/summary.json"
+    },
+    {
+      "label": "dpo-test",
+      "module": "finetune_lab.evaluation",
+      "arguments": [
+        "--run",
+        "runs/preference-dpo-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/preference-dpo-001/adapter-test",
+        "--mode",
+        "adapter",
+        "--task",
+        "preference",
+        "--split",
+        "test",
+        "--batch-size",
+        "1"
+      ],
+      "gate": null
+    },
+    {
+      "label": "pair-base-validation",
+      "module": "finetune_lab.preference",
+      "arguments": [
+        "--run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/pair-base-validation",
+        "--mode",
+        "base",
+        "--split",
+        "validation"
+      ],
+      "gate": null
+    },
+    {
+      "label": "pair-base-test",
+      "module": "finetune_lab.preference",
+      "arguments": [
+        "--run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/pair-base-test",
+        "--mode",
+        "base",
+        "--split",
+        "test"
+      ],
+      "gate": null
+    },
+    {
+      "label": "pair-sft-validation",
+      "module": "finetune_lab.preference",
+      "arguments": [
+        "--run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/pair-sft-validation",
+        "--mode",
+        "adapter",
+        "--split",
+        "validation"
+      ],
+      "gate": null
+    },
+    {
+      "label": "pair-sft-test",
+      "module": "finetune_lab.preference",
+      "arguments": [
+        "--run",
+        "runs/preference-sft-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/pair-sft-test",
+        "--mode",
+        "adapter",
+        "--split",
+        "test"
+      ],
+      "gate": null
+    },
+    {
+      "label": "pair-dpo-validation",
+      "module": "finetune_lab.preference",
+      "arguments": [
+        "--run",
+        "runs/preference-dpo-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/pair-dpo-validation",
+        "--mode",
+        "adapter",
+        "--split",
+        "validation"
+      ],
+      "gate": null
+    },
+    {
+      "label": "pair-dpo-test",
+      "module": "finetune_lab.preference",
+      "arguments": [
+        "--run",
+        "runs/preference-dpo-001",
+        "--data",
+        "experiments/project4-dpo/data",
+        "--output",
+        "runs/pair-dpo-test",
+        "--mode",
+        "adapter",
+        "--split",
+        "test"
+      ],
+      "gate": null
+    },
+    {
+      "label": "pair-relative-validation",
+      "module": "finetune_lab.compare_preferences",
+      "arguments": [
+        "--policy",
+        "runs/pair-dpo-validation",
+        "--reference",
+        "runs/pair-sft-validation",
+        "--output",
+        "runs/pair-relative-validation"
+      ],
+      "gate": null
+    },
+    {
+      "label": "pair-relative-test",
+      "module": "finetune_lab.compare_preferences",
+      "arguments": [
+        "--policy",
+        "runs/pair-dpo-test",
+        "--reference",
+        "runs/pair-sft-test",
+        "--output",
+        "runs/pair-relative-test"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-0.6b-512-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--tokens",
+        "512",
+        "--output",
+        "runs/capacity-qwen3-0.6b-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-0.6b-512-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen3-0.6b-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-0.6b-1024-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen3-0.6B",
+        "--revision",
+        "c1899de289a04d12100db370d81485cdf75e47ca",
+        "--method",
+        "lora",
+        "--tokens",
+        "1024",
+        "--output",
+        "runs/capacity-qwen3-0.6b-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-0.6b-1024-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen3-0.6b-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-4b-512-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen3-4B",
+        "--revision",
+        "1cfa9a7208912126459214e8b04321603b3df60c",
+        "--method",
+        "lora",
+        "--tokens",
+        "512",
+        "--output",
+        "runs/capacity-qwen3-4b-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-4b-512-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen3-4b-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-4b-1024-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen3-4B",
+        "--revision",
+        "1cfa9a7208912126459214e8b04321603b3df60c",
+        "--method",
+        "lora",
+        "--tokens",
+        "1024",
+        "--output",
+        "runs/capacity-qwen3-4b-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-4b-1024-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen3-4b-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-14b-512-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen3-14B",
+        "--revision",
+        "40c069824f4251a91eefaf281ebe4c544efd3e18",
+        "--method",
+        "qlora",
+        "--tokens",
+        "512",
+        "--output",
+        "runs/capacity-qwen3-14b-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-14b-512-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen3-14b-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-14b-1024-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen3-14B",
+        "--revision",
+        "40c069824f4251a91eefaf281ebe4c544efd3e18",
+        "--method",
+        "qlora",
+        "--tokens",
+        "1024",
+        "--output",
+        "runs/capacity-qwen3-14b-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-14b-1024-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen3-14b-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-32b-512-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen3-32B",
+        "--revision",
+        "9216db5781bf21249d130ec9da846c4624c16137",
+        "--method",
+        "qlora",
+        "--tokens",
+        "512",
+        "--output",
+        "runs/capacity-qwen3-32b-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-32b-512-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen3-32b-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-32b-1024-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen3-32B",
+        "--revision",
+        "9216db5781bf21249d130ec9da846c4624c16137",
+        "--method",
+        "qlora",
+        "--tokens",
+        "1024",
+        "--output",
+        "runs/capacity-qwen3-32b-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen3-32b-1024-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen3-32b-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen2.5-72b-instruct-512-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen2.5-72B-Instruct",
+        "--revision",
+        "495f39366efef23836d0cfae4fbe635880d2be31",
+        "--method",
+        "qlora",
+        "--tokens",
+        "512",
+        "--output",
+        "runs/capacity-qwen2.5-72b-instruct-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen2.5-72b-instruct-512-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen2.5-72b-instruct-512"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen2.5-72b-instruct-1024-train",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "train",
+        "--model",
+        "Qwen/Qwen2.5-72B-Instruct",
+        "--revision",
+        "495f39366efef23836d0cfae4fbe635880d2be31",
+        "--method",
+        "qlora",
+        "--tokens",
+        "1024",
+        "--output",
+        "runs/capacity-qwen2.5-72b-instruct-1024"
+      ],
+      "gate": null
+    },
+    {
+      "label": "capacity-qwen2.5-72b-instruct-1024-reload",
+      "module": "finetune_lab.capacity",
+      "arguments": [
+        "reload",
+        "--run",
+        "runs/capacity-qwen2.5-72b-instruct-1024"
+      ],
+      "gate": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "model": "Qwen/Qwen3-32B",
+  "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "method": "qlora",
+  "tokens": 1024,
+  "micro_batch": 1,
+  "accumulation": 8,
+  "optimizer_steps": 1,
+  "rank": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "seed": 20261121,
+  "data_seed": 91,
+  "supervised_tokens": 64,
+  "targets": "all-linear",
+  "scope": "Fixed random token IDs; dense attention; capacity only, no quality claim"
+}
