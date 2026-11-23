@@ -1,6 +1,6 @@
 # Fine-Tune LLMs in Your Home Lab — code companion
 
-Runnable adapter-training labs, strict evaluators and original synthetic datasets for the book by Saurabh Chase. Code is MIT; dataset manifests retain their CC0-1.0 dedication. Model weights are acquired separately under their own licenses.
+Runnable adapter-training labs, strict evaluators and original synthetic datasets for the second edition of the book by Saurabh Chase, available in [Kindle](https://www.amazon.com/dp/B0HSN87DSW) and [paperback](https://www.amazon.com/dp/B0HSNGKZ66). Code is MIT; dataset manifests retain their CC0-1.0 dedication. Model weights are acquired separately under their own licenses.
 
 For the book's commands, download [book-v2.0.0](https://github.com/chasesaurabh/fine-tune-llms-in-your-home-lab/releases/tag/book-v2.0.0) and verify its `SHA256SUMS` file. Keep that named version with your experiment records.
 
